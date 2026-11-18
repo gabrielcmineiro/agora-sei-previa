@@ -1,0 +1,574 @@
+/* Agora Sei: biblioteca de movimento em guache, v1.0 (18/11/2026)
+   Ligue depois de tokens.css e componentes.css. Não redefine nenhuma classe de componentes.css.
+
+   Dois prefixos:
+   · as-carrega-*, as-esqueleto-*, as-progresso-tinta, as-imagem-chega, as-botao--esperando: espera e carregamento.
+   · as-g-*: toda outra peça pintada (microinterações, pequenas vitórias, cantinhos e detalhes).
+   Obs.: .as-esqueleto já existe em componentes.css (seção 24). O esqueleto pintado daqui é .as-esqueleto-aguada.
+
+   As pinceladas são guache de verdade, em ../ilustracoes/guache/elementos/ (WebP com transparência).
+   · Máscaras (uma cor escura sobre transparente): viram forma com mask-image e ganham cor de um token.
+     A mesma textura serve em qualquer cor e em qualquer família de desafio.
+   · Figuras coloridas (ramo, flores, brilhos, sol, coração, faixa, pincel e pote): entram como fundo, sem recolorir.
+
+   Cor: cada peça lê --as-g-cor, se você quiser trocar; sem ela, usa o padrão da peça, tirado de
+   --as-fam-aguada, --as-fam-meio, --as-g-claro e --as-g-forte. Um [data-familia] num ancestral troca tudo de uma vez.
+   Regra 6 / 3 / 1: área grande com aguada, traço com meio-tom, cor forte só em ponto pequeno.
+
+   Regras de movimento (as mesmas de DESIGN.md):
+   1. Só se anima transform, opacity, clip-path e máscara. A única exceção é .as-g-abre, que abre por linhas
+      de grade (0fr para 1fr), como pedido; ela não empurra nada além do próprio bloco.
+   2. Estado que muda no próprio elemento usa transição. Peça que chega por causa de um gesto só anima com
+      .as-agora (nela ou num ancestral). Ao recarregar, tudo aparece parado e pronto.
+      Como o app redesenha o HTML a cada gesto, as peças de estado também trazem a versão com .as-agora.
+   3. Toque: até 200 ms. Chegada: de 200 a 420 ms. Festa: até uns 700 ms, uma vez só.
+      Laço só em espera ou vazio, de 1,6 a 2,4 s por volta, com ease-in-out.
+   4. O estado de repouso de cada peça é o estado final. A animação só descreve de onde ela vem.
+      Com movimento reduzido, cada peça é desligada aqui mesmo (fim do arquivo) e aparece completa.
+   5. Enfeite tem aria-hidden e pointer-events: none. Carregamento tem role="status" e um nome curto,
+      escrito pela função de design/movimento.mjs.
+   6. Em cores forçadas, a máscara vira forma cheia na cor do texto, ou vira borda. Nada some.
+   Índice: A carregamento (1 a 8) · B microinterações (9 a 24) · C pequenas vitórias (25 a 30) · D cantinhos e detalhes (31 a 35) */
+
+/* ── 0. Base comum ───────────────────────────────────────────────────── */
+:root {
+  --as-g-img-pincelada-longa: url("../ilustracoes/guache/elementos/pincelada-longa.webp");
+  --as-g-img-pincelada-curta: url("../ilustracoes/guache/elementos/pincelada-curta.webp");
+  --as-g-img-sublinhado: url("../ilustracoes/guache/elementos/sublinhado.webp");
+  --as-g-img-circulo: url("../ilustracoes/guache/elementos/circulo.webp");
+  --as-g-img-seta: url("../ilustracoes/guache/elementos/seta.webp");
+  --as-g-img-mancha-1: url("../ilustracoes/guache/elementos/mancha-1.webp");
+  --as-g-img-mancha-2: url("../ilustracoes/guache/elementos/mancha-2.webp");
+  --as-g-img-respingos: url("../ilustracoes/guache/elementos/respingos.webp");
+  --as-g-img-check: url("../ilustracoes/guache/elementos/check.webp");
+  --as-g-img-etiqueta: url("../ilustracoes/guache/elementos/etiqueta.webp");
+  --as-g-img-carimbo: url("../ilustracoes/guache/elementos/carimbo-certo.webp");
+  --as-g-img-ramo: url("../ilustracoes/guache/elementos/cantinho-ramo.webp");
+  --as-g-img-flores: url("../ilustracoes/guache/elementos/cantinho-flores.webp");
+  --as-g-img-brilhos: url("../ilustracoes/guache/elementos/brilhos.webp");
+  --as-g-img-sol: url("../ilustracoes/guache/elementos/sol.webp");
+  --as-g-img-coracao: url("../ilustracoes/guache/elementos/coracao.webp");
+  --as-g-img-faixa: url("../ilustracoes/guache/elementos/faixa.webp");
+  --as-g-img-pincel: url("../ilustracoes/guache/elementos/pincel-e-tinta.webp");
+  /* Cores de família que componentes.css ainda não tinha. Sem família: o neutro e a assinatura da marca. */
+  --as-fam-aguada: var(--as-neutro-aguada);
+  --as-fam-meio: var(--as-neutro-meio);
+  --as-g-claro: var(--as-sol-claro);
+  --as-g-forte: var(--as-sol);
+}
+[data-familia="brincar"] { --as-fam-aguada: var(--as-brincar-aguada); --as-fam-meio: var(--as-brincar-meio); --as-g-claro: var(--as-brincar-fundo); --as-g-forte: var(--as-brincar-cor); }
+[data-familia="transicoes"] { --as-fam-aguada: var(--as-transicoes-aguada); --as-fam-meio: var(--as-transicoes-meio); --as-g-claro: var(--as-transicoes-fundo); --as-g-forte: var(--as-transicoes-cor); }
+[data-familia="noite"] { --as-fam-aguada: var(--as-noite-aguada); --as-fam-meio: var(--as-noite-meio); --as-g-claro: var(--as-noite-fundo); --as-g-forte: var(--as-noite-cor); }
+[data-familia="emocoes"] { --as-fam-aguada: var(--as-emocoes-aguada); --as-fam-meio: var(--as-emocoes-meio); --as-g-claro: var(--as-emocoes-fundo); --as-g-forte: var(--as-emocoes-cor); }
+[data-familia="autonomia"] { --as-fam-aguada: var(--as-autonomia-aguada); --as-fam-meio: var(--as-autonomia-meio); --as-g-claro: var(--as-autonomia-fundo); --as-g-forte: var(--as-autonomia-cor); }
+[data-familia="cuidadores"] { --as-fam-aguada: var(--as-cuidadores-aguada); --as-fam-meio: var(--as-cuidadores-meio); --as-g-claro: var(--as-cuidadores-fundo); --as-g-forte: var(--as-cuidadores-cor); }
+[data-familia="neutro"] { --as-fam-fundo: var(--as-neutro-fundo); --as-fam-cor: var(--as-neutro-cor); --as-fam-tinta: var(--as-neutro-tinta); --as-fam-aguada: var(--as-neutro-aguada); --as-fam-meio: var(--as-neutro-meio); --as-g-claro: var(--as-neutro-fundo); --as-g-forte: var(--as-neutro-cor); }
+
+/* Toda forma pintada: cada alvo diz qual máscara usa (--_m), o tamanho (--_ms) e a posição (--_mp).
+   Os tamanhos passam de 100% porque cada imagem tem margem vazia em volta da pincelada. */
+.as-carrega-pincelada-traco, .as-carrega-gotas > i, .as-carrega-pincel-traco, .as-esqueleto-aguada::after,
+.as-progresso-tinta-trilho, .as-imagem-chega::before, .as-carrega-fichas-mesa > i::before, .as-carrega-fichas-mesa > i::after,
+.as-g-toque::after, .as-g-salvar-marca > i, .as-g-check, .as-g-opcao .as-opcao-caixa::before, .as-g-aba::after,
+.as-g-campo::after, .as-g-destaque::before, .as-g-circulo::after, .as-g-seta, .as-g-copiado-check,
+.as-g-carimbo::before, .as-g-carimbo-tinta, .as-g-confete-pingos > i, .as-g-mancha::before, .as-g-divisor,
+.as-g-etiqueta::before, .as-g-sublinhado::after {
+  -webkit-mask: var(--_m) var(--_mp, center) / var(--_ms, contain) no-repeat;
+  mask: var(--_m) var(--_mp, center) / var(--_ms, contain) no-repeat;
+}
+
+/* Movimentos que várias peças usam */
+@keyframes as-g-revela { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes as-g-chega { from { opacity: 0; transform: translateY(0.5rem); } }
+@keyframes as-g-surge { from { opacity: 0; } }
+
+
+/* ══ A. Carregamento ════════════════════════════════════════════════════ */
+
+/* ── 1. as-carrega-pincelada: a pincelada se pinta da esquerda para a direita e some ── */
+/* Carregamento de uma seção ou de um trecho em linha. A tinta entra com a borda molhada (degradê curto) e só
+   transform e opacity se mexem: a forma da pincelada é a máscara do pai. */
+.as-carrega-pincelada { display: inline-grid; place-items: center; width: var(--as-g-largura, 7.5rem); max-width: 100%; padding-block: 0.25rem; color: var(--as-g-cor, var(--as-fam-meio)); vertical-align: middle; }
+.as-carrega-pincelada-traco { --_m: var(--as-g-img-pincelada-longa); --_ms: 104% 467%; --_mp: 50% 52.5%; position: relative; display: block; width: 100%; aspect-ratio: 8 / 1; overflow: hidden; background-color: var(--as-fam-aguada); pointer-events: none; }
+.as-carrega-pincelada-traco::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 140%; background: linear-gradient(90deg, currentColor 0 71%, transparent 100%); animation: as-carrega-pinta 2s ease-in-out infinite; }
+@keyframes as-carrega-pinta {
+  0% { transform: translateX(-100%); opacity: 1; }
+  55%, 76% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(0); opacity: 0; }
+}
+.as-carrega-pincelada--p { --as-g-largura: 3.5rem; }
+
+/* ── 2. as-carrega-gotas: três gotas de tinta pulsando em sequência; cabe num botão ── */
+.as-carrega-gotas { display: inline-flex; align-items: center; gap: 0.1875rem; flex: none; color: var(--as-g-cor, currentColor); vertical-align: middle; }
+.as-carrega-gotas > i { --_m: var(--as-g-img-mancha-1); --_ms: 112% 170%; --_mp: 50% 53%; display: block; width: 0.5rem; height: 0.5rem; background-color: currentColor; transform: rotate(var(--_g, 0deg)); animation: as-carrega-pinga 1.6s ease-in-out infinite both; pointer-events: none; }
+.as-carrega-gotas > i:nth-of-type(1) { --_g: -12deg; }
+.as-carrega-gotas > i:nth-of-type(2) { --_g: 20deg; animation-delay: 180ms; }
+.as-carrega-gotas > i:nth-of-type(3) { --_g: -30deg; animation-delay: 360ms; }
+@keyframes as-carrega-pinga {
+  0%, 70%, 100% { opacity: 0.35; transform: rotate(var(--_g, 0deg)) scale(0.62); }
+  35% { opacity: 1; transform: rotate(var(--_g, 0deg)) scale(1); }
+}
+
+/* ── 3. as-carrega-pincel: o pincel no pote balança de leve e deixa uma pincelada ao lado ── */
+/* Espera de tela inteira, como "Montando o kit". O texto visível é o nome do status. */
+.as-carrega-pincel { display: grid; justify-items: center; align-content: center; gap: var(--as-e-3); padding: var(--as-e-5) var(--as-e-4); text-align: center; }
+.as-carrega-pincel-arte { position: relative; display: block; width: var(--as-g-largura, 10rem); aspect-ratio: 1; pointer-events: none; }
+.as-carrega-pincel-pote { position: absolute; inset: 0; background: var(--as-g-img-pincel) center / contain no-repeat; transform-origin: 54% 84%; animation: as-carrega-molha 2.2s ease-in-out infinite; }
+@keyframes as-carrega-molha {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  45% { transform: rotate(-2.5deg) translateY(0.125rem); }
+}
+.as-carrega-pincel-traco { --_m: var(--as-g-img-pincelada-curta); --_ms: 120% 394%; --_mp: 50% 56%; position: absolute; left: 66%; top: 83%; width: 30%; height: 8%; background-color: var(--as-g-cor, var(--as-sol)); transform: rotate(-7deg); animation: as-carrega-deixa 2.2s ease-in-out infinite; }
+@keyframes as-carrega-deixa {
+  0%, 18% { clip-path: inset(0 100% 0 0); opacity: 1; }
+  56%, 80% { clip-path: inset(0 0 0 0); opacity: 1; }
+  100% { clip-path: inset(0 0 0 0); opacity: 0; }
+}
+.as-carrega-pincel-titulo { font-family: var(--as-fonte-titulo); font-size: var(--as-t-2); line-height: 1.22; text-wrap: balance; }
+.as-carrega-pincel-texto { max-width: 22rem; color: var(--as-tinta-suave); font-size: var(--as-t-menor); line-height: 1.45; }
+
+/* ── 4. as-esqueleto-aguada: forma de espera com uma aguada pálida passando, sem brilho ── */
+/* A aguada é uma mancha de tinta mais escura que atravessa devagar, como pincel molhado passando no papel. */
+.as-esqueleto-grupo { display: grid; gap: var(--as-e-3); }
+.as-esqueleto-aguada { --_i: 0; position: relative; display: block; width: var(--largura, 100%); height: 0.875rem; overflow: hidden; border-radius: var(--as-r-pilula); background-color: var(--as-fam-aguada); }
+.as-esqueleto-aguada::after { --_m: var(--as-g-img-mancha-2); --_ms: 104% 140%; content: ""; position: absolute; inset: -20% auto -20% 0; width: 60%; background-color: var(--as-g-cor, var(--as-fam-meio)); opacity: 0; animation: as-esqueleto-passa 2s ease-in-out infinite; animation-delay: calc(var(--_i) * 90ms); pointer-events: none; }
+@keyframes as-esqueleto-passa {
+  0% { opacity: 0.2; transform: translateX(-105%) rotate(-4deg); }
+  100% { opacity: 0.2; transform: translateX(172%) rotate(4deg); }
+}
+.as-esqueleto-aguada--titulo { height: 1.25rem; border-radius: var(--as-r-1); }
+.as-esqueleto-aguada--avatar { width: 2.75rem; height: 2.75rem; flex: none; border-radius: 50%; }
+.as-esqueleto-aguada--arte { height: auto; aspect-ratio: 16 / 10; border-radius: 0; }
+.as-esqueleto-aguada--arte::after { width: 70%; }
+.as-esqueleto-ficha { display: flex; flex-direction: column; overflow: hidden; border: var(--as-borda) solid var(--as-linha); border-radius: var(--as-r-4); background: var(--as-superficie); box-shadow: var(--as-sombra-1); }
+.as-esqueleto-ficha-corpo { display: grid; gap: 0.625rem; padding: var(--as-e-4) var(--as-e-5) var(--as-e-5); }
+.as-esqueleto-linha-avatar { display: flex; align-items: center; gap: var(--as-e-3); }
+.as-esqueleto-linha-avatar > span:last-child { display: grid; flex: 1; gap: 0.5rem; min-width: 0; }
+
+/* ── 5. as-progresso-tinta: progresso que se conhece, pintado; valor em --valor (0 a 1) ── */
+.as-progresso-tinta { display: grid; gap: 0.375rem; }
+.as-progresso-tinta-rotulo { display: flex; justify-content: space-between; gap: var(--as-e-3); color: var(--as-tinta-suave); font-size: var(--as-t-mini); font-weight: var(--as-peso-medio); font-variant-numeric: tabular-nums; }
+.as-progresso-tinta-trilho { --_m: var(--as-g-img-pincelada-longa); --_ms: 104% 467%; --_mp: 50% 52.5%; position: relative; display: block; width: 100%; height: 0.875rem; overflow: hidden; background-color: var(--as-linha); }
+.as-progresso-tinta-valor { position: absolute; inset: 0 auto 0 0; width: calc(100% + 0.75rem); background: linear-gradient(90deg, var(--as-g-cor, var(--as-ameixa-meio)) calc(100% - 0.75rem), transparent); transform: translateX(calc((var(--valor, 0) - 1) * 100%)); transition: transform var(--as-lento) var(--as-saida); }
+@keyframes as-progresso-enche { from { transform: translateX(-100%); } }
+.as-agora .as-progresso-tinta-valor, .as-progresso-tinta.as-agora .as-progresso-tinta-valor { animation: as-progresso-enche var(--as-lento) var(--as-saida) both; }
+
+/* ── 6. as-botao--esperando: o botão espera sem sumir o rótulo ── */
+/* Vai junto de .as-botao, com aria-busy="true" e aria-disabled="true". As gotas ficam no lugar do ícone. */
+.as-botao.as-botao--esperando { cursor: progress; }
+.as-botao.as-botao--esperando[aria-disabled="true"] { opacity: 1; }
+.as-botao.as-botao--esperando:active { transform: none; }
+.as-botao--esperando .as-carrega-gotas { width: 1.25rem; justify-content: center; gap: 0.125rem; }
+.as-botao--esperando .as-carrega-gotas > i { width: 0.375rem; height: 0.375rem; }
+
+/* ── 7. as-imagem-chega: aguada da família no lugar da figura; a figura chega por cima ── */
+/* O app põe a classe as-chegou na <img> quando ela carrega. Sem script, a figura aparece direto. */
+.as-imagem-chega { position: relative; display: block; overflow: hidden; border-radius: var(--as-r-3); background: var(--as-superficie); }
+.as-imagem-chega::before { --_m: var(--as-g-img-mancha-2); --_ms: 104% 140%; content: ""; position: absolute; inset: 8%; background-color: var(--as-g-cor, var(--as-g-claro)); animation: as-imagem-respira 2.2s ease-in-out infinite alternate; transition: opacity 320ms ease-out; pointer-events: none; }
+.as-imagem-chega > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.03); transition: opacity 320ms var(--as-saida), transform var(--as-lento) var(--as-saida); }
+.as-imagem-chega > img.as-chegou { opacity: 1; transform: none; }
+.as-imagem-chega:has(> img.as-chegou)::before { opacity: 0; }
+@keyframes as-imagem-respira { from { transform: scale(0.94) rotate(-2deg); } to { transform: scale(1) rotate(1deg); } }
+@keyframes as-imagem-vem { from { opacity: 0; transform: scale(1.03); } }
+@keyframes as-imagem-vai { to { opacity: 0; } }
+/* Com .as-agora (amostra e tela redesenhada): espera --as-g-espera e então a figura chega. */
+.as-agora .as-imagem-chega > img.as-chegou, .as-imagem-chega.as-agora > img.as-chegou { animation: as-imagem-vem 320ms var(--as-saida) var(--as-g-espera, 0ms) both; }
+.as-agora .as-imagem-chega:has(> img.as-chegou)::before, .as-imagem-chega.as-agora:has(> img.as-chegou)::before { opacity: 1; animation: as-imagem-respira 2.2s ease-in-out infinite alternate, as-imagem-vai 320ms ease-out var(--as-g-espera, 0ms) forwards; }
+@media (scripting: none) { .as-imagem-chega > img { opacity: 1; transform: none; } }
+
+/* ── 8. as-carrega-fichas: três fichas que se embaralham de leve ── */
+.as-carrega-fichas { display: grid; justify-items: center; gap: var(--as-e-3); }
+.as-carrega-fichas-mesa { position: relative; display: block; width: 7.5rem; height: 6rem; pointer-events: none; }
+.as-carrega-fichas-mesa > i { position: absolute; left: 50%; bottom: 0.25rem; width: 3.5rem; height: 4.75rem; margin-left: -1.75rem; overflow: hidden; border: var(--as-borda) solid var(--as-linha); border-radius: var(--as-r-2); background: var(--as-superficie); box-shadow: var(--as-sombra-1); transform-origin: 50% 115%; transform: translateX(var(--_x)) rotate(var(--_g)); animation: as-carrega-embaralha 2.4s ease-in-out infinite; }
+.as-carrega-fichas-mesa > i::before { --_m: var(--as-g-img-mancha-2); --_ms: 104% 140%; content: ""; position: absolute; left: 6%; right: 6%; top: 6%; height: 42%; background-color: var(--as-fam-fundo, var(--as-g-claro)); }
+.as-carrega-fichas-mesa > i::after { --_m: var(--as-g-img-pincelada-longa); --_ms: 104% 467%; --_mp: 50% 52.5%; content: ""; position: absolute; left: 14%; right: 22%; top: 60%; height: 0.375rem; background-color: var(--as-ameixa-meio); opacity: 0.7; }
+.as-carrega-fichas-mesa > i:nth-child(1) { --_x: -1.375rem; --_g: -11deg; }
+.as-carrega-fichas-mesa > i:nth-child(2) { --_x: 0rem; --_g: 1deg; animation-delay: 800ms; }
+.as-carrega-fichas-mesa > i:nth-child(3) { --_x: 1.375rem; --_g: 12deg; animation-delay: 1600ms; }
+@keyframes as-carrega-embaralha {
+  0%, 42%, 100% { transform: translateX(var(--_x)) rotate(var(--_g)); }
+  20% { transform: translateX(calc(var(--_x) * 0.45)) translateY(-0.625rem) rotate(calc(var(--_g) * -0.35)); }
+}
+
+
+/* ══ B. Microinterações ═════════════════════════════════════════════════ */
+
+/* ── 9. as-g-toque: o elemento afunda e uma mancha se abre embaixo do dedo ── */
+/* Vai junto de um elemento que se toca (.as-botao, .as-escolha). A mancha usa a cor do texto, bem fraca,
+   e por isso serve em botão claro e escuro. Ao soltar, a mancha some mais devagar do que entrou. */
+.as-g-toque { position: relative; isolation: isolate; overflow: hidden; }
+.as-g-toque::after { --_m: var(--as-g-img-mancha-1); --_ms: 112% 170%; --_mp: 50% 53%; content: ""; position: absolute; left: 50%; top: 50%; z-index: -1; width: max(120%, 6rem); aspect-ratio: 1.6; background-color: currentColor; opacity: 0; transform: translate(-50%, -50%) scale(0.35); transition: opacity 240ms ease-out, transform 0s linear 240ms; pointer-events: none; }
+/* A compressão só vale onde a peça ainda não tem a dela (.as-botao e .as-escolha já afundam). */
+:where(.as-g-toque) { transition: transform var(--as-rapido) var(--as-saida); }
+:where(.as-g-toque):active { transform: scale(0.97); }
+.as-g-toque:active::after { opacity: 0.14; transform: translate(-50%, -50%) scale(1); transition: opacity 80ms ease-out, transform 160ms var(--as-saida); }
+
+/* ── 10. as-g-salvar: o marcador se enche de tinta de baixo para cima e solta três pingos ── */
+.as-g-salvar-marca { position: relative; display: inline-grid; flex: none; width: 1.25rem; height: 1.25rem; }
+.as-g-salvar-marca > .as-icone, .as-g-salvar-tinta { grid-area: 1 / 1; }
+.as-g-salvar-tinta { display: block; color: var(--as-g-cor, var(--as-tinta)); clip-path: polygon(0 100%, 0 112%, 25% 106%, 50% 112%, 75% 106%, 100% 112%, 100% 100%); transition: clip-path 280ms var(--as-saida); }
+.as-g-salvar-tinta .as-icone { width: 100%; height: 100%; }
+.as-g-salvar[aria-pressed="true"] .as-g-salvar-tinta { clip-path: polygon(0 100%, 0 -6%, 25% -12%, 50% -6%, 75% -12%, 100% -6%, 100% 100%); }
+.as-g-salvar-marca > i { --_m: var(--as-g-img-mancha-1); --_ms: 112% 170%; --_mp: 50% 53%; position: absolute; left: 50%; top: 40%; width: 0.375rem; height: 0.375rem; margin: -0.1875rem 0 0 -0.1875rem; background-color: var(--_c); opacity: 0; pointer-events: none; }
+.as-g-salvar-marca > i:nth-of-type(1) { --_c: var(--as-g-forte); --_x: -0.9rem; --_y: -0.85rem; }
+.as-g-salvar-marca > i:nth-of-type(2) { --_c: var(--as-ameixa-meio); --_x: 0.15rem; --_y: -1.2rem; width: 0.3125rem; height: 0.3125rem; }
+.as-g-salvar-marca > i:nth-of-type(3) { --_c: var(--as-g-forte); --_x: 1rem; --_y: -0.7rem; }
+@keyframes as-g-enche { from { clip-path: polygon(0 100%, 0 112%, 25% 106%, 50% 112%, 75% 106%, 100% 112%, 100% 100%); } }
+@keyframes as-g-pinga {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.4); }
+  25% { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--_x), var(--_y)) scale(1); }
+}
+.as-agora .as-g-salvar[aria-pressed="true"] .as-g-salvar-tinta, .as-g-salvar.as-agora[aria-pressed="true"] .as-g-salvar-tinta { animation: as-g-enche 280ms var(--as-saida) both; }
+.as-agora .as-g-salvar[aria-pressed="true"] .as-g-salvar-marca > i, .as-g-salvar.as-agora[aria-pressed="true"] .as-g-salvar-marca > i { animation: as-g-pinga 520ms var(--as-saida) 140ms both; }
+
+/* ── 11. as-g-check: o visto pintado aparece numa varrida da esquerda para a direita ── */
+.as-g-check { --_m: var(--as-g-img-check); --_ms: 130% 159%; --_mp: 60% 59%; display: inline-block; flex: none; width: var(--as-g-tamanho, 1.5rem); aspect-ratio: 1.22; background-color: var(--as-g-cor, var(--as-ok-tinta)); vertical-align: middle; pointer-events: none; }
+.as-agora .as-g-check, .as-g-check.as-agora { animation: as-g-revela 320ms cubic-bezier(0.4, 0, 0.2, 1) both; }
+
+/* ── 12. as-g-opcao: uma aguada se espalha atrás da opção escolhida ── */
+/* Vai junto de .as-opcao. A aguada substitui o fundo amarelo chapado; borda, marca e peso continuam iguais. */
+.as-g-opcao .as-opcao-caixa { position: relative; isolation: isolate; overflow: hidden; }
+.as-g-opcao .as-opcao-caixa::before { --_m: var(--as-g-img-mancha-2); --_ms: 100% 100%; content: ""; position: absolute; inset: -45% -1.75rem; z-index: -1; background-color: var(--as-g-cor, var(--as-g-claro)); opacity: 0; transform: scale(0.12); transform-origin: 3.375rem 50%; transition: transform 200ms var(--as-saida), opacity 160ms ease-out; pointer-events: none; }
+.as-g-opcao .as-opcao-caixa:has(.as-opcao-icone)::before { transform-origin: calc(100% - 3.375rem) 50%; }
+.as-g-opcao input:checked ~ .as-opcao-caixa { background: var(--as-superficie); }
+.as-g-opcao input:checked ~ .as-opcao-caixa::before { opacity: 1; transform: none; transition: transform 320ms var(--as-saida), opacity 120ms ease-out; }
+@keyframes as-g-espalha { from { opacity: 0; transform: scale(0.12); } 30% { opacity: 1; } }
+.as-agora .as-g-opcao input:checked ~ .as-opcao-caixa::before, .as-g-opcao.as-agora input:checked ~ .as-opcao-caixa::before { animation: as-g-espalha 320ms var(--as-saida) both; }
+
+/* ── 13. as-g-aba: um traço pintado embaixo da aba ativa, que se desenha quando ela fica ativa ── */
+/* Vai junto de .as-aba. */
+.as-g-aba { position: relative; }
+.as-g-aba::after { --_m: var(--as-g-img-sublinhado); --_ms: 106% 2000%; --_mp: 50% 50.8%; content: ""; position: absolute; left: 20%; right: 20%; bottom: 0.25rem; height: 0.375rem; background-color: var(--as-g-cor, var(--as-fam-meio)); clip-path: inset(0 100% 0 0); transition: clip-path 200ms var(--as-saida); pointer-events: none; }
+.as-g-aba[aria-selected="true"]::after { clip-path: inset(0 0 0 0); transition-duration: 260ms; }
+.as-agora .as-g-aba[aria-selected="true"]::after, .as-g-aba.as-agora[aria-selected="true"]::after { animation: as-g-revela 260ms var(--as-saida) both; }
+
+/* ── 14. as-g-campo: um traço pintado cresce embaixo do campo em foco ── */
+/* Envolve .as-campo-entrada. É um acréscimo: o anel de foco do campo continua. */
+.as-g-campo { position: relative; display: block; }
+.as-g-campo::after { --_m: var(--as-g-img-pincelada-longa); --_ms: 104% 467%; --_mp: 50% 52.5%; content: ""; position: absolute; left: 0.875rem; right: 0.875rem; bottom: 0.25rem; height: 0.375rem; background-color: var(--as-g-cor, var(--as-g-forte)); clip-path: inset(0 100% 0 0); transition: clip-path 160ms ease-out; pointer-events: none; }
+.as-g-campo:focus-within::after { clip-path: inset(0 0 0 0); transition: clip-path 200ms var(--as-saida); }
+
+/* ── 15. as-g-destaque: uma pincelada curta atrás de uma palavra do título ── */
+.as-g-destaque { position: relative; z-index: 0; white-space: nowrap; }
+.as-g-destaque::before { --_m: var(--as-g-img-pincelada-curta); --_ms: 120% 394%; --_mp: 50% 56%; content: ""; position: absolute; left: -0.18em; right: -0.18em; top: 0.38em; bottom: -0.06em; z-index: -1; background-color: var(--as-g-cor, var(--as-g-claro)); pointer-events: none; }
+.as-agora .as-g-destaque::before, .as-g-destaque.as-agora::before { animation: as-g-revela var(--as-lento) var(--as-saida) 120ms both; }
+
+/* ── 16. as-g-circulo: o anel pintado à mão em volta de um número ou palavra curta ── */
+/* O anel se desenha numa volta, de cima, no sentido do relógio. */
+.as-g-circulo { position: relative; z-index: 0; display: inline-block; margin: 0.2em 0.55em; padding-inline: 0.1em; } /* a margem cobre o tamanho do anel: ele não encosta na palavra vizinha */
+.as-g-circulo::after { --_m: var(--as-g-img-circulo); --_ms: 128% 128%; content: ""; position: absolute; inset: -0.3em -0.48em; z-index: -1; background-color: var(--as-g-cor, var(--as-g-forte)); pointer-events: none; }
+@keyframes as-g-volta {
+  0% { clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%); animation-timing-function: linear; }
+  6.5% { clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%); animation-timing-function: linear; }
+  21% { clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%, 100% 100%); animation-timing-function: linear; }
+  39% { clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%); animation-timing-function: linear; }
+  64.5% { clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 0%); animation-timing-function: linear; }
+  100% { clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%); }
+}
+.as-agora .as-g-circulo::after, .as-g-circulo.as-agora::after { animation: as-g-volta var(--as-lento) linear 80ms both; }
+
+/* ── 17. as-g-seta: seta pintada que dá um passo à frente no hover e no foco do link ── */
+.as-g-seta { --_m: var(--as-g-img-seta); --_ms: 130.5% 324%; --_mp: 50% 51%; display: inline-block; flex: none; width: 1.75rem; height: 0.5rem; background-color: var(--as-g-cor, currentColor); vertical-align: middle; transition: transform var(--as-medio) var(--as-saida); pointer-events: none; }
+:focus-visible .as-g-seta { transform: translateX(0.25rem); }
+@media (hover: hover) and (pointer: fine) {
+  :where(a, button, [role="link"], [role="button"]):hover .as-g-seta { transform: translateX(0.25rem); }
+}
+
+/* ── 18. as-g-contagem: um número que conta até o valor, uma vez ── */
+/* O número de verdade está no HTML. Com .as-agora, ele fica transparente e um contador com --numero conta por cima.
+   Sem @property, o contador pula para o valor final, que também é o mesmo número. */
+@property --as-g-n { syntax: "<integer>"; inherits: false; initial-value: 0; }
+.as-g-contagem { display: inline-grid; } /* sem algarismos de largura fixa: na Young Serif o "1" ficava solto ("1 2"). A largura já é guardada pelo número final, que fica por baixo */
+.as-g-contagem > *, .as-g-contagem::after { grid-area: 1 / 1; }
+.as-agora .as-g-contagem, .as-g-contagem.as-agora { --as-g-n: var(--numero, 0); counter-reset: as-g-n var(--as-g-n); animation: as-g-conta var(--as-lento) var(--as-saida) both; }
+.as-agora .as-g-contagem > *, .as-g-contagem.as-agora > * { opacity: 0; }
+.as-agora .as-g-contagem::after, .as-g-contagem.as-agora::after { content: counter(as-g-n); content: counter(as-g-n) / ""; justify-self: end; }
+@keyframes as-g-conta { from { --as-g-n: 0; } to { --as-g-n: var(--numero, 0); } }
+
+/* ── 19. as-g-lista: os itens chegam em sequência, pelo --i de cada um ── */
+.as-agora .as-g-lista > *, .as-g-lista.as-agora > * { animation: as-g-chega 300ms var(--as-saida) both; animation-delay: calc(min(var(--i, 0), 8) * 50ms); }
+
+/* ── 20. as-g-abre: abre e fecha um trecho quando o <details> vira um botão; a divisa gira ── */
+/* O botão tem aria-expanded e aria-controls; o corpo vem logo depois dele. Fechado, o corpo fica invisível
+   também para o leitor de tela e para o teclado (visibility). Fechar é mais rápido do que abrir. */
+.as-g-abre-botao { display: flex; align-items: center; justify-content: space-between; gap: var(--as-e-3); width: 100%; min-height: var(--as-alvo); padding: 0; border: 0; background: none; color: inherit; font: inherit; font-size: var(--as-t-menor); font-weight: var(--as-peso-medio); text-align: left; cursor: pointer; }
+.as-g-abre-botao .as-icone { flex: none; color: var(--as-tinta-suave); transition: transform var(--as-medio) var(--as-saida); }
+.as-g-abre-botao[aria-expanded="true"] .as-icone { transform: rotate(180deg); }
+.as-g-abre-corpo { display: grid; grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows var(--as-medio) var(--as-saida), visibility 0s linear var(--as-medio); }
+.as-g-abre-botao[aria-expanded="true"] + .as-g-abre-corpo { grid-template-rows: 1fr; visibility: visible; transition: grid-template-rows 280ms var(--as-saida), visibility 0s; }
+.as-g-abre-miolo { display: grid; gap: var(--as-e-2); min-height: 0; overflow: hidden; color: var(--as-tinta-suave); font-size: var(--as-t-menor); line-height: 1.5; opacity: 0; transform: translateY(-0.25rem); transition: opacity var(--as-rapido) ease-out, transform var(--as-medio) var(--as-saida); }
+.as-g-abre-botao[aria-expanded="true"] + .as-g-abre-corpo > .as-g-abre-miolo { opacity: 1; transform: none; transition: opacity var(--as-medio) ease-out 60ms, transform 280ms var(--as-saida); }
+.as-g-abre-miolo > :last-child { padding-bottom: var(--as-e-4); }
+@keyframes as-g-abre { from { grid-template-rows: 0fr; } }
+@keyframes as-g-gira { from { transform: rotate(0deg); } }
+.as-agora .as-g-abre-botao[aria-expanded="true"] + .as-g-abre-corpo, .as-g-abre.as-agora .as-g-abre-botao[aria-expanded="true"] + .as-g-abre-corpo { animation: as-g-abre 280ms var(--as-saida) both; }
+.as-agora .as-g-abre-botao[aria-expanded="true"] + .as-g-abre-corpo > .as-g-abre-miolo, .as-g-abre.as-agora .as-g-abre-botao[aria-expanded="true"] + .as-g-abre-corpo > .as-g-abre-miolo { animation: as-g-chega 280ms var(--as-saida) 60ms both; }
+.as-agora .as-g-abre-botao[aria-expanded="true"] .as-icone, .as-g-abre.as-agora .as-g-abre-botao[aria-expanded="true"] .as-icone { animation: as-g-gira var(--as-medio) var(--as-saida) both; }
+
+/* ── 21. as-g-erro: um balanço calmo, duas idas, uma vez só ── */
+@keyframes as-g-balanca {
+  0%, 100% { transform: translateX(0); }
+  22% { transform: translateX(-0.3125rem); }
+  50% { transform: translateX(0.25rem); }
+  76% { transform: translateX(-0.125rem); }
+}
+.as-agora .as-g-erro, .as-g-erro.as-agora { animation: as-g-balanca 320ms ease-in-out 1 both; }
+
+/* ── 22. as-g-copiado: o ícone de copiar dá lugar ao visto pintado ── */
+/* O estado é data-copiado="true" no botão; o app troca também o texto do rótulo. */
+.as-g-copiado-icones { position: relative; display: inline-grid; flex: none; place-items: center; width: 1.25rem; height: 1.25rem; }
+.as-g-copiado-icones > * { grid-area: 1 / 1; }
+.as-g-copiado-icones > .as-icone { transition: opacity var(--as-rapido) ease-out, transform var(--as-medio) var(--as-saida); }
+.as-g-copiado-check { --_m: var(--as-g-img-check); --_ms: 130% 159%; --_mp: 60% 59%; display: block; width: 1.375rem; aspect-ratio: 1.22; background-color: var(--as-g-cor, var(--as-ok-tinta)); opacity: 0; clip-path: inset(0 100% 0 0); transition: opacity var(--as-rapido) ease-out, clip-path 0s linear var(--as-rapido); }
+.as-g-copiado[data-copiado="true"] .as-g-copiado-icones > .as-icone { opacity: 0; transform: scale(0.7) rotate(-12deg); }
+.as-g-copiado[data-copiado="true"] .as-g-copiado-check { opacity: 1; clip-path: inset(0 0 0 0); transition: opacity 60ms ease-out 60ms, clip-path 280ms cubic-bezier(0.4, 0, 0.2, 1) 60ms; }
+@keyframes as-g-copia-sai { from { opacity: 1; transform: none; } }
+.as-agora .as-g-copiado[data-copiado="true"] .as-g-copiado-icones > .as-icone, .as-g-copiado.as-agora[data-copiado="true"] .as-g-copiado-icones > .as-icone { animation: as-g-copia-sai var(--as-rapido) ease-out both; }
+.as-agora .as-g-copiado[data-copiado="true"] .as-g-copiado-check, .as-g-copiado.as-agora[data-copiado="true"] .as-g-copiado-check { animation: as-g-revela 280ms cubic-bezier(0.4, 0, 0.2, 1) 60ms both; }
+
+/* ── 23. as-g-aceno: o avatar da criança acena uma vez ── */
+.as-g-aceno { display: inline-block; flex: none; transform-origin: 50% 88%; }
+@keyframes as-g-acena {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-9deg); }
+  55% { transform: rotate(7deg); }
+  80% { transform: rotate(-3deg); }
+}
+.as-agora .as-g-aceno, .as-g-aceno.as-agora { animation: as-g-acena var(--as-lento) ease-in-out 140ms both; }
+
+/* ── 24. as-g-troca: o conteúdo que muda no lugar entra com uma subida curta ── */
+/* O bloco novo recebe .as-agora. Se o antigo ainda estiver na tela, ponha .as-g-troca--saindo nele por 150 ms. */
+@keyframes as-g-troca-entra { from { opacity: 0; transform: translateY(0.375rem); } }
+@keyframes as-g-troca-sai { to { opacity: 0; transform: translateY(-0.25rem); } }
+.as-agora .as-g-troca, .as-g-troca.as-agora { animation: as-g-troca-entra 260ms var(--as-saida) both; }
+.as-g-troca--saindo { animation: as-g-troca-sai 150ms ease-out forwards; pointer-events: none; }
+
+
+/* ══ C. Pequenas vitórias ═══════════════════════════════════════════════ */
+
+/* ── 25. as-g-carimbo: o carimbo bate, passa um pouco do ponto, inclina e a tinta assenta ── */
+.as-g-carimbo { --_giro: -8deg; position: relative; display: inline-grid; place-items: center; flex: none; width: var(--as-g-tamanho, 4.5rem); aspect-ratio: 1; }
+.as-g-carimbo::before { --_m: var(--as-g-img-mancha-1); --_ms: 112% 170%; --_mp: 50% 53%; content: ""; position: absolute; inset: -6%; background-color: var(--as-fam-aguada); pointer-events: none; }
+.as-g-carimbo-tinta { --_m: var(--as-g-img-carimbo); --_ms: 127% 127%; position: relative; display: block; width: 100%; height: 100%; background-color: var(--as-g-cor, var(--as-fam-tinta, var(--as-tinta))); transform: rotate(var(--_giro)); pointer-events: none; }
+@keyframes as-g-carimba {
+  0% { opacity: 0; transform: rotate(calc(var(--_giro) - 10deg)) scale(1.32); }
+  48% { opacity: 0.72; transform: rotate(var(--_giro)) scale(0.95); }
+  70% { opacity: 0.86; transform: rotate(var(--_giro)) scale(1.02); }
+  100% { opacity: 1; transform: rotate(var(--_giro)) scale(1); }
+}
+@keyframes as-g-tinta-abre { 0%, 40% { opacity: 0; transform: scale(0.7); } 100% { opacity: 1; transform: scale(1); } }
+.as-agora .as-g-carimbo-tinta, .as-g-carimbo.as-agora .as-g-carimbo-tinta { animation: as-g-carimba 480ms var(--as-saida) both; }
+.as-agora .as-g-carimbo::before, .as-g-carimbo.as-agora::before { animation: as-g-tinta-abre 480ms var(--as-saida) both; }
+
+/* ── 26. as-g-confete: os nove pingos de tinta se espalham em cinco cores ── */
+/* Cada pingo é a mesma máscara de respingos, recortada no próprio pingo. Com conteúdo no meio
+   (.as-g-confete-miolo), o pingo central sai para não ficar embaixo dele. */
+.as-g-confete { position: relative; display: inline-grid; place-items: center; width: var(--as-g-tamanho, 9rem); aspect-ratio: 1; }
+.as-g-confete-pingos { position: absolute; inset: 0; pointer-events: none; }
+.as-g-confete-pingos > i { --_m: var(--as-g-img-respingos); --_ms: 100% 100%; position: absolute; inset: 0; background-color: var(--_c); clip-path: var(--_r); transform-origin: var(--_o); }
+.as-g-confete-miolo { position: relative; }
+.as-g-confete:has(> .as-g-confete-miolo) .as-g-confete-pingos > i:nth-child(5) { display: none; }
+.as-g-confete-pingos > i:nth-child(1) { --_c: var(--as-sol); --_r: inset(17.5% 60.5% 60.5% 17.5%); --_o: 28.5% 28.5%; --_x: 21.5%; --_y: 21.5%; --_i: 0; }
+.as-g-confete-pingos > i:nth-child(2) { --_c: var(--as-transicoes-meio); --_r: inset(20.5% 35.5% 64.5% 45.5%); --_o: 55% 28%; --_x: -5%; --_y: 22%; --_i: 3; }
+.as-g-confete-pingos > i:nth-child(3) { --_c: var(--as-emocoes-meio); --_r: inset(29.5% 22.5% 59.5% 65.5%); --_o: 71.5% 35%; --_x: -21.5%; --_y: 15%; --_i: 6; }
+.as-g-confete-pingos > i:nth-child(4) { --_c: var(--as-autonomia-meio); --_r: inset(44% 68.5% 41.5% 15.5%); --_o: 23.5% 51.3%; --_x: 26.5%; --_y: -1.3%; --_i: 2; }
+.as-g-confete-pingos > i:nth-child(5) { --_c: var(--as-noite-meio); --_r: inset(39.5% 38.5% 37% 37.5%); --_o: 49.5% 51%; --_x: 0.5%; --_y: -1%; --_i: 1; }
+.as-g-confete-pingos > i:nth-child(6) { --_c: var(--as-sol); --_r: inset(47.3% 16.5% 38.5% 69%); --_o: 76% 54.4%; --_x: -26%; --_y: -4.4%; --_i: 5; }
+.as-g-confete-pingos > i:nth-child(7) { --_c: var(--as-emocoes-meio); --_r: inset(60.5% 62.9% 22.5% 20%); --_o: 28.5% 69%; --_x: 21.5%; --_y: -19%; --_i: 4; }
+.as-g-confete-pingos > i:nth-child(8) { --_c: var(--as-transicoes-meio); --_r: inset(72% 46.5% 17% 42.2%); --_o: 47.8% 77.5%; --_x: 2.2%; --_y: -27.5%; --_i: 7; }
+.as-g-confete-pingos > i:nth-child(9) { --_c: var(--as-autonomia-meio); --_r: inset(63.5% 21.5% 22.5% 59.5%); --_o: 69% 70.5%; --_x: -19%; --_y: -20.5%; --_i: 8; }
+@keyframes as-g-espalha-pingos {
+  0% { opacity: 0; transform: translate(var(--_x), var(--_y)) scale(0.3) rotate(-24deg); }
+  28% { opacity: 1; }
+  68% { transform: translate(calc(var(--_x) * -0.08), calc(var(--_y) * -0.08)) scale(1.06) rotate(3deg); }
+  100% { opacity: 1; transform: none; }
+}
+.as-agora .as-g-confete-pingos > i, .as-g-confete.as-agora .as-g-confete-pingos > i { animation: as-g-espalha-pingos 620ms var(--as-saida) both; animation-delay: calc(var(--_i) * 22ms); }
+
+/* ── 27. as-g-brilhos: três brilhos piscam duas vezes e descansam ── */
+/* A figura é a mesma em quatro camadas, cada uma recortada num brilho, para cada um piscar no seu tempo. */
+.as-g-brilhos { position: relative; display: inline-block; flex: none; width: var(--as-g-tamanho, 4.5rem); aspect-ratio: 1; pointer-events: none; }
+.as-g-brilhos > i { position: absolute; inset: 0; background: var(--as-g-img-brilhos) center / 100% 100% no-repeat; clip-path: var(--_r); transform-origin: var(--_o); }
+.as-g-brilhos > i:nth-child(1) { --_r: polygon(17% 15.5%, 59.5% 15.5%, 59.5% 46%, 48% 61%, 17% 61%); --_o: 38% 38%; }
+.as-g-brilhos > i:nth-child(2) { --_r: inset(42% 17% 27% 51.5%); --_o: 66.5% 57%; --_d: 110ms; }
+.as-g-brilhos > i:nth-child(3) { --_r: inset(63% 49% 18% 32%); --_o: 41% 72%; --_d: 200ms; }
+.as-g-brilhos > i:nth-child(4) { --_r: polygon(59% 27.5%, 69% 27.5%, 69% 37.5%, 61% 37.5%, 61% 73.5%, 62.5% 73.5%, 62.5% 81.5%, 53.5% 81.5%, 53.5% 73.5%, 61% 73.5%, 61% 37.5%, 59% 37.5%); --_o: 60% 55%; }
+@keyframes as-g-pisca {
+  0% { opacity: 0; transform: scale(0.6) rotate(-14deg); }
+  24% { opacity: 1; transform: scale(1.14) rotate(0deg); }
+  46% { transform: scale(0.9); }
+  70% { transform: scale(1.08); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes as-g-pontinho { 0% { opacity: 0; transform: scale(0.5); } 100% { opacity: 1; transform: none; } }
+.as-agora .as-g-brilhos > i, .as-g-brilhos.as-agora > i { animation: as-g-pisca 640ms var(--as-saida) var(--_d, 0ms) both; }
+.as-agora .as-g-brilhos > i:nth-child(4), .as-g-brilhos.as-agora > i:nth-child(4) { animation: as-g-pontinho 320ms var(--as-saida) 300ms both; }
+
+/* ── 28. as-g-coracao: o coração bate uma vez ── */
+.as-g-coracao { display: inline-block; flex: none; width: var(--as-g-tamanho, 3rem); aspect-ratio: 1; background: var(--as-g-img-coracao) center / contain no-repeat; transform-origin: 50% 60%; pointer-events: none; }
+@keyframes as-g-bate {
+  0% { opacity: 0; transform: scale(0.8); }
+  18% { opacity: 1; transform: scale(1.16); }
+  38% { transform: scale(0.96); }
+  58% { transform: scale(1.07); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.as-agora .as-g-coracao, .as-g-coracao.as-agora { animation: as-g-bate 560ms var(--as-saida) both; }
+
+/* ── 29. as-g-faixa: a faixa se desenrola do centro, com lugar para um texto curto ── */
+/* A figura é cortada para sobrar só a faixa; o texto fica no meio da parte larga, numa linha. */
+.as-g-faixa { position: relative; display: block; width: min(100%, var(--as-g-largura, 20rem)); margin-inline: auto; }
+.as-g-faixa-arte { display: block; width: 100%; aspect-ratio: 3.4; background: var(--as-g-img-faixa) 50% 55% / 100% auto no-repeat; transform-origin: 50% 40%; pointer-events: none; }
+.as-g-faixa-texto { position: absolute; left: 22%; right: 22%; top: 10%; height: 46%; display: grid; place-items: center; color: var(--as-tinta); font-family: var(--as-fonte-titulo); font-size: var(--as-g-faixa-letra, 1.0625rem); line-height: 1.15; text-align: center; }
+.as-g-faixa-texto > span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* O repouso é a faixa inteira, sem depender do último quadro: a animação só preenche para trás (backwards),
+   e ao terminar a peça volta ao próprio estilo, que é a figura completa. */
+@keyframes as-g-desenrola {
+  0% { clip-path: inset(0 47% 0 47%); transform: scaleY(0.86); opacity: 0.4; }
+  25% { opacity: 1; }
+  100% { clip-path: inset(0 0 0 0); transform: none; opacity: 1; }
+}
+.as-g-faixa-arte { clip-path: none; opacity: 1; }
+.as-agora .as-g-faixa-arte, .as-g-faixa.as-agora .as-g-faixa-arte { animation: as-g-desenrola 560ms var(--as-saida) backwards; }
+.as-agora .as-g-faixa-texto, .as-g-faixa.as-agora .as-g-faixa-texto { animation: as-g-chega 280ms var(--as-saida) 260ms backwards; }
+
+/* ── 30. as-g-sol: o sol nasce de trás do horizonte ── */
+/* Duas camadas da mesma figura: o céu (sol e raios, recortado acima do horizonte) e o chão (só a linha). */
+.as-g-sol { position: relative; display: block; width: var(--as-g-tamanho, 8rem); aspect-ratio: 1; margin-inline: auto; pointer-events: none; }
+.as-g-sol-ceu, .as-g-sol-chao { position: absolute; inset: 0; }
+.as-g-sol-ceu { clip-path: inset(0 0 26% 0); }
+.as-g-sol-astro { position: absolute; inset: 0; background: var(--as-g-img-sol) center / 100% 100% no-repeat; clip-path: inset(0 0 26.7% 0); }
+.as-g-sol-chao { background: var(--as-g-img-sol) center / 100% 100% no-repeat; clip-path: inset(73.2% 0 0 0); }
+@keyframes as-g-nasce {
+  0% { opacity: 0; transform: translateY(42%) scale(0.92); }
+  30% { opacity: 1; }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes as-g-horizonte { from { opacity: 0; transform: scaleX(0.7); } }
+.as-agora .as-g-sol-astro, .as-g-sol.as-agora .as-g-sol-astro { animation: as-g-nasce 640ms var(--as-saida) 120ms both; }
+.as-agora .as-g-sol-chao, .as-g-sol.as-agora .as-g-sol-chao { animation: as-g-horizonte 280ms var(--as-saida) both; }
+
+
+/* ══ D. Cantinhos e detalhes ════════════════════════════════════════════ */
+
+/* ── 31. as-g-cantinho: enfeite preso num canto do card ou painel, que cresce do canto ── */
+/* --se: ramo no canto de cima, à esquerda. --id: flores no canto de baixo, à direita.
+   Nunca cobre texto: o dono ganha .as-g-com-cantinho (e --se ou --id), que abre espaço naquele canto, do
+   tamanho do enfeite (--as-g-cantinho, 4.25rem), e põe o enfeite atrás do conteúdo.
+   Sem espaço sobrando, use .as-g-cantinho--fundo sem o modificador do dono: fica atrás, bem fraco. */
+.as-g-com-cantinho { position: relative; isolation: isolate; }
+.as-g-com-cantinho--se { padding-top: calc(var(--as-g-cantinho, 4.25rem) + 0.25rem); }
+.as-g-com-cantinho--id { padding-bottom: calc(var(--as-g-cantinho, 4.25rem) + 0.25rem); }
+.as-g-cantinho { position: absolute; z-index: -1; width: var(--as-g-cantinho, 4.25rem); aspect-ratio: 1; background-repeat: no-repeat; pointer-events: none; }
+.as-g-cantinho--se { top: 0; left: 0; background-image: var(--as-g-img-ramo); background-size: 158% 158%; background-position: 6% 6%; transform-origin: 0 0; border-top-left-radius: inherit; }
+.as-g-cantinho--id { right: 0; bottom: 0; background-image: var(--as-g-img-flores); background-size: 145% 145%; background-position: 96% 98%; transform-origin: 100% 100%; border-bottom-right-radius: inherit; }
+.as-g-cantinho--fundo { opacity: 0.32; }
+@keyframes as-g-brota { from { opacity: 0; transform: scale(0.55) rotate(var(--_g, -8deg)); } }
+.as-g-cantinho--id { --_g: 8deg; }
+.as-agora .as-g-cantinho, .as-g-cantinho.as-agora { animation: as-g-brota var(--as-lento) var(--as-saida) 120ms both; }
+.as-agora .as-g-cantinho--fundo, .as-g-cantinho--fundo.as-agora { animation-name: as-g-brota-fraco; }
+@keyframes as-g-brota-fraco { from { opacity: 0; transform: scale(0.55) rotate(var(--_g, -8deg)); } to { opacity: 0.32; transform: none; } }
+
+/* ── 32. as-g-mancha: mancha de aguada atrás de um ícone, avatar ou figura pequena ── */
+/* --respira: respiração bem lenta, só em tela vazia ou de espera. --larga: mancha comprida, para texto curto. */
+.as-g-mancha { position: relative; z-index: 0; display: inline-grid; place-items: center; flex: none; }
+.as-g-mancha::before { --_m: var(--as-g-img-mancha-1); --_ms: 112% 170%; --_mp: 50% 53%; content: ""; position: absolute; inset: -22%; z-index: -1; background-color: var(--as-g-cor, var(--as-fam-aguada)); transform: rotate(var(--_g, -6deg)); pointer-events: none; }
+.as-g-mancha--larga::before { --_m: var(--as-g-img-mancha-2); --_ms: 104% 140%; --_mp: center; inset: -22% -16%; }
+.as-g-mancha--forte::before { background-color: var(--as-g-cor, var(--as-g-claro)); }
+@keyframes as-g-respira { from { transform: rotate(var(--_g, -6deg)) scale(0.96); } to { transform: rotate(calc(var(--_g, -6deg) + 5deg)) scale(1.04); } }
+.as-g-mancha--respira::before { animation: as-g-respira 2.4s ease-in-out infinite alternate; }
+
+/* ── 33. as-g-divisor: linha fina pintada ── */
+/* Use num <hr>. Com .as-agora, a linha se pinta da esquerda para a direita. */
+.as-g-divisor { --_m: var(--as-g-img-pincelada-longa); --_ms: 104% 467%; --_mp: 50% 52.5%; display: block; width: 100%; height: 0.3125rem; margin: var(--as-e-5) 0; border: 0; background-color: var(--as-g-cor, var(--as-fam-meio)); opacity: 0.7; }
+.as-agora .as-g-divisor, .as-g-divisor.as-agora { animation: as-g-revela var(--as-lento) var(--as-saida) both; }
+
+/* ── 34. as-g-etiqueta: etiqueta com o fundo de tinta pintado ── */
+.as-g-etiqueta { position: relative; z-index: 0; display: inline-flex; align-items: center; gap: 0.3125rem; min-height: 1.75rem; padding: 0.1875rem 0.875rem; color: var(--as-fam-tinta, var(--as-tinta)); font-size: var(--as-t-mini); font-weight: var(--as-peso-forte); line-height: 1.2; white-space: nowrap; }
+.as-g-etiqueta .as-icone { width: 0.9375rem; height: 0.9375rem; }
+.as-g-etiqueta::before { --_m: var(--as-g-img-etiqueta); --_ms: 114% 237%; --_mp: 50% 51.5%; content: ""; position: absolute; inset: 0; z-index: -1; background-color: var(--as-g-cor, var(--as-g-claro)); pointer-events: none; }
+.as-agora .as-g-etiqueta::before, .as-g-etiqueta.as-agora::before { animation: as-g-revela 260ms var(--as-saida) both; }
+.as-agora .as-g-etiqueta, .as-g-etiqueta.as-agora { animation: as-g-surge 200ms ease-out both; }
+
+/* ── 35. as-g-sublinhado: sublinhado pintado num link ou numa palavra do título ── */
+/* Parado. Num link, o traço pintado faz o papel do sublinhado; em cores forçadas, o sublinhado normal volta. */
+.as-g-sublinhado { position: relative; z-index: 0; text-decoration: none; }
+.as-g-sublinhado::after { --_m: var(--as-g-img-sublinhado); --_ms: 106% 2000%; --_mp: 50% 50.8%; content: ""; position: absolute; left: -0.06em; right: -0.06em; bottom: -0.16em; height: 0.2em; min-height: 3px; z-index: -1; background-color: var(--as-g-cor, var(--as-g-forte)); pointer-events: none; }
+a.as-g-sublinhado::after { background-color: var(--as-g-cor, currentColor); }
+.as-agora .as-g-sublinhado::after, .as-g-sublinhado.as-agora::after { animation: as-g-revela 320ms var(--as-saida) both; }
+
+
+/* ══ Movimento reduzido: tudo parado e completo ═════════════════════════ */
+/* Uma linha por grupo de peças. Cada peça já repousa no estado final; aqui só se desliga o caminho até ele. */
+@media (prefers-reduced-motion: reduce) {
+  /* A. carregamento: pincelada inteira, gotas cheias, pincel quieto, fichas paradas, sem aguada passando */
+  .as-carrega-pincelada-traco::before, .as-carrega-gotas > i, .as-carrega-pincel-pote, .as-carrega-pincel-traco,
+  .as-esqueleto-aguada::after, .as-progresso-tinta-valor, .as-imagem-chega::before, .as-imagem-chega > img,
+  .as-carrega-fichas-mesa > i { animation: none !important; transition: none !important; }
+  .as-carrega-pincelada-traco::before { transform: none !important; opacity: 1 !important; }
+  .as-carrega-gotas > i { opacity: 1 !important; transform: rotate(var(--_g, 0deg)) !important; }
+  .as-carrega-pincel-traco { clip-path: none !important; opacity: 1 !important; }
+  .as-esqueleto-aguada::after { opacity: 0 !important; }
+  .as-carrega-fichas-mesa > i { transform: translateX(var(--_x)) rotate(var(--_g)) !important; }
+  .as-agora .as-imagem-chega:has(> img.as-chegou)::before, .as-imagem-chega.as-agora:has(> img.as-chegou)::before { opacity: 0 !important; }
+  .as-imagem-chega > img.as-chegou { opacity: 1 !important; transform: none !important; }
+
+  /* B. microinterações: o estado final aparece de uma vez */
+  .as-g-toque, .as-g-toque::after, .as-g-salvar-tinta, .as-g-salvar-marca > i, .as-g-check, .as-g-opcao .as-opcao-caixa::before,
+  .as-g-aba::after, .as-g-campo::after, .as-g-destaque::before, .as-g-circulo::after, .as-g-seta, .as-g-contagem,
+  .as-g-lista > *, .as-g-abre-botao .as-icone, .as-g-abre-corpo, .as-g-abre-miolo, .as-g-erro, .as-g-copiado-icones > .as-icone,
+  .as-g-copiado-check, .as-g-aceno, .as-g-troca, .as-g-troca--saindo { animation: none !important; transition: none !important; }
+  .as-g-check, .as-g-destaque::before, .as-g-circulo::after { clip-path: none !important; }
+  .as-g-salvar-marca > i { opacity: 0 !important; }
+  .as-g-seta { transform: none !important; }
+  .as-agora .as-g-contagem > *, .as-g-contagem.as-agora > * { opacity: 1 !important; }
+  .as-agora .as-g-contagem::after, .as-g-contagem.as-agora::after { content: none !important; }
+  .as-g-lista > *, .as-g-troca { opacity: 1 !important; transform: none !important; }
+  .as-g-abre-miolo { transform: none !important; }
+
+  /* C. pequenas vitórias: carimbo batido, pingos no lugar, brilhos acesos, faixa aberta, sol nascido */
+  .as-g-carimbo::before, .as-g-carimbo-tinta, .as-g-confete-pingos > i, .as-g-brilhos > i, .as-g-coracao,
+  .as-g-faixa-arte, .as-g-faixa-texto, .as-g-sol-astro, .as-g-sol-chao { animation: none !important; transition: none !important; }
+  .as-g-carimbo-tinta { opacity: 1 !important; transform: rotate(var(--_giro)) !important; }
+  .as-g-confete-pingos > i, .as-g-brilhos > i, .as-g-coracao, .as-g-faixa-texto, .as-g-sol-astro, .as-g-sol-chao { opacity: 1 !important; transform: none !important; }
+  .as-g-faixa-arte { clip-path: none !important; transform: none !important; }
+
+  /* D. cantinhos e detalhes */
+  .as-g-cantinho, .as-g-mancha::before, .as-g-divisor, .as-g-etiqueta, .as-g-etiqueta::before, .as-g-sublinhado::after { animation: none !important; transition: none !important; }
+  .as-g-cantinho { transform: none !important; }
+  .as-g-cantinho:not(.as-g-cantinho--fundo) { opacity: 1 !important; }
+  .as-g-divisor, .as-g-etiqueta::before, .as-g-sublinhado::after { clip-path: none !important; }
+}
+
+
+/* ══ Cores forçadas: a máscara vira forma cheia ou borda ═══════════════ */
+@media (forced-colors: active) {
+  /* Traços e marcas: a forma pintada continua, na cor do texto do sistema. */
+  .as-carrega-pincelada-traco, .as-carrega-gotas > i, .as-carrega-pincel-traco, .as-g-check, .as-g-copiado-check,
+  .as-g-aba::after, .as-g-campo::after, .as-g-circulo::after, .as-g-seta, .as-g-carimbo-tinta, .as-g-confete-pingos > i,
+  .as-g-divisor, .as-g-sublinhado::after, .as-g-salvar-marca > i { forced-color-adjust: none; background-color: CanvasText; }
+  .as-carrega-pincelada-traco::before { background: Highlight; }
+  .as-progresso-tinta-trilho { forced-color-adjust: none; -webkit-mask: none; mask: none; background: Canvas; border: 1px solid CanvasText; border-radius: var(--as-r-pilula); }
+  .as-progresso-tinta-valor { forced-color-adjust: none; background: Highlight; }
+  .as-g-salvar-tinta { forced-color-adjust: none; color: Highlight; }
+  /* Aguadas atrás de texto: viram contorno, para o texto continuar legível. */
+  .as-esqueleto-aguada { border: 1px solid CanvasText; }
+  .as-esqueleto-aguada::after, .as-imagem-chega::before, .as-g-toque::after, .as-carrega-fichas-mesa > i::before,
+  .as-g-opcao .as-opcao-caixa::before, .as-g-carimbo::before, .as-g-mancha::before { display: none; }
+  .as-imagem-chega { border: 1px dashed CanvasText; }
+  .as-carrega-fichas-mesa > i { border-color: CanvasText; }
+  .as-carrega-fichas-mesa > i::after { forced-color-adjust: none; background-color: CanvasText; }
+  .as-g-destaque { text-decoration: underline 0.18em; text-underline-offset: 0.12em; }
+  .as-g-destaque::before { display: none; }
+  .as-g-etiqueta { border: 1px solid CanvasText; border-radius: var(--as-r-pilula); }
+  .as-g-etiqueta::before { display: none; }
+  a.as-g-sublinhado { text-decoration: underline; }
+  /* Figuras coloridas são imagens e ficam; o texto da faixa ganha fundo próprio. */
+  .as-g-faixa-texto { forced-color-adjust: none; color: var(--as-tinta); }
+}
+
+/* ── Pausa geral (18/11/2026, pedido do João para a 2.3.0) ──
+   O app põe data-movimento="pausado" no <html> quando a aba fica oculta (evento visibilitychange) e tira quando ela volta.
+   Tudo para onde está e continua do mesmo ponto. Não troca o prefers-reduced-motion, que segue valendo sozinho. */
+[data-movimento="pausado"] *, [data-movimento="pausado"] *::before, [data-movimento="pausado"] *::after { animation-play-state: paused !important; }
+

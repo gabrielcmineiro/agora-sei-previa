@@ -1,0 +1,598 @@
+{
+ "gerado_de": "ilustracoes/_fonte/fichas-novas.mjs",
+ "nota": "Imagens geradas por IA (gpt_image_2_6) a partir da referência de estilo do projeto; não são pintura à mão.",
+ "referencia": {
+  "job": "85eb5889-4068-4be3-945d-20afa5e516e6",
+  "arquivo": "guache/piloto/cor-1-terra-fria.webp"
+ },
+ "fichas": [
+  {
+   "id": "PES-D01",
+   "arquivo": "fichas/pes-d01.webp",
+   "alt": "Adolescente no sofá mostra ao pai, na tela do videogame portátil, onde dá para salvar; o pai escuta ao lado.",
+   "necessidade": "momentos_dificeis",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-D02",
+   "arquivo": "fichas/pes-d02.webp",
+   "alt": "Na calçada, a mãe agachada mostra o portão fechado do parque à menina, que segura uma bola.",
+   "necessidade": "momentos_dificeis",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-D03",
+   "arquivo": "fichas/pes-d03.webp",
+   "alt": "Na porta da creche, o pai cumprimenta a educadora; o menino, de mochila, fica perto dele.",
+   "necessidade": "momentos_dificeis",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-D04",
+   "arquivo": "fichas/pes-d04.webp",
+   "alt": "A avó, na calçada, segura a foto de um portão azul ao lado do próprio portão azul da escola.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D05",
+   "arquivo": "fichas/pes-d05.webp",
+   "alt": "Menino à mesa aponta um pente e uma toalha enquanto conta o que incomodou; a cuidadora, do outro lado, escuta.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D06",
+   "arquivo": "fichas/pes-d06.webp",
+   "alt": "No consultório, a adolescente fala diretamente com a médica; a mãe fica sentada um pouco atrás, ao lado dela.",
+   "necessidade": "momentos_dificeis",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-D07",
+   "arquivo": "fichas/pes-d07.webp",
+   "alt": "Mãe e avó conversam de pé; o menino desenha numa mesinha e a menina brinca com blocos no seu tapete, cada um no seu espaço.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D08",
+   "arquivo": "fichas/pes-d08.webp",
+   "alt": "Na porta de casa, o pai, de saída, confere com a cuidadora um bilhete e o telefone.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D09",
+   "arquivo": "fichas/pes-d09.webp",
+   "alt": "A mãe fica sentada no chão, calma e disponível; o pai e a avó se afastam para conversar entre si.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D10",
+   "arquivo": "fichas/pes-d10.webp",
+   "alt": "No corredor do mercado, o menino sentado abraça os joelhos; a cuidadora fica agachada perto e um funcionário libera a passagem.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D11",
+   "arquivo": "fichas/pes-d11.webp",
+   "alt": "Num saguão, um funcionário abaixa o som do alto-falante; o menino tapa os ouvidos e o pai mostra uma saída tranquila.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D14",
+   "arquivo": "fichas/pes-d14.webp",
+   "alt": "Duas crianças querem o mesmo caminhão; a avó, ajoelhada, mostra um trem ao alcance.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D15",
+   "arquivo": "fichas/pes-d15.webp",
+   "alt": "A mãe se afasta e pede ao pai que assuma; os dois olham para o menino, sentado no tapete.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D17",
+   "arquivo": "fichas/pes-d17.webp",
+   "alt": "No terminal, a avó confere o painel de horários.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D18",
+   "arquivo": "fichas/pes-d18.webp",
+   "alt": "O pai marca com um clipe uma página do caderno e afasta o material.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D19",
+   "arquivo": "fichas/pes-d19.webp",
+   "alt": "A mãe recebe as visitas na porta; do outro lado da sala, o menino observa de longe, livre para se aproximar ou não.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D20",
+   "arquivo": "fichas/pes-d20.webp",
+   "alt": "Pai e filho saem da feira por um caminho livre; ao fundo, a avó avisa o grupo.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D21",
+   "arquivo": "fichas/pes-d21.webp",
+   "alt": "Na sala nova, a estudante guarda a mochila num escaninho que a professora indica.",
+   "necessidade": "momentos_dificeis",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-D22",
+   "arquivo": "fichas/pes-d22.webp",
+   "alt": "Estudante e professor conversam em particular, com a sequência da apresentação em cartões sobre a mesa.",
+   "necessidade": "momentos_dificeis",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-D23",
+   "arquivo": "fichas/pes-d23.webp",
+   "alt": "Na porta da cozinha, a cuidadora e a avó conferem juntas um recado.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D24",
+   "arquivo": "fichas/pes-d24.webp",
+   "alt": "Mãe e filho sentados na cama de um quarto fechado conversam com calma.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D25",
+   "arquivo": "fichas/pes-d25.webp",
+   "alt": "À noite, o menino sentado na cama olha para o pai, de pé na porta entreaberta.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D26",
+   "arquivo": "fichas/pes-d26.webp",
+   "alt": "Na entrada da sala, o professor conversa em particular com a estudante.",
+   "necessidade": "momentos_dificeis",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-D27",
+   "arquivo": "fichas/pes-d27.webp",
+   "alt": "O menino guarda a coleira ao lado da foto do cachorro; a avó fica ao lado dele.",
+   "necessidade": "momentos_dificeis",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-D28",
+   "arquivo": "fichas/pes-d28.webp",
+   "alt": "A mãe, à mesa, preenche uma folha com três campos.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D29",
+   "arquivo": "fichas/pes-d29.webp",
+   "alt": "Na creche, o pai acaba de chegar, agacha-se e escuta a menina antes de pegar a mochila.",
+   "necessidade": "momentos_dificeis",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-D30",
+   "arquivo": "fichas/pes-d30.webp",
+   "alt": "Dois convites sobre a mesa, com espaço vazio entre eles; a cuidadora pensa.",
+   "necessidade": "momentos_dificeis",
+   "idade": "adulto"
+  },
+  {
+   "id": "PES-D32",
+   "arquivo": "fichas/pes-d32.webp",
+   "alt": "Adolescente e pai revisam uma anotação sobre a luz; ao lado, o abajur aceso baixinho.",
+   "necessidade": "momentos_dificeis",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E01",
+   "arquivo": "fichas/pes-e01.webp",
+   "alt": "Mãe e menina pequena sentadas frente a frente abrem as mãos em turnos.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E02",
+   "arquivo": "fichas/pes-e02.webp",
+   "alt": "A avó e a menina pequena no tapete, com duas meias listradas e outro par de meias; a menina levanta uma.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E03",
+   "arquivo": "fichas/pes-e03.webp",
+   "alt": "Pai e menina pequena junto à janela com um passarinho; ela abre os braços como asas e ele escuta.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E04",
+   "arquivo": "fichas/pes-e04.webp",
+   "alt": "Cuidadora e menina pequena sentadas olham uma sombra na parede; a menina aponta.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E05",
+   "arquivo": "fichas/pes-e05.webp",
+   "alt": "A mãe cantava e para quando a menina pequena mostra a mão pedindo para encerrar.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E06",
+   "arquivo": "fichas/pes-e06.webp",
+   "alt": "Menino no correio de faz de conta, uma caixa de papelão, entrega uma carta dobrada ao pai.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E07",
+   "arquivo": "fichas/pes-e07.webp",
+   "alt": "Avó e menina diante de uma tartaruga de brinquedo e uma portinha aberta; a menina mostra o que há do outro lado.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E08",
+   "arquivo": "fichas/pes-e08.webp",
+   "alt": "No chão, quatro folhas grandes com círculos e quadrados lisos e listrados; o menino junta as listradas e a mãe observa.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E09",
+   "arquivo": "fichas/pes-e09.webp",
+   "alt": "A cuidadora segura metade de um desenho de barco no mar; a menina gira a outra metade para encaixar.",
+   "necessidade": "estimular",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-E10",
+   "arquivo": "fichas/pes-e10.webp",
+   "alt": "Pai e filho, do mesmo lado da mesa, jogam memória com quatro cartas; o menino aponta uma.",
+   "necessidade": "estimular",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-E11",
+   "arquivo": "fichas/pes-e11.webp",
+   "alt": "O menino rega a planta com um copo leve; a avó aponta onde a água deve cair.",
+   "necessidade": "estimular",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-E12",
+   "arquivo": "fichas/pes-e12.webp",
+   "alt": "Mãe e filho à mesa comparam uma meia, uma almofada e um livro.",
+   "necessidade": "estimular",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-E13",
+   "arquivo": "fichas/pes-e13.webp",
+   "alt": "Num labirinto desenhado, a cuidadora espera com o lápis na bifurcação e o menino indica o caminho.",
+   "necessidade": "estimular",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-E14",
+   "arquivo": "fichas/pes-e14.webp",
+   "alt": "O menino põe um livro de capa para a frente numa prateleira baixa; o pai, ajoelhado, olha da altura dele.",
+   "necessidade": "estimular",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-E15",
+   "arquivo": "fichas/pes-e15.webp",
+   "alt": "O menino diante de um quebra-cabeça; a avó, ao lado, espera com as mãos no colo antes de ajudar.",
+   "necessidade": "estimular",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-E16",
+   "arquivo": "fichas/pes-e16.webp",
+   "alt": "A adolescente mostra o capacete da bicicleta para explicar; a mãe faz uma pausa e escuta.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E17",
+   "arquivo": "fichas/pes-e17.webp",
+   "alt": "Adolescente e pai sobre o mapa de uma ilha com duas rotas e um barquinho de papel; ela escolhe uma rota.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E18",
+   "arquivo": "fichas/pes-e18.webp",
+   "alt": "Avó bate de leve no próprio joelho e a adolescente responde com uma palma.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E19",
+   "arquivo": "fichas/pes-e19.webp",
+   "alt": "A avó para a leitura do gibi e a adolescente aponta um quadrinho e comenta.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E20",
+   "arquivo": "fichas/pes-e20.webp",
+   "alt": "A adolescente guarda o moletom preferido na frente de uma gaveta baixa; a mãe observa.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E21",
+   "arquivo": "fichas/pes-e21.webp",
+   "alt": "Pai e adolescente jogam numa trilha de cinco casas, com três cartas de avanço ao lado.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E22",
+   "arquivo": "fichas/pes-e22.webp",
+   "alt": "A adolescente dobra uma toalha de mão ao lado de uma cesta; a avó observa.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E23",
+   "arquivo": "fichas/pes-e23.webp",
+   "alt": "No balcão da biblioteca, a adolescente entrega ao bibliotecário a pergunta desenhada sobre gibis; o pai espera atrás.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E24",
+   "arquivo": "fichas/pes-e24.webp",
+   "alt": "A adolescente segura o recado e decide o destino dele; a mãe, ao lado, de mãos vazias.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E25",
+   "arquivo": "fichas/pes-e25.webp",
+   "alt": "A adolescente mostra uma revistinha dobrada com a capa e uma página em branco; o pai olha.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E26",
+   "arquivo": "fichas/pes-e26.webp",
+   "alt": "A adolescente fica na escrivaninha com o celular ao alcance; a mãe sai e deixa a porta encostada.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E27",
+   "arquivo": "fichas/pes-e27.webp",
+   "alt": "Jovens e o pai em volta da mesa, cada um com um cartão de função; dois dividem o mesmo cartão.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E28",
+   "arquivo": "fichas/pes-e28.webp",
+   "alt": "A adolescente dirige a cena e o pai atua segurando um bilhete.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E29",
+   "arquivo": "fichas/pes-e29.webp",
+   "alt": "A adolescente marca a margem do caderno onde vai retomar; a avó acompanha.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E30",
+   "arquivo": "fichas/pes-e30.webp",
+   "alt": "Num jogo de tabuleiro, a ampulheta foi deixada de lado; um jovem indica a jogada apontando.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E31",
+   "arquivo": "fichas/pes-e31.webp",
+   "alt": "A adolescente destaca um trecho do livro e anota sua dúvida num papel; a mãe está por perto.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-E32",
+   "arquivo": "fichas/pes-e32.webp",
+   "alt": "Grupo em volta da mesa reúne sugestões em papéis dobrados; um jovem contribui com um gesto.",
+   "necessidade": "estimular",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A01",
+   "arquivo": "fichas/pes-a01.webp",
+   "alt": "A menina pequena esfrega os olhos perto dos brinquedos; a mãe aponta para uma poltrona baixa.",
+   "necessidade": "acalmar",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-A02",
+   "arquivo": "fichas/pes-a02.webp",
+   "alt": "A menina pequena, acordada, sentada no tapete com um urso grande; o pai está por perto.",
+   "necessidade": "acalmar",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-A03",
+   "arquivo": "fichas/pes-a03.webp",
+   "alt": "O menino coloca o coelho de pelúcia numa bolsa aberta; a avó espera ao lado.",
+   "necessidade": "acalmar",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-A04",
+   "arquivo": "fichas/pes-a04.webp",
+   "alt": "Na entrada da escola nova, uma professora recebe a mãe e o menino.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A05",
+   "arquivo": "fichas/pes-a05.webp",
+   "alt": "O pai guarda a sacola da festa enquanto a menina vai para seu canto na sala.",
+   "necessidade": "acalmar",
+   "idade": "2-4"
+  },
+  {
+   "id": "PES-A06",
+   "arquivo": "fichas/pes-a06.webp",
+   "alt": "O menino descansa numa cadeira no canto da sala, com passagem livre; a cuidadora está à vista.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A07",
+   "arquivo": "fichas/pes-a07.webp",
+   "alt": "Duas camisetas de cortes diferentes sobre a cama; o menino aponta uma e a mãe espera.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A08",
+   "arquivo": "fichas/pes-a08.webp",
+   "alt": "O menino movimenta as mãos no meio da sala; o pai afasta uma mesinha para deixar espaço.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A09",
+   "arquivo": "fichas/pes-a09.webp",
+   "alt": "No portão da escola, a avó cumprimenta o menino e indica o caminho de casa.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A10",
+   "arquivo": "fichas/pes-a10.webp",
+   "alt": "A adolescente descansa no sofá e o menino brinca com um xilofone do outro lado; o pai fica entre os dois.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A11",
+   "arquivo": "fichas/pes-a11.webp",
+   "alt": "A adolescente silencia um grupo no celular, sentada num pufe; a mãe lê ao fundo.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A12",
+   "arquivo": "fichas/pes-a12.webp",
+   "alt": "A adolescente faz seu sinal de pausa e o pai caminha ao lado indicando uma porta aberta.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A13",
+   "arquivo": "fichas/pes-a13.webp",
+   "alt": "Na recepção da clínica, a avó e o menino conferem onde aguardar.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A14",
+   "arquivo": "fichas/pes-a14.webp",
+   "alt": "A família olha a semana no calendário; a adolescente aponta o espaço em branco.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A15",
+   "arquivo": "fichas/pes-a15.webp",
+   "alt": "Adolescente e avó sentadas num banco à sombra, com o caminho de volta para casa à vista.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A16",
+   "arquivo": "fichas/pes-a16.webp",
+   "alt": "Com a TV desligada, a avó fica sentada perto da adolescente, disponível.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A17",
+   "arquivo": "fichas/pes-a17.webp",
+   "alt": "O menino sentado num banco; o pai fica à distância; ao fundo, a mãe pede com discrição que os outros voltem ao que faziam.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A18",
+   "arquivo": "fichas/pes-a18.webp",
+   "alt": "A adolescente olha seus mapas desenhados; o pai deixa os lápis ao alcance e se afasta.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A19",
+   "arquivo": "fichas/pes-a19.webp",
+   "alt": "A adolescente fala ao telefone numa poltrona; a mãe está na cozinha, ao fundo.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A20",
+   "arquivo": "fichas/pes-a20.webp",
+   "alt": "A adolescente lê na cama; a avó bate na porta antes de se aproximar.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A21",
+   "arquivo": "fichas/pes-a21.webp",
+   "alt": "Adolescente e pai lado a lado no sofá; o telefone do pai está guardado.",
+   "necessidade": "acalmar",
+   "idade": "9-14"
+  },
+  {
+   "id": "PES-A22",
+   "arquivo": "fichas/pes-a22.webp",
+   "alt": "O menino continua a brincar com blocos; a mãe, a alguns passos, fala com ele com a mão no peito.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A23",
+   "arquivo": "fichas/pes-a23.webp",
+   "alt": "O pai, de saída, explica ao menino onde estará; a avó confirma que fica com ele.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  },
+  {
+   "id": "PES-A24",
+   "arquivo": "fichas/pes-a24.webp",
+   "alt": "A avó chega com as compras; a cuidadora confere na porta com o menino ao lado.",
+   "necessidade": "acalmar",
+   "idade": "5-8"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "jobs": {
+  "nuvem-e-sol": "f1761e1b-6d8e-44af-a362-991aeb9f8197",
+  "caneca-e-colher": "d38f0918-8df3-4a1b-9e9a-4f78b54861ac",
+  "cartao-com-figura": "9e9cc4c0-7cd4-486d-89e9-54649f0828d0",
+  "balao-de-fala": "325f0e16-13ae-433f-97e5-4094fdca979b",
+  "livro-aberto": "fbe5d87a-5ab9-4e67-92c1-316e2325ecf4",
+  "mao-apontando": "2bef07d3-09a3-4191-bbef-7d65e3c97b41",
+  "cartoes-de-figuras": "b4600255-36fa-4b30-8d77-90c190bd886a",
+  "carrinho": "9675a160-4d1d-4229-b476-2aa4a6534c5d",
+  "giz-de-cera": "0d2ba5ab-09d9-4d32-b954-ede88f2ccbc7",
+  "bola": "e74801cf-1b26-488b-8fe4-d29f5af38e1c",
+  "livros": "622ca6af-ce29-4d50-a435-7af9d3dd3a6a",
+  "chocalho": "adf1f572-2909-4e91-ad69-e893d91ac87c",
+  "balde-e-patinho": "11ffa6e4-8ebf-402e-9891-4678025a7734",
+  "cachorro-de-pelucia": "0ae92730-4fe5-403c-9817-4a767def89c2",
+  "bule-de-brinquedo": "9134e2d8-2932-4065-9c81-48e3f74caef4",
+  "boneco-com-capa": "ea04f201-2400-427d-9857-5e70ed35cb55",
+  "papel-e-lapis": "a0aa0511-936e-47bc-b0a6-60c6df43559b",
+  "impressora": "248f5c6f-21fb-40bc-841c-2ed2abae3105",
+  "almofada-e-manta": "b2830517-247e-4437-94c6-0b01206d74d9",
+  "tapete": "aa272ee7-5901-41f8-8e25-57f0ea95f237",
+  "mao-aberta": "0a1db7b0-ccbb-4062-a5b1-0812cd57c01a",
+  "lampada": "674ba658-7610-4ea5-8353-7b1fdd7a4cd2",
+  "bonecos-juntos": "a4dbecb8-7ee8-4e3a-ba44-d8b7dcd2b818",
+  "um-adulto": "86572f82-318e-4eee-9341-de8721f0ee72",
+  "tres-adultos": "8839a99a-eff2-4392-9e2e-79cc3b16d601"
+ },
+ "falhas": [],
+ "saldo_antes": 1480.25,
+ "saldo_depois": 1367.75,
+ "nota": "Adesivos do quiz, 18/11/2026. Imagens geradas por IA (Higgsfield, gpt_image_2_6, xhigh, 2k, fundo transparente) com a referência de estilo do guache. Nunca apresentar como pintura à mão.",
+ "gasto": {
+  "imagens": 25,
+  "creditos": 112.5
+ }
+}

@@ -1,0 +1,715 @@
+{
+  "versao": "1.1.0",
+  "acesso_sem_quiz": true,
+  "tarefas_recomendadas": [],
+  "prioridade": [
+    "emergencia",
+    "saude",
+    "sofrimento_intenso",
+    "frustracao_leve"
+  ],
+  "sofrimento_intenso": {
+    "titulo": "Preciso de apoio agora",
+    "texto_markdown": "Em emergência de saúde — dificuldade para respirar, perda de consciência, convulsão ou acidente grave — ligue SAMU 192 no Brasil. Informe onde a criança está e siga as orientações recebidas.\n\nSem emergência, reduza perguntas, ruído e pessoas em volta. Permaneça disponível; ofereça espaço tranquilo apenas se for seguro e aceito.\n\nUse pouca informação e a comunicação habitual. Preserve o recurso de comunicação. Não exija contato visual, abraço, resposta ou tarefa.\n\nNão contenha, imobilize, tranque nem force exposição. Não comece atividades sensoriais para tentar interromper a crise. Siga o plano individual existente da equipe assistente.\n\nSilêncio súbito não confirma melhora. Se houver dor nova, mudança incomum ou dúvida sobre o estado da criança, peça avaliação presencial. Se surgir emergência, acione socorro.\n\nDepois, permita recuperação. Quando for possível, observe o que aconteceu antes e depois e procure a equipe se os episódios se repetirem ou envolverem risco.\n\nOrientação inicial ao adulto. Não identifica a causa, não substitui avaliação ou plano individual e não promete interromper a crise.",
+    "origem": "Síntese editorial com fontes por seção; não é protocolo clínico validado.",
+    "nao_exigir": [
+      "atividade",
+      "fala",
+      "contato visual",
+      "toque",
+      "cumprimento de tarefa"
+    ],
+    "saida": "Retornar às atividades somente após segurança, disponibilidade e requisitos reconfirmados.",
+    "emergencia": "Em emergência de saúde — dificuldade para respirar, perda de consciência, convulsão ou acidente grave — ligue SAMU 192 no Brasil. Informe onde a criança está e siga as orientações recebidas.",
+    "passos": [
+      "Sem emergência, reduza perguntas, ruído e pessoas em volta. Permaneça disponível; ofereça espaço tranquilo apenas se for seguro e aceito.",
+      "Use pouca informação e a comunicação habitual. Preserve o recurso de comunicação. Não exija contato visual, abraço, resposta ou tarefa.",
+      "Não contenha, imobilize, tranque nem force exposição. Não comece atividades sensoriais para tentar interromper a crise. Siga o plano individual existente da equipe assistente.",
+      "Silêncio súbito não confirma melhora. Se houver dor nova, mudança incomum ou dúvida sobre o estado da criança, peça avaliação presencial. Se surgir emergência, acione socorro.",
+      "Depois, permita recuperação. Quando for possível, observe o que aconteceu antes e depois e procure a equipe se os episódios se repetirem ou envolverem risco."
+    ],
+    "evite": [],
+    "interrompa_se": [],
+    "procure_ajuda_se": [],
+    "explica": {
+      "limite": "Orientação inicial ao adulto. Não identifica a causa, não substitui avaliação ou plano individual e não promete interromper a crise."
+    },
+    "fontes_atividade": [
+      {
+        "id": "nas",
+        "titulo": "Meltdowns - a guide for all audiences",
+        "url": "https://www.autism.org.uk/advice-and-guidance/behaviour/meltdowns/all-audiences",
+        "finalidade": "Orientação sobre sobrecarga e recuperação; população original: pessoas autistas.",
+        "leitura": "secoes_relidas",
+        "secao": "What to do; Identifying the causes",
+        "registro": "18/11/2026, página aberta; linhas 38–49.",
+        "selo_publico": null,
+        "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+      },
+      {
+        "id": "nhs",
+        "titulo": "Supporting an autistic child",
+        "url": "https://www.nhs.uk/conditions/autism/supporting-a-child/",
+        "finalidade": "Ajustes de ambiente e apoio individual; população original: crianças autistas.",
+        "leitura": "secoes_relidas",
+        "secao": "Understanding autistic children; Going to school",
+        "registro": "18/11/2026, página aberta; linhas 16–32 e 57–65.",
+        "selo_publico": null,
+        "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+      }
+    ],
+    "fontes_encaminhamento": [
+      {
+        "id": "samu",
+        "titulo": "SAMU 192",
+        "url": "https://www.gov.br/saude/pt-br/campanhas-da-saude/2025/samu-192",
+        "finalidade": "Encaminhamento de emergência no Brasil; sinais e informações para a ligação.",
+        "leitura": "secoes_relidas",
+        "secao": "Quando ligar para o 192?; O que dizer ao ligar para o 192?",
+        "registro": "18/11/2026, página aberta; linhas 333–355.",
+        "selo_publico": null,
+        "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+      }
+    ]
+  },
+  "orientacoes_especificas": [
+    {
+      "id": "PES-D12",
+      "titulo": "A criança ficou quieta de repente",
+      "status": "elegivel_rota",
+      "revisao_humana": "pendente",
+      "destino": "rota_mudanca_abrupta",
+      "situacao": {
+        "id": "pes-d12-situacao",
+        "rotulo": "A criança ficou quieta de repente",
+        "contexto": "Uma criança autista parou de interagir durante uma situação exigente.",
+        "selecao": "explicita_pelo_cuidador"
+      },
+      "necessidade": "momentos_dificeis",
+      "pratica": {
+        "categoria": "orientacao_seguranca",
+        "nome": "Uma pessoa pode interagir menos quando está sobrecarregada. Uma mudança súbita ou incomum também pode ter causa física.",
+        "nao_e_aplicacao_modelo_denver": true
+      },
+      "idade": {
+        "min_meses": 24,
+        "max_meses": 179,
+        "inclusiva": true,
+        "fundamento": "Recorte editorial dentro da população descrita; confirmar requisitos funcionais e adequação com o time técnico."
+      },
+      "populacao": {
+        "aplicavel": "Criança/adolescente e cuidador na situação e faixa indicadas, conforme requisitos funcionais",
+        "condicoes": [],
+        "fontes_originais": [
+          "Pessoas autistas de diferentes idades e quem as acompanha."
+        ],
+        "extensao": "Não generalizar eficácia. Se fonte de princípio trata de autismo e a fonte de atividade é geral, a correspondência é editorial e não exige diagnóstico."
+      },
+      "momentos_permitidos": [
+        "na_hora"
+      ],
+      "requisitos": [
+        {
+          "id": "PES-D12-R01",
+          "pergunta": "Há alguém no local capaz de observar a criança e chamar ajuda?",
+          "esperado": "sim",
+          "texto_original": "Há alguém no local que pode observar a criança e chamar ajuda.",
+          "origem": "requisito_original"
+        }
+      ],
+      "exclusoes": [
+        {
+          "id": "PES-D12-X01",
+          "pergunta": "Algum critério de interrupção desta orientação está presente agora? Critério: Se ela não responder como costuma, estiver muito diferente ou você não souber distinguir o que aconteceu, interrompa a atividade e peça ajuda presencial sem esperar um teste pelo aplicativo.",
+          "esperado": "nao",
+          "texto": "Se ela não responder como costuma, estiver muito diferente ou você não souber distinguir o que aconteceu, interrompa a atividade e peça ajuda presencial sem esperar um teste pelo aplicativo.",
+          "condicao": {
+            "campo": "respostas.PES-D12-X01",
+            "operador": "diferente",
+            "valor": "nao"
+          },
+          "efeito": "bloquear_e_mostrar_interrupcao"
+        }
+      ],
+      "interrompa_se": [
+        "Se ela não responder como costuma, estiver muito diferente ou você não souber distinguir o que aconteceu, interrompa a atividade e peça ajuda presencial sem esperar um teste pelo aplicativo."
+      ],
+      "procure_ajuda_se": [
+        "Perda de consciência ou dificuldade para respirar exige socorro imediato. No Brasil, ligue para o SAMU 192."
+      ],
+      "adaptacoes_etarias": [
+        {
+          "min_meses": 24,
+          "max_meses": 59,
+          "ajuste": "O adulto descreve uma coisa de cada vez e aceita apontar, gesto ou afastamento. Não exige explicação verbal.",
+          "aplicacao_especifica": "Se houve perda de consciência, dificuldade para respirar ou acidente grave, chame o serviço de emergência imediatamente.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 60,
+          "max_meses": 107,
+          "ajuste": "O adulto oferece escolhas concretas e confirma o significado; leitura e execução podem ficar a cargo do adulto.",
+          "aplicacao_especifica": "Se houve perda de consciência, dificuldade para respirar ou acidente grave, chame o serviço de emergência imediatamente.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 108,
+          "max_meses": 143,
+          "ajuste": "Combine quanto apoio a criança quer; preserve privacidade e aceite comunicação sem fala.",
+          "aplicacao_especifica": "Se houve perda de consciência, dificuldade para respirar ou acidente grave, chame o serviço de emergência imediatamente.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 144,
+          "max_meses": 179,
+          "ajuste": "Peça autorização para ajudar, respeite autoria e privacidade; evite linguagem ou materiais infantilizados.",
+          "aplicacao_especifica": "Se houve perda de consciência, dificuldade para respirar ou acidente grave, chame o serviço de emergência imediatamente.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        }
+      ],
+      "justificativa_faixa_ampla": {
+        "aplica": true,
+        "texto": "Orientação dirigida à ação do adulto, não exercício de habilidade infantil. A ação é a dos passos; a comunicação muda pelas faixas abaixo. Fontes não demonstram eficácia por mês."
+      },
+      "adaptacoes_contextuais": [
+        {
+          "quando": "O adulto não conhece a criança",
+          "mudanca": "Chame alguém que a conheça, sem atrasar o socorro se houver suspeita de emergência.",
+          "aplicacao": "Somente após o cuidador confirmar que a condição se aplica; nunca inferir pela idade."
+        }
+      ],
+      "fontes_atividade": [
+        {
+          "id": "nas",
+          "titulo": "Meltdowns - a guide for all audiences",
+          "url": "https://www.autism.org.uk/advice-and-guidance/behaviour/meltdowns/all-audiences",
+          "finalidade": "Orientação sobre sobrecarga e recuperação; população original: pessoas autistas.",
+          "leitura": "secoes_relidas",
+          "secao": "What to do; Identifying the causes",
+          "registro": "18/11/2026, página aberta; linhas 38–49.",
+          "selo_publico": null,
+          "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+        }
+      ],
+      "fontes_encaminhamento": [
+        {
+          "id": "samu",
+          "titulo": "SAMU 192",
+          "url": "https://www.gov.br/saude/pt-br/campanhas-da-saude/2025/samu-192",
+          "finalidade": "Encaminhamento de emergência no Brasil; sinais e informações para a ligação.",
+          "leitura": "secoes_relidas",
+          "secao": "Quando ligar para o 192?; O que dizer ao ligar para o 192?",
+          "registro": "18/11/2026, página aberta; linhas 333–355.",
+          "selo_publico": null,
+          "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+        }
+      ],
+      "explica": {
+        "acao": "Se houve perda de consciência, dificuldade para respirar ou acidente grave, chame o serviço de emergência imediatamente.",
+        "possivel_beneficio": "Orientar o adulto a perceber mudanças em relação ao jeito habitual da criança.",
+        "o_que_acontece": "Nesta situação: Uma criança autista parou de interagir durante uma situação exigente. A causa individual não é determinada pelo app.",
+        "observacao": "Compare com o padrão habitual relatado por quem a conhece. Registre mudanças que continuarem após a situação.",
+        "limite": "Apoio inicial ao adulto; não é avaliação médica, investigação ou tarefa para a criança. Não espere concluir esta leitura para buscar ajuda."
+      },
+      "passos": [
+        "Se houve perda de consciência, dificuldade para respirar ou acidente grave, chame o serviço de emergência imediatamente.",
+        "Se está acordada, segura e reconhece a sua presença do modo habitual, retire a demanda que estava em curso.",
+        "Permaneça acessível e acolha qualquer comunicação espontânea, inclusive o pedido de distância."
+      ],
+      "evite": [
+        "Interpretar o silêncio como melhora, desobediência ou sinal certo de sobrecarga."
+      ],
+      "ilustracao": "Adulto próximo, ambiente desocupado e telefone acessível sem bloquear a criança.",
+      "origem": {
+        "arquivo": "acervo-112-revisao.json",
+        "sha256": "d18322a8e1ba2759ffca97079a8f3b183b682fe4246a67e53cc9654f32228208"
+      },
+      "se_nao_der_certo": "Interrompa a tentativa, preserve conforto e comunicação e reveja com o cuidador/equipe; não aumente exigências para obter cumprimento.",
+      "regra_uso": "Rota de orientação não é recomendação de atividade e fica acessível sem quiz.",
+      "emergencia": "Em emergência de saúde — dificuldade para respirar, perda de consciência, convulsão ou acidente grave — ligue SAMU 192 no Brasil. Informe onde a criança está e siga as orientações recebidas."
+    },
+    {
+      "id": "PES-D13",
+      "titulo": "Ela reclama quando encosta o pé",
+      "status": "elegivel_rota",
+      "revisao_humana": "pendente",
+      "destino": "rota_suspeita_dor",
+      "situacao": {
+        "id": "pes-d13-situacao",
+        "rotulo": "Ela reclama quando encosta o pé",
+        "contexto": "Durante uma saída, a criança para e indica que o pé dói, ou muda de repente a forma de andar.",
+        "selecao": "explicita_pelo_cuidador"
+      },
+      "necessidade": "momentos_dificeis",
+      "pratica": {
+        "categoria": "orientacao_seguranca",
+        "nome": "A dor pode mudar a forma de a criança andar ou participar, inclusive quando ela tem dificuldade para explicá-la.",
+        "nao_e_aplicacao_modelo_denver": true
+      },
+      "idade": {
+        "min_meses": 24,
+        "max_meses": 179,
+        "inclusiva": true,
+        "fundamento": "Recorte editorial dentro da população descrita; confirmar requisitos funcionais e adequação com o time técnico."
+      },
+      "populacao": {
+        "aplicavel": "Criança/adolescente e cuidador na situação e faixa indicadas, conforme requisitos funcionais",
+        "condicoes": [],
+        "fontes_originais": [
+          "Crianças e jovens autistas menores de 19 anos e suas famílias, no contexto do cuidado profissional."
+        ],
+        "extensao": "Não generalizar eficácia. Se fonte de princípio trata de autismo e a fonte de atividade é geral, a correspondência é editorial e não exige diagnóstico."
+      },
+      "momentos_permitidos": [
+        "na_hora"
+      ],
+      "requisitos": [
+        {
+          "id": "PES-D13-R01",
+          "pergunta": "Há adulto no local que pode contatar a equipe de saúde?",
+          "esperado": "sim",
+          "texto_original": "Um adulto está no local e pode conversar com a equipe de saúde.",
+          "origem": "requisito_original"
+        }
+      ],
+      "exclusoes": [
+        {
+          "id": "PES-D13-X01",
+          "pergunta": "Algum critério de interrupção desta orientação está presente agora? Critério: Se houver lesão importante ou perigo no local, interrompa a saída e peça socorro imediatamente.",
+          "esperado": "nao",
+          "texto": "Se houver lesão importante ou perigo no local, interrompa a saída e peça socorro imediatamente.",
+          "condicao": {
+            "campo": "respostas.PES-D13-X01",
+            "operador": "diferente",
+            "valor": "nao"
+          },
+          "efeito": "bloquear_e_mostrar_interrupcao"
+        }
+      ],
+      "interrompa_se": [
+        "Se houver lesão importante ou perigo no local, interrompa a saída e peça socorro imediatamente."
+      ],
+      "procure_ajuda_se": [
+        "Em caso de acidente grave ou perda de consciência, acione a emergência. No Brasil, SAMU 192."
+      ],
+      "adaptacoes_etarias": [
+        {
+          "min_meses": 24,
+          "max_meses": 59,
+          "ajuste": "O adulto descreve uma coisa de cada vez e aceita apontar, gesto ou afastamento. Não exige explicação verbal.",
+          "aplicacao_especifica": "Pare o deslocamento planejado e escute ou observe o que a criança mostra.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 60,
+          "max_meses": 107,
+          "ajuste": "O adulto oferece escolhas concretas e confirma o significado; leitura e execução podem ficar a cargo do adulto.",
+          "aplicacao_especifica": "Pare o deslocamento planejado e escute ou observe o que a criança mostra.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 108,
+          "max_meses": 143,
+          "ajuste": "Combine quanto apoio a criança quer; preserve privacidade e aceite comunicação sem fala.",
+          "aplicacao_especifica": "Pare o deslocamento planejado e escute ou observe o que a criança mostra.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 144,
+          "max_meses": 179,
+          "ajuste": "Peça autorização para ajudar, respeite autoria e privacidade; evite linguagem ou materiais infantilizados.",
+          "aplicacao_especifica": "Pare o deslocamento planejado e escute ou observe o que a criança mostra.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        }
+      ],
+      "justificativa_faixa_ampla": {
+        "aplica": true,
+        "texto": "Orientação dirigida à ação do adulto, não exercício de habilidade infantil. A ação é a dos passos; a comunicação muda pelas faixas abaixo. Fontes não demonstram eficácia por mês."
+      },
+      "adaptacoes_contextuais": [
+        {
+          "quando": "Ela não usa fala para indicar dor",
+          "mudanca": "Relate a mudança observada sem tentar completar a história por ela.",
+          "aplicacao": "Somente após o cuidador confirmar que a condição se aplica; nunca inferir pela idade."
+        }
+      ],
+      "fontes_atividade": [
+        {
+          "id": "nice",
+          "titulo": "Autism spectrum disorder in under 19s: support and management",
+          "url": "https://www.nice.org.uk/guidance/cg170",
+          "finalidade": "Considerar condições de saúde e contexto na avaliação; população original autista menor de 19 anos.",
+          "leitura": "registro_anterior_nao_relida",
+          "secao": "Fonte e escopo preservados do lote 1.0.0; releitura das recomendações falhou HTTP403.",
+          "registro": "Lote expansao-112-2026-11-18 registra lida; tentativa atual não comprova releitura.",
+          "selo_publico": null,
+          "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+        }
+      ],
+      "fontes_encaminhamento": [
+        {
+          "id": "samu",
+          "titulo": "SAMU 192",
+          "url": "https://www.gov.br/saude/pt-br/campanhas-da-saude/2025/samu-192",
+          "finalidade": "Encaminhamento de emergência no Brasil; sinais e informações para a ligação.",
+          "leitura": "secoes_relidas",
+          "secao": "Quando ligar para o 192?; O que dizer ao ligar para o 192?",
+          "registro": "18/11/2026, página aberta; linhas 333–355.",
+          "selo_publico": null,
+          "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+        }
+      ],
+      "explica": {
+        "acao": "Pare o deslocamento planejado e escute ou observe o que a criança mostra.",
+        "possivel_beneficio": "Suspender a cobrança de caminhar e encaminhar uma queixa física para avaliação.",
+        "o_que_acontece": "Nesta situação: Durante uma saída, a criança para e indica que o pé dói, ou muda de repente a forma de andar. A causa individual não é determinada pelo app.",
+        "observacao": "Para a equipe de saúde, descreva a última atividade que ela fez normalmente e a primeira mudança observada.",
+        "limite": "Apoio inicial ao adulto; não é avaliação médica, investigação ou tarefa para a criança. Não espere concluir esta leitura para buscar ajuda."
+      },
+      "passos": [
+        "Pare o deslocamento planejado e escute ou observe o que a criança mostra.",
+        "Conte à pessoa que a acompanha o que mudou e se houve uma queda ou outro acidente conhecido.",
+        "Se a dor for nova, persistir ou a impedir de andar como de costume, procure avaliação de saúde. Diante de acidente grave, chame a emergência imediatamente."
+      ],
+      "evite": [
+        "Pedir que caminhe para provar que dói ou explicar a situação apenas como recusa."
+      ],
+      "ilustracao": "Cuidador ouve a criança apontar para o pé, com o caminho à frente em pausa.",
+      "origem": {
+        "arquivo": "acervo-112-revisao.json",
+        "sha256": "d18322a8e1ba2759ffca97079a8f3b183b682fe4246a67e53cc9654f32228208"
+      },
+      "se_nao_der_certo": "Interrompa a tentativa, preserve conforto e comunicação e reveja com o cuidador/equipe; não aumente exigências para obter cumprimento.",
+      "regra_uso": "Rota de orientação não é recomendação de atividade e fica acessível sem quiz.",
+      "emergencia": "Em emergência de saúde — dificuldade para respirar, perda de consciência, convulsão ou acidente grave — ligue SAMU 192 no Brasil. Informe onde a criança está e siga as orientações recebidas."
+    },
+    {
+      "id": "PES-D16",
+      "titulo": "A videochamada não mostra o que houve",
+      "status": "elegivel_rota",
+      "revisao_humana": "pendente",
+      "destino": "rota_seguranca_distancia",
+      "situacao": {
+        "id": "pes-d16-situacao",
+        "rotulo": "A videochamada não mostra o que houve",
+        "contexto": "O cuidador distante escuta choro intenso ou recebe uma mensagem preocupante.",
+        "selecao": "explicita_pelo_cuidador"
+      },
+      "necessidade": "momentos_dificeis",
+      "pratica": {
+        "categoria": "orientacao_seguranca",
+        "nome": "Uma imagem parcial ou uma ligação interrompida não permitem ao cuidador distante determinar se a criança está segura.",
+        "nao_e_aplicacao_modelo_denver": true
+      },
+      "idade": {
+        "min_meses": 24,
+        "max_meses": 179,
+        "inclusiva": true,
+        "fundamento": "Recorte editorial dentro da população descrita; confirmar requisitos funcionais e adequação com o time técnico."
+      },
+      "populacao": {
+        "aplicavel": "Criança/adolescente e cuidador na situação e faixa indicadas, conforme requisitos funcionais",
+        "condicoes": [],
+        "fontes_originais": [],
+        "extensao": "Não generalizar eficácia. Se fonte de princípio trata de autismo e a fonte de atividade é geral, a correspondência é editorial e não exige diagnóstico."
+      },
+      "momentos_permitidos": [
+        "na_hora"
+      ],
+      "requisitos": [
+        {
+          "id": "PES-D16-R01",
+          "pergunta": "Você consegue contatar alguém no local?",
+          "esperado": "sim",
+          "texto_original": "Meio de contato e endereço ou possibilidade de obtê-lo rapidamente.",
+          "origem": "requisito_original"
+        },
+        {
+          "id": "PES-D16-R02",
+          "pergunta": "O endereço é conhecido ou pode ser obtido imediatamente?",
+          "esperado": "sim",
+          "texto_original": "Meio de contato e endereço ou possibilidade de obtê-lo rapidamente.",
+          "origem": "requisito_original"
+        }
+      ],
+      "exclusoes": [
+        {
+          "id": "PES-D16-X01",
+          "pergunta": "Algum critério de interrupção desta orientação está presente agora? Critério: Se a chamada falhar, pare de tentar avaliar por vídeo e acione ajuda presencial conforme o risco já relatado.",
+          "esperado": "nao",
+          "texto": "Se a chamada falhar, pare de tentar avaliar por vídeo e acione ajuda presencial conforme o risco já relatado.",
+          "condicao": {
+            "campo": "respostas.PES-D16-X01",
+            "operador": "diferente",
+            "valor": "nao"
+          },
+          "efeito": "bloquear_e_mostrar_interrupcao"
+        }
+      ],
+      "interrompa_se": [
+        "Se a chamada falhar, pare de tentar avaliar por vídeo e acione ajuda presencial conforme o risco já relatado."
+      ],
+      "procure_ajuda_se": [
+        "Em emergência de saúde no Brasil, ligue para o SAMU 192. Informe município, endereço e ponto de referência da criança."
+      ],
+      "adaptacoes_etarias": [
+        {
+          "min_meses": 24,
+          "max_meses": 59,
+          "ajuste": "O adulto descreve uma coisa de cada vez e aceita apontar, gesto ou afastamento. Não exige explicação verbal.",
+          "aplicacao_especifica": "Fale com quem está fisicamente com a criança e confirme onde estão. A chamada não permite avaliar sua segurança.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 60,
+          "max_meses": 107,
+          "ajuste": "O adulto oferece escolhas concretas e confirma o significado; leitura e execução podem ficar a cargo do adulto.",
+          "aplicacao_especifica": "Fale com quem está fisicamente com a criança e confirme onde estão. A chamada não permite avaliar sua segurança.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 108,
+          "max_meses": 143,
+          "ajuste": "Combine quanto apoio a criança quer; preserve privacidade e aceite comunicação sem fala.",
+          "aplicacao_especifica": "Fale com quem está fisicamente com a criança e confirme onde estão. A chamada não permite avaliar sua segurança.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 144,
+          "max_meses": 179,
+          "ajuste": "Peça autorização para ajudar, respeite autoria e privacidade; evite linguagem ou materiais infantilizados.",
+          "aplicacao_especifica": "Fale com quem está fisicamente com a criança e confirme onde estão. A chamada não permite avaliar sua segurança.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        }
+      ],
+      "justificativa_faixa_ampla": {
+        "aplica": true,
+        "texto": "Orientação dirigida à ação do adulto, não exercício de habilidade infantil. A ação é a dos passos; a comunicação muda pelas faixas abaixo. Fontes não demonstram eficácia por mês."
+      },
+      "adaptacoes_contextuais": [
+        {
+          "quando": "A criança está sem adulto no local",
+          "mudanca": "Acione um adulto próximo de confiança e, se houver perigo imediato, o serviço de emergência em paralelo.",
+          "aplicacao": "Somente após o cuidador confirmar que a condição se aplica; nunca inferir pela idade."
+        }
+      ],
+      "fontes_atividade": [],
+      "fontes_encaminhamento": [
+        {
+          "id": "samu",
+          "titulo": "SAMU 192",
+          "url": "https://www.gov.br/saude/pt-br/campanhas-da-saude/2025/samu-192",
+          "finalidade": "Encaminhamento de emergência no Brasil; sinais e informações para a ligação.",
+          "leitura": "secoes_relidas",
+          "secao": "Quando ligar para o 192?; O que dizer ao ligar para o 192?",
+          "registro": "18/11/2026, página aberta; linhas 333–355.",
+          "selo_publico": null,
+          "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+        }
+      ],
+      "explica": {
+        "acao": "Fale com quem está fisicamente com a criança e confirme onde estão. A chamada não permite avaliar sua segurança.",
+        "possivel_beneficio": "Conseguir presença e ajuda local sem depender de avaliação por imagem.",
+        "o_que_acontece": "Nesta situação: O cuidador distante escuta choro intenso ou recebe uma mensagem preocupante. A causa individual não é determinada pelo app.",
+        "observacao": "Confirme se alguém chegou ao local ou se o serviço de emergência recebeu o endereço. Não conclua que está tudo bem pelo fim da ligação.",
+        "limite": "Apoio inicial ao adulto; não é avaliação médica, investigação ou tarefa para a criança. Não espere concluir esta leitura para buscar ajuda."
+      },
+      "passos": [
+        "Fale com quem está fisicamente com a criança e confirme onde estão. A chamada não permite avaliar sua segurança.",
+        "Diante de relato de perigo imediato à saúde, peça à pessoa no local que acione a emergência agora, sem esperar sua opinião.",
+        "Se ninguém no local puder ligar, acione você o serviço de emergência, diga que está à distância e dê o endereço exato da criança."
+      ],
+      "evite": [
+        "Pedir à criança que faça algo diante da câmera para decidir se precisa de socorro."
+      ],
+      "ilustracao": "Cuidador ao telefone com endereço em mãos e outra pessoa acompanhando a criança.",
+      "origem": {
+        "arquivo": "acervo-112-revisao.json",
+        "sha256": "d18322a8e1ba2759ffca97079a8f3b183b682fe4246a67e53cc9654f32228208"
+      },
+      "se_nao_der_certo": "Interrompa a tentativa, preserve conforto e comunicação e reveja com o cuidador/equipe; não aumente exigências para obter cumprimento.",
+      "regra_uso": "Rota de orientação não é recomendação de atividade e fica acessível sem quiz.",
+      "emergencia": "Em emergência de saúde — dificuldade para respirar, perda de consciência, convulsão ou acidente grave — ligue SAMU 192 no Brasil. Informe onde a criança está e siga as orientações recebidas."
+    },
+    {
+      "id": "PES-D31",
+      "titulo": "Quando a criança conta por que evitou alguém",
+      "status": "elegivel_rota",
+      "revisao_humana": "pendente",
+      "destino": "rota_protecao",
+      "situacao": {
+        "id": "pes-d31-situacao",
+        "rotulo": "Quando a criança conta por que evitou alguém",
+        "contexto": "Depois de uma situação difícil, a criança diz que uma pessoa a assustou, ameaçou ou machucou.",
+        "selecao": "explicita_pelo_cuidador"
+      },
+      "necessidade": "momentos_dificeis",
+      "pratica": {
+        "categoria": "orientacao_seguranca",
+        "nome": "Uma revelação de possível violência pede escuta e proteção, sem fazer a criança repetir sua história.",
+        "nao_e_aplicacao_modelo_denver": true
+      },
+      "idade": {
+        "min_meses": 24,
+        "max_meses": 179,
+        "inclusiva": true,
+        "fundamento": "Recorte editorial dentro da população descrita; confirmar requisitos funcionais e adequação com o time técnico."
+      },
+      "populacao": {
+        "aplicavel": "Criança/adolescente e cuidador na situação e faixa indicadas, conforme requisitos funcionais",
+        "condicoes": [],
+        "fontes_originais": [
+          "Profissionais do SUAS no atendimento a crianças e adolescentes vítimas ou testemunhas de violência no Brasil."
+        ],
+        "extensao": "Não generalizar eficácia. Se fonte de princípio trata de autismo e a fonte de atividade é geral, a correspondência é editorial e não exige diagnóstico."
+      },
+      "momentos_permitidos": [
+        "depois"
+      ],
+      "requisitos": [
+        {
+          "id": "PES-D31-R01",
+          "pergunta": "Há adulto de confiança que possa garantir privacidade e tomar providências de proteção?",
+          "esperado": "sim",
+          "texto_original": "Um adulto de confiança pode oferecer privacidade e tomar providências para proteger a criança.",
+          "origem": "requisito_original"
+        }
+      ],
+      "exclusoes": [
+        {
+          "id": "PES-D31-X01",
+          "pergunta": "Algum critério de interrupção desta orientação está presente agora? Critério: Interrompa qualquer atividade do aplicativo se surgir relato ou suspeita de violência. A prioridade é oferecer proteção.",
+          "esperado": "nao",
+          "texto": "Interrompa qualquer atividade do aplicativo se surgir relato ou suspeita de violência. A prioridade é oferecer proteção.",
+          "condicao": {
+            "campo": "respostas.PES-D31-X01",
+            "operador": "diferente",
+            "valor": "nao"
+          },
+          "efeito": "bloquear_e_mostrar_interrupcao"
+        }
+      ],
+      "interrompa_se": [
+        "Interrompa qualquer atividade do aplicativo se surgir relato ou suspeita de violência. A prioridade é oferecer proteção."
+      ],
+      "procure_ajuda_se": [
+        "Diante de suspeita de violência, procure a rede de proteção, mesmo sem um relato detalhado. Em perigo imediato, acione o serviço de emergência adequado.",
+        "Em emergência de saúde no Brasil, como dificuldade para respirar ou perda de consciência, ligue para o SAMU 192."
+      ],
+      "adaptacoes_etarias": [
+        {
+          "min_meses": 24,
+          "max_meses": 59,
+          "ajuste": "O adulto descreve uma coisa de cada vez e aceita apontar, gesto ou afastamento. Não exige explicação verbal.",
+          "aplicacao_especifica": "Se houver perigo atual, procure ajuda presencial imediatamente e garanta acompanhamento de alguém seguro.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 60,
+          "max_meses": 107,
+          "ajuste": "O adulto oferece escolhas concretas e confirma o significado; leitura e execução podem ficar a cargo do adulto.",
+          "aplicacao_especifica": "Se houver perigo atual, procure ajuda presencial imediatamente e garanta acompanhamento de alguém seguro.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 108,
+          "max_meses": 143,
+          "ajuste": "Combine quanto apoio a criança quer; preserve privacidade e aceite comunicação sem fala.",
+          "aplicacao_especifica": "Se houver perigo atual, procure ajuda presencial imediatamente e garanta acompanhamento de alguém seguro.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        },
+        {
+          "min_meses": 144,
+          "max_meses": 179,
+          "ajuste": "Peça autorização para ajudar, respeite autoria e privacidade; evite linguagem ou materiais infantilizados.",
+          "aplicacao_especifica": "Se houver perigo atual, procure ajuda presencial imediatamente e garanta acompanhamento de alguém seguro.",
+          "natureza": "Adaptação editorial de linguagem e apoio, sem ampliar faixa ou presumir habilidade."
+        }
+      ],
+      "justificativa_faixa_ampla": {
+        "aplica": true,
+        "texto": "Orientação dirigida à ação do adulto, não exercício de habilidade infantil. A ação é a dos passos; a comunicação muda pelas faixas abaixo. Fontes não demonstram eficácia por mês."
+      },
+      "adaptacoes_contextuais": [
+        {
+          "quando": "A criança usa comunicação alternativa",
+          "mudanca": "Deixe seu recurso habitual disponível e transmita à rede o que ela comunicou, distinguindo suas próprias interpretações.",
+          "aplicacao": "Somente após o cuidador confirmar que a condição se aplica; nunca inferir pela idade."
+        }
+      ],
+      "fontes_atividade": [
+        {
+          "id": "suas",
+          "titulo": "Parâmetros de atuação do Sistema Único de Assistência Social (SUAS) no sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência",
+          "url": "https://www.mds.gov.br/webarquivos/MDS/Principal/Capa/Marcha%20dos%20Prefeitos/SUAS_garantia_direitos_criancas_adolescentes_vitimas_testemunhas_violencia.pdf",
+          "finalidade": "Acolhimento e encaminhamento de proteção; não sustenta atividades infantis.",
+          "leitura": "registro_anterior_nao_relida",
+          "secao": "Escopo de acolhimento e proteção documentado no lote anterior.",
+          "registro": "expansao-112-2026-11-18/crises.json e expansao-integravel-2026-11-18/rotas.json; não relida nesta correção.",
+          "selo_publico": null,
+          "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+        }
+      ],
+      "fontes_encaminhamento": [
+        {
+          "id": "samu",
+          "titulo": "SAMU 192",
+          "url": "https://www.gov.br/saude/pt-br/campanhas-da-saude/2025/samu-192",
+          "finalidade": "Encaminhamento de emergência no Brasil; sinais e informações para a ligação.",
+          "leitura": "secoes_relidas",
+          "secao": "Quando ligar para o 192?; O que dizer ao ligar para o 192?",
+          "registro": "18/11/2026, página aberta; linhas 333–355.",
+          "selo_publico": null,
+          "nota_publica": "Referência da orientação; não valida esta sequência nem identifica a criança."
+        }
+      ],
+      "explica": {
+        "acao": "Se houver perigo atual, procure ajuda presencial imediatamente e garanta acompanhamento de alguém seguro.",
+        "possivel_beneficio": "Ajudar o adulto a ouvir uma revelação de possível violência sem fazer a criança repetir.",
+        "o_que_acontece": "Nesta situação: Depois de uma situação difícil, a criança diz que uma pessoa a assustou, ameaçou ou machucou. A causa individual não é determinada pelo app.",
+        "observacao": "Confirme qual serviço recebeu o pedido e qual adulto seguro está acompanhando a criança.",
+        "limite": "Apoio inicial ao adulto; não é avaliação médica, investigação ou tarefa para a criança. Não espere concluir esta leitura para buscar ajuda."
+      },
+      "passos": [
+        "Escute o que ela quiser dizer, acolha também o silêncio e explique que vai buscar ajuda para protegê-la.",
+        "No Brasil, procure o Conselho Tutelar ou o serviço da rede de proteção. Se houver dor, lesão ou urgência de saúde, procure também atendimento de saúde."
+      ],
+      "evite": [
+        "Interrogar, testar a versão, promover confronto com a pessoa mencionada ou exigir segredo."
+      ],
+      "ilustracao": "Criança e cuidador conversando em privacidade, sem representar a violência.",
+      "origem": {
+        "arquivo": "acervo-112-revisao.json",
+        "sha256": "d18322a8e1ba2759ffca97079a8f3b183b682fe4246a67e53cc9654f32228208"
+      },
+      "se_nao_der_certo": "Interrompa a tentativa, preserve conforto e comunicação e reveja com o cuidador/equipe; não aumente exigências para obter cumprimento.",
+      "regra_uso": "Rota de orientação não é recomendação de atividade e fica acessível sem quiz.",
+      "emergencia": "Se há perigo atual, procure ajuda presencial imediatamente e mantenha a criança acompanhada por alguém seguro. Em emergência de saúde — dificuldade para respirar, perda de consciência, convulsão ou acidente grave — ligue SAMU 192 no Brasil. Informe onde a criança está e siga as orientações recebidas."
+    }
+  ],
+  "decisao_executavel": [
+    {
+      "campo": "gates.sem_perigo",
+      "valor": "nao",
+      "destino": "emergencia",
+      "atividades": false
+    },
+    {
+      "campo": "gates.sem_dor_nova",
+      "valor": "nao",
+      "destino": "saude",
+      "atividades": false
+    },
+    {
+      "campo": "gates.sem_sofrimento_intenso",
+      "valor": "nao",
+      "destino": "sofrimento_intenso",
+      "atividades": false
+    }
+  ],
+  "ausente_ou_desconhecido": {
+    "destino": "confirmar_seguranca",
+    "atividades": false,
+    "manter_acesso_rotas": true
+  }
+}

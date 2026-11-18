@@ -1,0 +1,169 @@
+{
+  "versao": "2.5.0",
+  "cobertura_idade_meses": [
+    24,
+    179
+  ],
+  "familias": [
+    {
+      "id": "brincar",
+      "nome": "Brincar e participar",
+      "ordem": 1
+    },
+    {
+      "id": "transicoes",
+      "nome": "Rotinas e transições",
+      "ordem": 2
+    },
+    {
+      "id": "noite",
+      "nome": "Preparar a noite",
+      "ordem": 3
+    },
+    {
+      "id": "emocoes",
+      "nome": "Frustrações e emoções",
+      "ordem": 4
+    },
+    {
+      "id": "autonomia",
+      "nome": "Pequenas autonomias",
+      "ordem": 5
+    },
+    {
+      "id": "cuidadores",
+      "nome": "Cuidadores em sintonia",
+      "ordem": 6
+    },
+    {
+      "id": "momentos_dificeis",
+      "nome": "Momentos difíceis"
+    },
+    {
+      "id": "estimular",
+      "nome": "Estimular"
+    },
+    {
+      "id": "acalmar",
+      "nome": "Acalmar"
+    }
+  ],
+  "desafios": [
+    {
+      "id": "brincar",
+      "familia": "brincar",
+      "nome": "Brincar e participar",
+      "estado": "ativo",
+      "bloqueado_por": [
+        "dor_frequente"
+      ],
+      "nota": "6 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+    },
+    {
+      "id": "transicoes",
+      "familia": "transicoes",
+      "nome": "Rotinas e transições",
+      "estado": "ativo",
+      "bloqueado_por": [
+        "dor_frequente"
+      ],
+      "nota": "6 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+    },
+    {
+      "id": "noite",
+      "familia": "noite",
+      "nome": "Preparar a noite",
+      "estado": "ativo",
+      "bloqueado_por": [
+        "dor_frequente",
+        "ronco_com_pausas"
+      ],
+      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+    },
+    {
+      "id": "emocoes",
+      "familia": "emocoes",
+      "nome": "Frustrações e emoções",
+      "estado": "ativo",
+      "bloqueado_por": [
+        "dor_frequente"
+      ],
+      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+    },
+    {
+      "id": "autonomia",
+      "familia": "autonomia",
+      "nome": "Pequenas autonomias",
+      "estado": "ativo",
+      "bloqueado_por": [
+        "dor_frequente"
+      ],
+      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+    },
+    {
+      "id": "cuidadores",
+      "familia": "cuidadores",
+      "nome": "Cuidadores em sintonia",
+      "estado": "ativo",
+      "bloqueado_por": [
+        "dor_frequente"
+      ],
+      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+    },
+    {
+      "id": "momentos_dificeis",
+      "nome": "Momentos difíceis",
+      "familia": "momentos_dificeis",
+      "estado": "ativo",
+      "bloqueado_por": []
+    },
+    {
+      "id": "estimular",
+      "nome": "Estimular",
+      "familia": "estimular",
+      "estado": "ativo",
+      "bloqueado_por": []
+    },
+    {
+      "id": "acalmar",
+      "nome": "Acalmar",
+      "familia": "acalmar",
+      "estado": "ativo",
+      "bloqueado_por": []
+    }
+  ],
+  "orientacoes": {
+    "sinal_de_risco": "O catálogo demonstrativo não atende autolesão, agressão com lesão ou fuga. Se houver perigo imediato, priorize proteção e procure um serviço de urgência local; em outras situações, busque avaliação individual. Este estado não oferece protocolo nem encaminhamento comercial.",
+    "dor_frequente": "Dor frequente precisa de avaliação de saúde. Não atribua o comportamento apenas à rotina ou ao diagnóstico; os cards desta demonstração ficam suspensos para essa situação.",
+    "ronco_com_pausas": "Pausas na respiração durante o sono precisam de avaliação de saúde; não trate com cards de rotina. Se houver dificuldade para respirar agora, procure atendimento de urgência.",
+    "desconforto": "Interrompa a sugestão que causou desconforto. Registre o contexto sem inferir causa e busque orientação se persistir ou houver risco."
+  },
+  "mapa_de_expansao": [
+    {
+      "id": "alimentacao",
+      "nome": "Alimentação e seletividade",
+      "estado": "em_preparacao"
+    },
+    {
+      "id": "desfralde",
+      "nome": "Desfralde",
+      "estado": "em_preparacao"
+    },
+    {
+      "id": "motor",
+      "nome": "Necessidades motoras específicas",
+      "estado": "em_preparacao"
+    },
+    {
+      "id": "fala",
+      "nome": "Fala e fonoaudiologia",
+      "estado": "fora_do_escopo"
+    },
+    {
+      "id": "sono-tratamento",
+      "nome": "Tratamento de distúrbios do sono",
+      "estado": "fora_do_escopo"
+    }
+  ],
+  "limites": "108 fichas, com recortes próprios entre 2 e 14 anos e 11 meses; quatro orientações em rotas próprias. Conteúdo editorial em revisão, sem eficácia do aplicativo demonstrada."
+}

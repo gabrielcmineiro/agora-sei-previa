@@ -1,0 +1,502 @@
+[
+ {
+  "index": 1,
+  "pasta": "adesivos",
+  "nome": "nuvem-e-sol",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A small soft rain cloud in dusty lilac-grey with a pale ochre sun peeking out from behind it and three tiny raindrops.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 2,
+  "pasta": "adesivos",
+  "nome": "caneca-e-colher",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A plain ceramic mug in dusty blue with a small wooden spoon lying beside it.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 3,
+  "pasta": "adesivos",
+  "nome": "cartao-com-figura",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: One small rounded picture card in cream showing a very simple painted sun, standing slightly tilted.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 4,
+  "pasta": "adesivos",
+  "nome": "balao-de-fala",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: One single empty rounded speech bubble in muted terracotta-rose, with a small tail, no text inside.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 5,
+  "pasta": "adesivos",
+  "nome": "livro-aberto",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: An open picture book seen from the front, cream pages with a few pale brush lines suggesting text and one small painted leaf illustration, sage-green cover edges.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 6,
+  "pasta": "adesivos",
+  "nome": "mao-apontando",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A small child's hand with warm brown skin, index finger pointing to the right, sleeve cuff in muted terracotta-rose.\n\nOnly a soft painted contact shadow beneath. Only the hand and the cuff: no face, no body. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 7,
+  "pasta": "adesivos",
+  "nome": "cartoes-de-figuras",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: Three small rounded picture cards fanned out, in cream, each showing one very simple painted shape: a cup, a ball and a bed.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 8,
+  "pasta": "adesivos",
+  "nome": "carrinho",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A small simple wooden toy car in muted terracotta with four round oatmeal wheels.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 9,
+  "pasta": "adesivos",
+  "nome": "giz-de-cera",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: Three short wax crayons in sage green, dusty blue and mango yellow lying side by side, with one loose curly scribble next to them.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 10,
+  "pasta": "adesivos",
+  "nome": "bola",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A soft play ball with broad sections in dusty blue, cream and muted terracotta.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 11,
+  "pasta": "adesivos",
+  "nome": "livros",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: Two closed picture books stacked slightly askew, covers in sage green and dusty aubergine, cream page edges.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 12,
+  "pasta": "adesivos",
+  "nome": "chocalho",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A small wooden maraca rattle in pale ochre with a muted terracotta band, lying at an angle.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 13,
+  "pasta": "adesivos",
+  "nome": "balde-e-patinho",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A small bucket in dusty blue with painted water inside and a little pale ochre rubber duck floating in it.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 14,
+  "pasta": "adesivos",
+  "nome": "cachorro-de-pelucia",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A soft stuffed toy dog in oatmeal with floppy brown ears, sitting upright. Stitched simple features, no cartoon face.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 15,
+  "pasta": "adesivos",
+  "nome": "bule-de-brinquedo",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A tiny toy teapot in muted terracotta-rose with one small matching cup beside it.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 16,
+  "pasta": "adesivos",
+  "nome": "boneco-com-capa",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A small wooden peg doll with a plain rounded head, wearing a little cape in dusty aubergine.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 17,
+  "pasta": "adesivos",
+  "nome": "papel-e-lapis",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A single sheet of cream paper, slightly curled at one corner, with a wooden pencil lying across it.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 18,
+  "pasta": "adesivos",
+  "nome": "impressora",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A small simple home printer in oatmeal grey with one cream sheet of paper coming out of the top.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 19,
+  "pasta": "adesivos",
+  "nome": "almofada-e-manta",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A round floor cushion in sage green with a folded knitted blanket in cream resting on top.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 20,
+  "pasta": "adesivos",
+  "nome": "tapete",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A rectangular woven rug in oatmeal with thin muted terracotta stripes at both ends and short fringes, seen at a slight angle, empty.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 21,
+  "pasta": "adesivos",
+  "nome": "mao-aberta",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: One open adult hand with warm brown skin, palm facing up, relaxed fingers, sleeve cuff in dusty blue.\n\nOnly a soft painted contact shadow beneath. Only the hand and the cuff: no face, no body. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 22,
+  "pasta": "adesivos",
+  "nome": "lampada",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: A simple table lamp with a sage-green base and a cream shade, with a soft pale ochre glow painted around the shade.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 23,
+  "pasta": "adesivos",
+  "nome": "bonecos-juntos",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: Five small wooden peg dolls with plain rounded heads standing close together in a tight group, in dusty blue, sage, terracotta, ochre and aubergine.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 24,
+  "pasta": "adesivos",
+  "nome": "um-adulto",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: One tall wooden peg doll with a plain rounded head, in dusty aubergine, standing alone.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ },
+ {
+  "index": 25,
+  "pasta": "adesivos",
+  "nome": "tres-adultos",
+  "largura": 480,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "1:1",
+   "background": "transparent",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "A single isolated subject painted in opaque gouache, in exactly the brushwork, paint texture and quiet balanced palette of the reference image, and nothing else: flat opaque shapes with dry-brush edges, a few fine colored-pencil details, no outlines.\n\nOBJECT: Three tall wooden peg dolls with plain rounded heads standing side by side with a little space between them, in dusty aubergine, muted teal and soft terracotta.\n\nOnly a soft painted contact shadow beneath. No people, no hands. Simple, bold shapes that stay readable when the picture is very small. Quiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nNo text, letters, numbers or logos, no outlines, no gradients, no 3D. Fully transparent background. Square 1:1, the subject centered with generous empty margin."
+  }
+ }
+]

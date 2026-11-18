@@ -1,0 +1,106 @@
+/* Agora Sei — tokens de design, v2.0 (Isaque, 18/11/2026)
+   Só variáveis. Todas com prefixo --as-. Usadas por design/componentes.css.
+   Contraste conferido por design/_fonte/contraste.mjs (resultado em design/INTEGRACAO.md). */
+:root {
+  /* ── Papel e tinta ─────────────────────────────────────────── */
+  --as-papel: #F6F4F9;              /* fundo da página */
+  --as-superficie: #FFFFFF;         /* cards, painéis, campos */
+  --as-superficie-funda: #ECE8F3;   /* abas inativas, trilhos, áreas recuadas */
+  --as-linha: #DCD6E6;              /* divisórias e bordas decorativas */
+  --as-linha-forte: #7E7591;        /* borda de campo e de opção (3:1 ou mais) */
+  --as-tinta: #2A2140;              /* texto principal e botão primário */
+  --as-tinta-suave: #574B66;        /* texto de apoio */
+  --as-tinta-fraca: #6B6078;        /* legendas e texto de exemplo dos campos */
+
+  /* ── Marca e ação ──────────────────────────────────────────── */
+  --as-sol: #F6A723;                /* cor-assinatura; nunca como texto sobre claro */
+  --as-sol-claro: #FFE7BA;
+  --as-sol-tinta: #744400;
+  --as-acao: #2A2140;
+  --as-acao-realce: #40346A;        /* hover do botão primário */
+  --as-sobre-acao: #FFFFFF;
+  --as-link: #4B32B8;
+  --as-foco: #5A3FD1;               /* anel de foco */
+  --as-cor-do-navegador: #F6F4F9;   /* valor para <meta name="theme-color"> */
+
+  /* ── Famílias de desafio: fundo / cor cheia / tinta ────────── */
+  --as-brincar-fundo: #FFE7BA;     --as-brincar-cor: #F6A723;     --as-brincar-tinta: #744400;
+  --as-transicoes-fundo: #D6EBF8;  --as-transicoes-cor: #4AA3DA;  --as-transicoes-tinta: #0F4C75;
+  --as-noite-fundo: #E4DFF8;       --as-noite-cor: #7C6CD8;       --as-noite-tinta: #3A2D8A;
+  --as-emocoes-fundo: #FBDDD5;     --as-emocoes-cor: #EB6E5B;     --as-emocoes-tinta: #8A281C;
+  --as-autonomia-fundo: #DDEFD3;   --as-autonomia-cor: #5CAB4E;   --as-autonomia-tinta: #23591C;
+  --as-cuidadores-fundo: #D2EEE8;  --as-cuidadores-cor: #2EA393;  --as-cuidadores-tinta: #0E584E;
+  --as-neutro-fundo: #E9E5EF;      --as-neutro-cor: #9A91AB;      --as-neutro-tinta: #453C55;
+
+  /* ── Guache (v2.0): paleta equilibrada ─────────────────────────
+     Regra 6 / 3 / 1: seis partes de claro (papel, creme, aguadas), três de meio-tom e uma de cor forte.
+     As cores fortes continuam sendo --as-tinta, --as-sol e a cor cheia de cada desafio; elas aparecem pouco e pequeno. */
+  --as-creme: #FBF6EC;              /* papel quente: fundo de ilustração, capa e tela de descanso */
+  --as-areia: #EDE4D6;              /* neutro quente: tapete, móvel, área recuada dentro de ilustração */
+  /* aguadas: a cor do desafio muito diluída. Mancha atrás de figura, de ícone e de palavra. */
+  --as-brincar-aguada: #FBEDCB;    --as-transicoes-aguada: #DFEBF3;  --as-noite-aguada: #E9E5F4;
+  --as-emocoes-aguada: #F7E3DC;    --as-autonomia-aguada: #E3EDDC;   --as-cuidadores-aguada: #DDECE8;
+  --as-neutro-aguada: #EEEAF3;
+  /* meios-tons: a mesma cor com branco e um pouco de cinza. É o tom que mais aparece nas figuras. Só decoração, nunca texto. */
+  --as-brincar-meio: #DDA94A;      --as-transicoes-meio: #7BA3C0;    --as-noite-meio: #9488C4;
+  --as-emocoes-meio: #D0796A;      --as-autonomia-meio: #8FAE82;     --as-cuidadores-meio: #6DA79F;
+  --as-neutro-meio: #A99FB8;
+  --as-ameixa-meio: #55456E;        /* a tinta diluída: sombra, cabelo, roupa escura nas figuras */
+
+  /* ── Estados ───────────────────────────────────────────────── */
+  --as-ok-fundo: #DDEFD3;       --as-ok-tinta: #23591C;       --as-ok-linha: #5CAB4E;
+  --as-atencao-fundo: #FFF0D2;  --as-atencao-tinta: #6A4200;  --as-atencao-linha: #B97A0E;
+  --as-cuidado-fundo: #FBDDD5;  --as-cuidado-tinta: #8A281C;  --as-cuidado-linha: #C9513E;
+  --as-info-fundo: #ECE8F8;     --as-info-tinta: #2A2140;     --as-info-linha: #7C6CD8;
+
+  /* ── Tipografia ────────────────────────────────────────────── */
+  --as-fonte-titulo: "Young Serif", Georgia, "Times New Roman", serif;
+  --as-fonte-texto: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --as-t-vitrine: clamp(2.125rem, 1.35rem + 3.4vw, 3.5rem);   /* 34 → 56 */
+  --as-t-1: clamp(1.75rem, 1.45rem + 1.4vw, 2.375rem);        /* 28 → 38 */
+  --as-t-2: 1.375rem;     /* 22 */
+  --as-t-3: 1.125rem;     /* 18 */
+  --as-t-corpo: 1.0625rem;/* 17 */
+  --as-t-menor: 0.9375rem;/* 15 */
+  --as-t-mini: 0.8125rem; /* 13 */
+  --as-altura-titulo: 1.14;
+  --as-altura-corpo: 1.55;
+  --as-peso-normal: 400;
+  --as-peso-medio: 560;
+  --as-peso-forte: 700;
+
+  /* ── Espaço (base 4 px) ────────────────────────────────────── */
+  --as-e-1: 0.25rem;  --as-e-2: 0.5rem;   --as-e-3: 0.75rem;  --as-e-4: 1rem;
+  --as-e-5: 1.25rem;  --as-e-6: 1.5rem;   --as-e-7: 2rem;     --as-e-8: 2.5rem;
+  --as-e-9: 3.5rem;   --as-e-10: 4.5rem;
+
+  /* ── Forma ─────────────────────────────────────────────────── */
+  --as-r-1: 8px;  --as-r-2: 12px;  --as-r-3: 16px;  --as-r-4: 22px;  --as-r-pilula: 999px;
+  --as-borda: 1px;
+  --as-borda-forte: 2px;
+
+  /* ── Profundidade (sombras com deslocamento, tingidas da tinta) */
+  --as-sombra-1: 0 1px 2px rgb(42 33 64 / 0.06), 0 3px 8px -3px rgb(42 33 64 / 0.10);
+  --as-sombra-2: 0 2px 4px rgb(42 33 64 / 0.05), 0 14px 28px -14px rgb(42 33 64 / 0.22);
+  --as-sombra-3: 0 4px 8px rgb(42 33 64 / 0.06), 0 24px 44px -18px rgb(42 33 64 / 0.28);
+
+  /* ── Movimento ─────────────────────────────────────────────── */
+  --as-rapido: 120ms;
+  --as-medio: 200ms;
+  --as-lento: 420ms;
+  --as-saida: cubic-bezier(0.23, 1, 0.32, 1);
+  --as-mola: cubic-bezier(0.34, 1.56, 0.64, 1);   /* passa um pouco do ponto e volta: marca, salvar */
+  --as-marco: 360ms;                             /* carimbo e selo: raro, pode durar mais */
+
+  /* ── Medidas ───────────────────────────────────────────────── */
+  --as-alvo: 2.75rem;            /* 44 px: menor área de toque */
+  --as-largura-pagina: 72rem;    /* 1152 px */
+  --as-largura-leitura: 38rem;   /* ~65 caracteres no corpo */
+  --as-trilho: 14.5rem;          /* navegação lateral no computador */
+  --as-nav-altura: 4.25rem;      /* navegação inferior no celular */
+  --as-coluna: 30rem;            /* 480 px: largura do app em tela larga */
+  --as-mesa: #E6E1EE;            /* fundo em volta da coluna do app */
+  --as-r-5: 28px;                /* folha que sobe de baixo */
+  /* grão de papel: ruído leve em SVG, repetido a cada 220 px */
+  --as-grao: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.16  0 0 0 0 0.13  0 0 0 0 0.25  0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23g)'/%3E%3C/svg%3E");
+}

@@ -1,0 +1,1617 @@
+[
+ {
+  "index": 1,
+  "pasta": "fichas",
+  "nome": "pes-d01",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits on a sofa holding a handheld game console and turns its screen toward a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt, showing him the simple round save symbol on the screen; the father sits beside her, leaning in slightly and listening, his hands resting on his knees. A jacket hangs by the door in the background.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 2,
+  "pasta": "fichas",
+  "nome": "pes-d02",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On a sidewalk in front of a closed metal park gate with trees behind it, a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater crouches at the height of a 3-year-old girl with two curly hair puffs, brown skin and a muted terracotta-rose top and gestures toward the gate with one open hand; the girl stands beside her holding a small ball and looks at the closed gate.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 3,
+  "pasta": "fichas",
+  "nome": "pes-d03",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At the doorway of a nursery classroom with a row of coat hooks, a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt greets a nursery teacher in her forties with short wavy grey-brown hair, olive skin and a sand-colored cardigan with a friendly nod; a 4-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt stands close beside his father holding the strap of a small backpack and looks up at the teacher.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 4,
+  "pasta": "fichas",
+  "nome": "pes-d04",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stands on a sidewalk in front of a school wall with a blue metal gate and holds up a printed photograph of that same blue gate beside it, comparing the two. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 5,
+  "pasta": "fichas",
+  "nome": "pes-d05",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits at a kitchen table and points to a comb and a folded towel lying on the table in front of him, explaining; a young caregiver with a long dark braid, tan skin and a dusty-blue shirt sits across the table, listening, her hands resting on the table, not touching him.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 6,
+  "pasta": "fichas",
+  "nome": "pes-d06",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a simple clinic room, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits on a chair and talks directly to a doctor in her fifties with short grey hair, light skin and a plain white coat, who sits facing her and listens; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater sits a little behind the girl at her side, quiet and available. A desk and an examination bed in the background.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 7,
+  "pasta": "fichas",
+  "nome": "pes-d07",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a living room, a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater and a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stand together talking calmly; on one side an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits at a small table drawing, and on the other side a 3-year-old girl with two curly hair puffs, brown skin and a muted terracotta-rose top plays with wooden blocks on her own rug, each child in a separate space.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 8,
+  "pasta": "fichas",
+  "nome": "pes-d08",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At an open front door, a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt, wearing a jacket and ready to leave, shows a small handwritten note card and his phone with a blank screen to a young caregiver with a long dark braid, tan skin and a dusty-blue shirt, who reads along and nods. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 9,
+  "pasta": "fichas",
+  "nome": "pes-d09",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a quiet living room, a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater sits calmly on the floor, still and available, hands resting on her lap; behind her, a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt and a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan step back toward the doorway and talk quietly to each other. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 10,
+  "pasta": "fichas",
+  "nome": "pes-d10",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a supermarket aisle, an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits on the floor hugging his knees, turned slightly away; a young caregiver with a long dark braid, tan skin and a dusty-blue shirt crouches an arm's length away, calm, not touching him; a staff member, a man in his forties with a shaved head, dark-brown skin and a plain dusty-green uniform shirt stands at the end of the aisle holding out an open hand to keep the way clear. A shopping basket rests on the floor.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 11,
+  "pasta": "fichas",
+  "nome": "pes-d11",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a station hall, a loudspeaker hangs high on the wall; a staff member, a man in his forties with a shaved head, dark-brown skin and a plain dusty-green uniform shirt turns a knob on a small wall control panel; an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) stands with his hands over his ears, and a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt stands beside him, not touching, pointing with an open hand toward a quiet open doorway.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 12,
+  "pasta": "fichas",
+  "nome": "pes-d14",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On a rug, an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) and a 3-year-old girl with two curly hair puffs, brown skin and a muted terracotta-rose top both reach for the same wooden toy truck; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan kneels nearby at their height, calm, and with an open hand points to a second toy, a wooden train, lying within reach.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 13,
+  "pasta": "fichas",
+  "nome": "pes-d15",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a living room, a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater steps back with one hand raised softly and asks a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt to take over; the father nods and steps forward. Both look toward an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler), who sits on a rug with a toy car.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 14,
+  "pasta": "fichas",
+  "nome": "pes-d17",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a bus terminal, a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stands holding a small bag and looks up at a large departure board made of plain colored blank rows; a bench and a bus stop sign without letters are nearby. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 15,
+  "pasta": "fichas",
+  "nome": "pes-d18",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sits alone at a desk and clips a paper clip onto one page of an open school exercise book, then pushes the book gently aside; a pencil lies beside it. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 16,
+  "pasta": "fichas",
+  "nome": "pes-d19",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At an open front door, a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater welcomes two visitors, an older man with a grey moustache, light skin and a muted olive jacket and a woman in her fifties with short auburn hair, light skin and a sand coat, who stay in the doorway; across the room an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) stands beside a bookshelf at a distance, watching, free to come closer or not.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 17,
+  "pasta": "fichas",
+  "nome": "pes-d20",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At an outdoor fair, a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt walks beside an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) along a clear path toward an open gate, not holding him; in the background a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan talks to two other adults standing by a picnic blanket with bags.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 18,
+  "pasta": "fichas",
+  "nome": "pes-d21",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a classroom, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) places her backpack into a cubby in a row of empty cubbies; a teacher in her fifties with straight shoulder-length brown hair, light skin and a greyed-ochre cardigan stands beside her and points to the same cubby with an open hand.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 19,
+  "pasta": "fichas",
+  "nome": "pes-d22",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In an empty classroom, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) and a teacher in his forties with short grey hair, light skin, round wire glasses and an oatmeal sweater sit at a desk talking privately; on the desk lies a row of four small picture cards in order, showing simple painted figures.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 20,
+  "pasta": "fichas",
+  "nome": "pes-d23",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a kitchen doorway, a young caregiver with a long dark braid, tan skin and a dusty-blue shirt and a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stand close together and look at one small note card that the caregiver holds, talking quietly. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 21,
+  "pasta": "fichas",
+  "nome": "pes-d24",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a quiet bedroom with the door closed, a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater and an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sit on the edge of a low bed with some space between them, talking calmly; a lamp glows on a small table.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 22,
+  "pasta": "fichas",
+  "nome": "pes-d25",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At night, an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits up in his bed holding a blanket and looks toward the half-open door, where a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt stands in the doorway; a small night lamp glows and a crescent moon shows in the window.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 23,
+  "pasta": "fichas",
+  "nome": "pes-d26",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At the doorway of a classroom, a teacher in his forties with short grey hair, light skin, round wire glasses and an oatmeal sweater stands talking privately with a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child), who holds her books against her chest; the hallway behind them is empty.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 24,
+  "pasta": "fichas",
+  "nome": "pes-d27",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) places a dog collar on a shelf next to a small framed painted picture of a dog; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stands beside him, close and quiet, her hands resting at her sides.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 25,
+  "pasta": "fichas",
+  "nome": "pes-d28",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater sits at a kitchen table with a sheet of paper divided into three empty boxes, holding a pencil over the first box; a mug rests beside the sheet. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 26,
+  "pasta": "fichas",
+  "nome": "pes-d29",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At the door of a nursery, a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt, just arrived and still in his jacket, crouches at the height of a 3-year-old girl with two curly hair puffs, brown skin and a muted terracotta-rose top and listens to her; her small backpack rests on the floor beside them, not yet put away.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 27,
+  "pasta": "fichas",
+  "nome": "pes-d30",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A young caregiver with a long dark braid, tan skin and a dusty-blue shirt sits at a table looking at two invitation cards set far apart, with an empty stretch of table between them, and a pencil resting nearby. No children.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 28,
+  "pasta": "fichas",
+  "nome": "pes-d32",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) and a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sit side by side at a desk looking at one sheet of paper with a small painted lamp picture on it; on the desk, a real desk lamp glows softly, turned low.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-rose painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 29,
+  "pasta": "fichas",
+  "nome": "pes-e01",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater and a 2-year-old toddler girl with two small curly hair puffs, brown skin and a muted terracotta-rose top (clearly a toddler: short legs, round belly, large head for her body) sit facing each other on a rug, an arm's length apart; both hold up one open hand, the girl opening her fingers and the mother copying her.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 30,
+  "pasta": "fichas",
+  "nome": "pes-e02",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On a rug, a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan kneels beside a 2-year-old toddler girl with two small curly hair puffs, brown skin and a muted terracotta-rose top (clearly a toddler: short legs, round belly, large head for her body); in front of them lie two striped socks side by side and a pair of plain knitted socks; the girl holds up one striped sock.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 31,
+  "pasta": "fichas",
+  "nome": "pes-e03",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt and a 2-year-old toddler girl with two small curly hair puffs, brown skin and a muted terracotta-rose top (clearly a toddler: short legs, round belly, large head for her body) sit by a low window where a small bird sits on the sill outside; the girl opens her arms wide like wings while the father listens, smiling softly.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 32,
+  "pasta": "fichas",
+  "nome": "pes-e04",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A young caregiver with a long dark braid, tan skin and a dusty-blue shirt and a 2-year-old toddler girl with two small curly hair puffs, brown skin and a muted terracotta-rose top (clearly a toddler: short legs, round belly, large head for her body) sit on the floor side by side facing a sunlit wall where the soft shadow of a leafy plant falls; the girl points at the shadow and the caregiver looks where she points.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 33,
+  "pasta": "fichas",
+  "nome": "pes-e05",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater sits on the floor singing softly to a 2-year-old toddler girl with two small curly hair puffs, brown skin and a muted terracotta-rose top (clearly a toddler: short legs, round belly, large head for her body), who holds up one small flat hand to say enough; the mother stops, her mouth closed and her hands resting on her lap.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 34,
+  "pasta": "fichas",
+  "nome": "pes-e06",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 4-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt sits behind a cardboard box set up as a pretend post office counter and hands a folded sheet of paper across it to a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt, who sits on a floor cushion that stands for the house.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 35,
+  "pasta": "fichas",
+  "nome": "pes-e07",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan and a 3-year-old girl with two curly hair puffs, brown skin and a muted terracotta-rose top sit on the floor; in front of them a small toy turtle stands beside a little cardboard door propped open; the girl gestures with both hands toward the space beyond the door, and the grandmother listens.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 36,
+  "pasta": "fichas",
+  "nome": "pes-e08",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On the floor lie four large sheets of paper: a plain circle, a striped circle, a plain square and a striped square; a 4-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt moves the striped circle next to the striped square while a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater kneels beside him and watches.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 37,
+  "pasta": "fichas",
+  "nome": "pes-e09",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On the floor, a young caregiver with a long dark braid, tan skin and a dusty-blue shirt holds one half of a large painting of a boat on the sea still with her hand, while a 3-year-old girl with two curly hair puffs, brown skin and a muted terracotta-rose top turns the other half to fit it.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 38,
+  "pasta": "fichas",
+  "nome": "pes-e10",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt and an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sit side by side on the same side of a table; four cards lie in a row, three face down and one turned up showing a simple painted apple; the boy points to another card.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 39,
+  "pasta": "fichas",
+  "nome": "pes-e11",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) pours a little water from a light plastic cup into a sturdy potted plant on a low table; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stands beside him and points to the spot of soil where the water goes; one patch of soil is darker and wet.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 40,
+  "pasta": "fichas",
+  "nome": "pes-e12",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On a table lie a rolled sock, a small cushion and a picture book; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater and an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sit at the table looking at the three objects, the boy touching the cushion as he compares.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 41,
+  "pasta": "fichas",
+  "nome": "pes-e13",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On a table lies a sheet with a simple painted maze; a young caregiver with a long dark braid, tan skin and a dusty-blue shirt rests a pencil at a wide fork in the path and waits, while an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) points in the direction to go.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 42,
+  "pasta": "fichas",
+  "nome": "pes-e14",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) stands a picture book with its cover facing out on a low bookshelf at his own height; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt kneels beside him and looks at the shelf from the boy's height.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 43,
+  "pasta": "fichas",
+  "nome": "pes-e15",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits at a table frowning slightly at an unfinished wooden puzzle; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan sits beside him with her hands resting on her lap, waiting, not reaching in.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 44,
+  "pasta": "fichas",
+  "nome": "pes-e16",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a hallway, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) holds up her bicycle helmet to show what she meant; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater stands facing her, pausing with one hand at her chin, listening.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 45,
+  "pasta": "fichas",
+  "nome": "pes-e17",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) and a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt lean over a large hand-painted map of an island on a table, with two dotted routes and a small folded paper boat placed where a bridge would be; the girl traces one route with her finger.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 46,
+  "pasta": "fichas",
+  "nome": "pes-e18",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan and a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sit facing each other on two chairs; the grandmother taps her own knee softly with two fingers, and the girl answers by clapping her hands once.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 47,
+  "pasta": "fichas",
+  "nome": "pes-e19",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: On a sofa, a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan holds an open comic book whose panels show only simple pictures and pauses reading; a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child), sitting beside her, points at one panel and comments.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 48,
+  "pasta": "fichas",
+  "nome": "pes-e20",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) kneels at an open low drawer and lays her folded favorite dusty-blue hoodie at its front edge; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater stands nearby watching.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 49,
+  "pasta": "fichas",
+  "nome": "pes-e21",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt and a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sit at a table over a simple painted board path of five round spaces, the middle one highlighted; a wooden token sits on the first space and three small cards with plain arrows lie beside the board.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 50,
+  "pasta": "fichas",
+  "nome": "pes-e22",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) folds a hand towel on a table; an open woven basket with space inside stands beside it; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan sits nearby watching.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 51,
+  "pasta": "fichas",
+  "nome": "pes-e23",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At a library counter, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) hands a small sheet with a drawing of a comic book to a librarian in his fifties with a grey beard, light-brown skin and an oatmeal cardigan; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt stands one step behind her. Bookshelves in the background.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 52,
+  "pasta": "fichas",
+  "nome": "pes-e24",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits holding a small folded note with a simple drawing on it, deciding what to do with it; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater sits beside her with empty hands resting on her lap.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 53,
+  "pasta": "fichas",
+  "nome": "pes-e25",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) holds a sheet folded into a small booklet, showing a painted cover with a cat and one blank inner page; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sits beside her looking at it.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 54,
+  "pasta": "fichas",
+  "nome": "pes-e26",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits at her desk in a quiet room with her phone within reach on the desk; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater walks out through the doorway, leaving the door ajar.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 55,
+  "pasta": "fichas",
+  "nome": "pes-e27",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: Around a table sit a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child), a 14-year-old boy with short straight black hair, light skin and an ochre sweater (clearly a young teenager) and a 13-year-old girl with a short auburn bob, pale freckled skin and a sage cardigan (clearly a young teenager), with a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt; each holds a small colored card showing a simple symbol, and two of the young people share one card between them.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 56,
+  "pasta": "fichas",
+  "nome": "pes-e28",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits on a chair gesturing like a director with one hand; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt stands in front of a bookshelf acting, holding a small folded note.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 57,
+  "pasta": "fichas",
+  "nome": "pes-e29",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits at a desk and draws a small circle in the margin of an open notebook beside lines of tiny squiggles; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan sits nearby, looking on.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 58,
+  "pasta": "fichas",
+  "nome": "pes-e30",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At a table with a board game, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child), a 14-year-old boy with short straight black hair, light skin and an ochre sweater (clearly a young teenager) and a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt play; a sand timer has been set aside at the edge of the table, and the boy in the ochre sweater points to his move instead of speaking.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 59,
+  "pasta": "fichas",
+  "nome": "pes-e31",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits at a desk with an open textbook and highlights one line of tiny squiggles; beside it lies a small sticky note with her own squiggles; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater sits nearby.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 60,
+  "pasta": "fichas",
+  "nome": "pes-e32",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: Around a table, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child), a 13-year-old girl with a short auburn bob, pale freckled skin and a sage cardigan (clearly a young teenager) and a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan drop small folded papers into a bowl, while a 14-year-old boy with short straight black hair, light skin and an ochre sweater (clearly a young teenager) gives a thumbs-up gesture instead.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale ochre painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 61,
+  "pasta": "fichas",
+  "nome": "pes-a01",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 2-year-old toddler girl with two small curly hair puffs, brown skin and a muted terracotta-rose top (clearly a toddler: short legs, round belly, large head for her body) stands beside a few scattered toys rubbing her eyes; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater crouches nearby and points with an open hand to a soft low armchair close by.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 62,
+  "pasta": "fichas",
+  "nome": "pes-a02",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 2-year-old toddler girl with two small curly hair puffs, brown skin and a muted terracotta-rose top (clearly a toddler: short legs, round belly, large head for her body) sits awake on a rug hugging a large soft stuffed bear; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sits nearby on a sofa, relaxed.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 63,
+  "pasta": "fichas",
+  "nome": "pes-a03",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 4-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt puts a whole stuffed rabbit into an open tote bag on the floor; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan kneels beside the bag and waits.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 64,
+  "pasta": "fichas",
+  "nome": "pes-a04",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At a school entrance, a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater and an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) arrive and are welcomed by a teacher in her fifties with straight shoulder-length brown hair, light skin and a greyed-ochre cardigan, who wears a plain lanyard badge and crouches slightly to greet the boy.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 65,
+  "pasta": "fichas",
+  "nome": "pes-a05",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt hangs a party bag with a balloon tied to it on a hook by the door, while a 3-year-old girl with two curly hair puffs, brown skin and a muted terracotta-rose top walks toward a cushion corner in the living room.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 66,
+  "pasta": "fichas",
+  "nome": "pes-a06",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits on a cushioned chair at the side of a living room with a blanket on his lap; the way to it is clear and open, and a young caregiver with a long dark braid, tan skin and a dusty-blue shirt sits at a table across the room, visible.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 67,
+  "pasta": "fichas",
+  "nome": "pes-a07",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: Two plain t-shirts with different cuts lie on a bed, one with a round neck and one with a wider neck; an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) points to one of them while a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater stands one step away.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 68,
+  "pasta": "fichas",
+  "nome": "pes-a08",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) stands in the middle of a living room moving his hands in the air, content; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt moves a small side table aside to leave the space clear.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 69,
+  "pasta": "fichas",
+  "nome": "pes-a09",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At a school gate, a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan greets an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler), who carries his backpack, and points with an open hand down the sidewalk toward home.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 70,
+  "pasta": "fichas",
+  "nome": "pes-a10",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a living room, a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) rests on the sofa at one end with a book; at the far end a 4-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt plays with a toy xylophone on a rug; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sits in an armchair between them, available to both.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 71,
+  "pasta": "fichas",
+  "nome": "pes-a11",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits on a beanbag holding a phone whose screen shows only simple colored circles, and taps one of them; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater sits reading in the background.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 72,
+  "pasta": "fichas",
+  "nome": "pes-a12",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) holds up one flat hand as her signal for a pause; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt walks beside her toward an open door to the garden, pointing the way with an open hand.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 73,
+  "pasta": "fichas",
+  "nome": "pes-a13",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At a clinic reception desk, a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan and an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) stand talking to a receptionist in her twenties with a short black bob, light skin and a plain sage uniform top, who points to a quiet side area with two chairs.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 74,
+  "pasta": "fichas",
+  "nome": "pes-a14",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater, a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt and a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) stand looking at a wall calendar with seven columns of small colored blocks, one column left empty; the girl points to the empty column.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 75,
+  "pasta": "fichas",
+  "nome": "pes-a15",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) and a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan sit on a bench in a shaded courtyard under a tree; a short paved path leads back to the open door of their house.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 76,
+  "pasta": "fichas",
+  "nome": "pes-a16",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a living room, the television screen is switched off and dark; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan sits on the sofa near a 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child), turned toward her, listening.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 77,
+  "pasta": "fichas",
+  "nome": "pes-a17",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a playground, an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits on a bench, his posture tired and quiet; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sits on the far end of the same bench, at a distance; in the background a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater speaks quietly with two other adults, who turn back to their own things.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 78,
+  "pasta": "fichas",
+  "nome": "pes-a18",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits at a table looking through her own hand-drawn maps; a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sets an open box of colored pencils within her reach and steps back.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 79,
+  "pasta": "fichas",
+  "nome": "pes-a19",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits in a comfortable armchair talking on the phone; in the background a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater works in the kitchen, at a distance.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 80,
+  "pasta": "fichas",
+  "nome": "pes-a20",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) lies on her bed reading a book; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stands in the half-open doorway knocking lightly on the door before coming in.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 81,
+  "pasta": "fichas",
+  "nome": "pes-a21",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) and a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt sit side by side on a sofa, the girl talking and the father listening; his phone lies face down on a side table.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 82,
+  "pasta": "fichas",
+  "nome": "pes-a22",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: An 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) sits on the floor building with wooden blocks; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater crouches a few steps away with one hand on her chest, speaking to him calmly from that distance.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 83,
+  "pasta": "fichas",
+  "nome": "pes-a23",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: In a hallway, a father in his thirties with short black hair and a short beard, light-brown skin and a muted teal shirt, wearing a jacket, crouches beside an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) and points toward the front door; a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan stands next to them holding a mug and nods.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 84,
+  "pasta": "fichas",
+  "nome": "pes-a24",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: At an open front door, a grandmother in her sixties with short silver hair, round glasses, dark-brown skin and a soft terracotta cardigan arrives carrying two grocery bags; a young caregiver with a long dark braid, tan skin and a dusty-blue shirt stands in the doorway with an 8-year-old boy with short curly brown hair, light-brown skin and a sage-green t-shirt (clearly a school-age child: taller, longer arms and legs, reaching the chest of an adult, not a toddler) beside her and looks into one bag.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale lilac painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ },
+ {
+  "index": 85,
+  "pasta": "piloto-idades",
+  "nome": "piloto-encerrar-13-refeita",
+  "largura": 1200,
+  "params": {
+   "model": "gpt_image_2_6",
+   "quality": "xhigh",
+   "resolution": "2k",
+   "aspect_ratio": "3:2",
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "85eb5889-4068-4be3-945d-20afa5e516e6"
+    }
+   ],
+   "prompt": "Exactly the same editorial gouache style, brushwork, paint texture, quiet balanced palette and character design as the reference image: flat opaque gouache shapes with dry-brush edges on cold-press paper, a few fine colored-pencil details, natural adult and child proportions, minimal calm faces (small dot eyes, a hint of a nose, no big smiles). New scene, same hand.\n\nSCENE: A 13-year-old girl with long dark braids, medium-brown skin and a dusty-blue hoodie (clearly a young teenager: almost as tall as an adult's shoulder, long limbs, teenage posture, not a small child) sits on a sofa with headphones around her neck and a handheld game console on her lap, and sets a small round kitchen timer herself; a mother in her thirties with dark curly hair in a bun, medium-brown skin and a dusty aubergine sweater stands in the doorway at a distance, standing relaxed with her hands loosely at her sides, a calm friendly posture, giving her space.\n\nBackground: cool near-white paper #F6F4F9 with only one very soft pale dusty-blue painted wash shape behind the subject. Few objects, generous empty space, figures large in the frame.\n\nQuiet, balanced color, about six parts light, three parts mid-tone and one part strong: cool near-white paper, pale washes, sand and oatmeal neutrals; mid-tones of dusty aubergine, muted terracotta-rose, greyed ochre, sage and dusty blue do most of the work; at most one or two small strong accents of clear mango yellow #F6A723 or deep plum #2A2140. No pure saturated primaries. Warm natural brown skin tones in varied shades.\n\nWarm and grown-up, not a children's book, not cartoon, no outlines around shapes, no digital gradients, no 3D. No text, letters, numbers or logos. Horizontal 3:2, whole scene inside the frame with generous margins."
+  }
+ }
+]

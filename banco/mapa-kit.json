@@ -1,0 +1,3592 @@
+{
+  "versao": "1.0.0",
+  "status": "FINAL_EDITORIAL_PARA_INTEGRACAO",
+  "base_banco_sha256": "deda70e6347e5dfd387755469f95409e8b9d65514e8a42761c97a6237f697c0f",
+  "base_candidata": "2.5.1",
+  "natureza": "Correspondência editorial de navegação; não muda evidência, população ou eficácia. Não substitui motores de elegibilidade.",
+  "focos_validos": [
+    "brincar",
+    "transicoes",
+    "noite",
+    "emocoes",
+    "autonomia",
+    "cuidadores"
+  ],
+  "blocos": [
+    "momentos_dificeis",
+    "estimular",
+    "acalmar"
+  ],
+  "ordem_por_foco": {
+    "brincar": [
+      "estimular",
+      "acalmar",
+      "momentos_dificeis"
+    ],
+    "autonomia": [
+      "estimular",
+      "momentos_dificeis",
+      "acalmar"
+    ],
+    "noite": [
+      "acalmar",
+      "momentos_dificeis",
+      "estimular"
+    ],
+    "emocoes": [
+      "acalmar",
+      "momentos_dificeis",
+      "estimular"
+    ],
+    "transicoes": [
+      "momentos_dificeis",
+      "acalmar",
+      "estimular"
+    ],
+    "cuidadores": [
+      "momentos_dificeis",
+      "acalmar",
+      "estimular"
+    ]
+  },
+  "ordem_dentro_bloco": [
+    "situação explicitamente selecionada primeiro",
+    "foco coincidente",
+    "ID estável; sem alegação de melhor eficácia"
+  ],
+  "limite_inicial_por_bloco": 3,
+  "excedentes": "Ver mais opções no mesmo bloco; nunca contar ocultas como liberadas.",
+  "nenhuma_correspondencia": "Ainda precisamos entender qual situação cabe. Escolha uma situação ou reveja o foco.",
+  "texto_abertura": "Seu kit reúne opções para estimular, ajudar a acalmar e lidar com momentos difíceis. Antes de tentar, confirme a situação e os cuidados de cada sugestão.",
+  "rota_perigo": "Mostrar apoio imediato antes do kit. Não sugerir tarefas na crise.",
+  "proibicoes": [
+    "Não transformar foco, idade ou diagnóstico em confirmação de situação ou habilidade.",
+    "Não inserir resposta sim automática para satisfazer contrato existente.",
+    "Não preencher os três blocos com atividade incompatível apenas para parecer kit completo.",
+    "Não usar respostas socioeconômicas para liberar, bloquear ou classificar cuidado.",
+    "Não misturar respostas entre crianças ou tentativas."
+  ],
+  "cards": [
+    {
+      "id": "brincar-escolha-livre",
+      "editorial_id": "brincar-escolha-livre",
+      "titulo": "Cinco minutos seguindo a brincadeira",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Cinco minutos seguindo a brincadeira.",
+      "situacao_id": "kit-brincar-escolha-livre",
+      "pergunta_situacao": "Você quer apoio para esta situação: Cinco minutos seguindo a brincadeira?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "76c9210b915f442a1f8ce77b0245e06323d17916c965b8511e13010760911c9f",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "brincar-em-paralelo",
+      "editorial_id": "brincar-em-paralelo",
+      "titulo": "Brincar ao lado, sem tomar o brinquedo",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Brincar ao lado, sem tomar o brinquedo.",
+      "situacao_id": "kit-brincar-em-paralelo",
+      "pergunta_situacao": "Você quer apoio para esta situação: Brincar ao lado, sem tomar o brinquedo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "0f6d15ec147b45b3ae57fe8aec4f6f03fb8aa8bfea5411b2791cd14b587b7864",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "brincar-desenho-livre",
+      "editorial_id": "brincar-desenho-livre",
+      "titulo": "Um desenho que a criança conduz",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Um desenho que a criança conduz.",
+      "situacao_id": "kit-brincar-desenho-livre",
+      "pergunta_situacao": "Você quer apoio para esta situação: Um desenho que a criança conduz?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "484be34e0ca365601ca06bdaae2fcc8f7592fbadde055965994355ce38c793b9",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "brincar-faz-de-conta",
+      "editorial_id": "brincar-faz-de-conta",
+      "titulo": "O objeto vira brincadeira",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: O objeto vira brincadeira.",
+      "situacao_id": "kit-brincar-faz-de-conta",
+      "pergunta_situacao": "Você quer apoio para esta situação: O objeto vira brincadeira?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "c73f63157d8c55ac31cbff182a19147354e410618d7ce32649e9299bfd7b3b30",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "brincar-convite-verbal",
+      "editorial_id": "brincar-convite-verbal",
+      "titulo": "Uma escolha, sem interrogatório",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Uma escolha, sem interrogatório.",
+      "situacao_id": "kit-brincar-convite-verbal",
+      "pergunta_situacao": "Você quer apoio para esta situação: Uma escolha, sem interrogatório?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "96d82263ddd094bcd07b0c50d45f400013eedbf5735a4e72a6e8e8e232b22943",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "brincar-observar-preferencias",
+      "editorial_id": "brincar-observar-preferencias",
+      "titulo": "Descobrir o que convida à participação",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Descobrir o que convida à participação.",
+      "situacao_id": "kit-brincar-observar-preferencias",
+      "pergunta_situacao": "Você quer apoio para esta situação: Descobrir o que convida à participação?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "18cbd6ef9a5d5d7d9d448fcb2b7166c279aef7b2fa277829c71e174573ecda10",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "transicoes-objeto-familiar",
+      "editorial_id": "transicoes-objeto-familiar",
+      "titulo": "Mostrar o que vem a seguir",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Mostrar o que vem a seguir.",
+      "situacao_id": "kit-transicoes-objeto-familiar",
+      "pergunta_situacao": "Você quer apoio para esta situação: Mostrar o que vem a seguir?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "fb09811ede42cf29fe3febd4c24c42da34e87b8c7721a5c2fa8a4220fccf55d9",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "transicoes-duas-figuras",
+      "editorial_id": "transicoes-duas-figuras",
+      "titulo": "Agora e depois com figuras conhecidas",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Agora e depois com figuras conhecidas.",
+      "situacao_id": "kit-transicoes-duas-figuras",
+      "pergunta_situacao": "Você quer apoio para esta situação: Agora e depois com figuras conhecidas?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "e9b06be3327eb53fe0e76d6acc241a9a3669b404c971161c3e55afd85f247f24",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "transicoes-frase-curta",
+      "editorial_id": "transicoes-frase-curta",
+      "titulo": "Dizer a próxima ação",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Dizer a próxima ação.",
+      "situacao_id": "kit-transicoes-frase-curta",
+      "pergunta_situacao": "Você quer apoio para esta situação: Dizer a próxima ação?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "c5677592acd791614daf3c7cc4c8a6a385dff2f084deee831f00abdcfef204e6",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "transicoes-mudanca-combinada",
+      "editorial_id": "transicoes-mudanca-combinada",
+      "titulo": "Avisar uma mudança de plano",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Avisar uma mudança de plano.",
+      "situacao_id": "kit-transicoes-mudanca-combinada",
+      "pergunta_situacao": "Você quer apoio para esta situação: Avisar uma mudança de plano?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "776ccf322e87bce784f8205f9404173b664366565685c3ea397522ae0b3bd3bf",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "transicoes-menos-estimulos",
+      "editorial_id": "transicoes-menos-estimulos",
+      "titulo": "Preparar uma troca mais confortável",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Preparar uma troca mais confortável.",
+      "situacao_id": "kit-transicoes-menos-estimulos",
+      "pergunta_situacao": "Você quer apoio para esta situação: Preparar uma troca mais confortável?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        108
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "37d6b2994eb0cde8436142375d0c5cba4f554add9359710ba391f0e2d7074dcc",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "transicoes-preparar-saida",
+      "editorial_id": "transicoes-preparar-saida",
+      "titulo": "Deixar os itens da saída juntos",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Deixar os itens da saída juntos.",
+      "situacao_id": "kit-transicoes-preparar-saida",
+      "pergunta_situacao": "Você quer apoio para esta situação: Deixar os itens da saída juntos?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        48,
+        108
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "98101bd41eac5ee0dae02d8b1111fdb94d10553cb605c54006f1985f9f8cb5e6",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "noite-preparar-sequencia",
+      "editorial_id": "noite-preparar-sequencia",
+      "titulo": "Combinar uma sequência curta da noite",
+      "origem": "legado",
+      "bloco": "acalmar",
+      "focos": [
+        "noite"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: noite. Cenário: Combinar uma sequência curta da noite.",
+      "situacao_id": "kit-noite-preparar-sequencia",
+      "pergunta_situacao": "Você quer apoio para esta situação: Combinar uma sequência curta da noite?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "8981e4a6198e603edcc91e80d9fe5323265b1005c8d7b15a21c9240856cc9ae7",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "noite-livro-escolhido",
+      "editorial_id": "noite-livro-escolhido",
+      "titulo": "Escolher um livro para o momento tranquilo",
+      "origem": "legado",
+      "bloco": "acalmar",
+      "focos": [
+        "noite"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: noite. Cenário: Escolher um livro para o momento tranquilo.",
+      "situacao_id": "kit-noite-livro-escolhido",
+      "pergunta_situacao": "Você quer apoio para esta situação: Escolher um livro para o momento tranquilo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "3de1944ae1a10f6a7417c58358a3b221d1b16f23afba3bcfac9f16b308111537",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "noite-organizar-ambiente",
+      "editorial_id": "noite-organizar-ambiente",
+      "titulo": "Observar o conforto antes da noite",
+      "origem": "legado",
+      "bloco": "acalmar",
+      "focos": [
+        "noite"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: noite. Cenário: Observar o conforto antes da noite.",
+      "situacao_id": "kit-noite-organizar-ambiente",
+      "pergunta_situacao": "Você quer apoio para esta situação: Observar o conforto antes da noite?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        108
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "6a10807305dee8bcd255e73657ca0e2c863227193eee22434421814c89a72afe",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "emocoes-acolher-sem-cobrar",
+      "editorial_id": "emocoes-acolher-sem-cobrar",
+      "titulo": "Estar perto sem exigir explicação",
+      "origem": "legado",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Estar perto sem exigir explicação.",
+      "situacao_id": "kit-emocoes-acolher-sem-cobrar",
+      "pergunta_situacao": "Você quer apoio para esta situação: Estar perto sem exigir explicação?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "840b34355571bec52dde94ed7dff3a5e53d2c468a141950ca6b51b9f5e0b6430",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "emocoes-nomear-com-cuidado",
+      "editorial_id": "emocoes-nomear-com-cuidado",
+      "titulo": "Dar nome sem decidir pela criança",
+      "origem": "legado",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Dar nome sem decidir pela criança.",
+      "situacao_id": "kit-emocoes-nomear-com-cuidado",
+      "pergunta_situacao": "Você quer apoio para esta situação: Dar nome sem decidir pela criança?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "1f642b4d238fa169ca13d6c8ab92de006acc9a31fcc662cec2c0bf2750fefeeb",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "emocoes-pausa-do-adulto",
+      "editorial_id": "emocoes-pausa-do-adulto",
+      "titulo": "O adulto organiza a própria resposta",
+      "origem": "legado",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: O adulto organiza a própria resposta.",
+      "situacao_id": "kit-emocoes-pausa-do-adulto",
+      "pergunta_situacao": "Você quer apoio para esta situação: O adulto organiza a própria resposta?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "8bf821ed179ed3a952ec7e8bb3eb301e18a2d91597da622e8ec4ce5e26cc9f5a",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "autonomia-guardar-um-item",
+      "editorial_id": "autonomia-guardar-um-item",
+      "titulo": "Guardar um item com ajuda disponível",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Guardar um item com ajuda disponível.",
+      "situacao_id": "kit-autonomia-guardar-um-item",
+      "pergunta_situacao": "Você quer apoio para esta situação: Guardar um item com ajuda disponível?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "98b79b5db8b09507696234c58849be55c0624a0695ee4dac4d5a3522f663737d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "autonomia-duas-roupas",
+      "editorial_id": "autonomia-duas-roupas",
+      "titulo": "Escolher entre duas roupas",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Escolher entre duas roupas.",
+      "situacao_id": "kit-autonomia-duas-roupas",
+      "pergunta_situacao": "Você quer apoio para esta situação: Escolher entre duas roupas?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "3e142415ff99f5514d6ae262dc1597f64fca128a3547c6ea9362095cbeb8e0e9",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "autonomia-dividir-tarefa",
+      "editorial_id": "autonomia-dividir-tarefa",
+      "titulo": "Uma etapa de cada vez",
+      "origem": "legado",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Uma etapa de cada vez.",
+      "situacao_id": "kit-autonomia-dividir-tarefa",
+      "pergunta_situacao": "Você quer apoio para esta situação: Uma etapa de cada vez?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        48,
+        108
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "bf4572ded9030c4c413ea75e3b7282a2fc0b74e1dc6f24ae682a4a079689fa6e",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "cuidadores-um-combinado",
+      "editorial_id": "cuidadores-um-combinado",
+      "titulo": "Combinar uma resposta entre adultos",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Combinar uma resposta entre adultos.",
+      "situacao_id": "kit-cuidadores-um-combinado",
+      "pergunta_situacao": "Você quer apoio para esta situação: Combinar uma resposta entre adultos?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "b0d56e04a027685b5d800a2f21ed46ae962a984446cdc0941518af7d7b1c2f7d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "cuidadores-anotar-sequencia",
+      "editorial_id": "cuidadores-anotar-sequencia",
+      "titulo": "Uma nota curta para quem cuida",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Uma nota curta para quem cuida.",
+      "situacao_id": "kit-cuidadores-anotar-sequencia",
+      "pergunta_situacao": "Você quer apoio para esta situação: Uma nota curta para quem cuida?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "63574637f6da4f4315b14fba3774d8ab027e9aa338f3a9a7cb55f7ce809d8cf5",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "cuidadores-rever-expectativa",
+      "editorial_id": "cuidadores-rever-expectativa",
+      "titulo": "Rever se o combinado cabe",
+      "origem": "legado",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Rever se o combinado cabe.",
+      "situacao_id": "kit-cuidadores-rever-expectativa",
+      "pergunta_situacao": "Você quer apoio para esta situação: Rever se o combinado cabe?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assess + confirmação de momento",
+      "requisitos_privados_ids": [],
+      "exclusoes_ids": [],
+      "regra_original_sha256": "aae24590d3430c4969d48f9db4d4fe1e949b90d5427bef532738118784d6a1f1",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d01",
+      "editorial_id": "PES-D01",
+      "titulo": "O jogo pode ser salvo?",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: O jogo pode ser salvo?.",
+      "situacao_id": "pes-d01-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O jogo pode ser salvo??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        72,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D01-R01",
+        "PES-D01-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D01-X01"
+      ],
+      "regra_original_sha256": "4d19aaf8f1c2ab2a2f01226b632193ffc0c1fcc0b787d5fcbd118f1296b80a83",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d02",
+      "editorial_id": "PES-D02",
+      "titulo": "O portão do parque está fechado",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: O portão do parque está fechado.",
+      "situacao_id": "pes-d02-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O portão do parque está fechado?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D02-R01",
+        "PES-D02-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D02-X01",
+        "PES-D02-X02"
+      ],
+      "regra_original_sha256": "ca7129e47478233ed433af5ea3a77f9de03edf42912b34f5e83f7f386d1fdb88",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d03",
+      "editorial_id": "PES-D03",
+      "titulo": "Quem recebe na creche hoje?",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Quem recebe na creche hoje?.",
+      "situacao_id": "pes-d03-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quem recebe na creche hoje??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D03-R01",
+        "PES-D03-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D03-X01"
+      ],
+      "regra_original_sha256": "d16a1ba19560f5544eb07c7264ac808ff60128a6e9d818b036cebd2850b2bc91",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d04",
+      "editorial_id": "PES-D04",
+      "titulo": "A entrada mudou de lugar",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: A entrada mudou de lugar.",
+      "situacao_id": "pes-d04-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: A entrada mudou de lugar?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D04-R01",
+        "PES-D04-R02",
+        "PES-D04-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D04-X01"
+      ],
+      "regra_original_sha256": "1b04513efd82e763350afc275fd1c7842bbac106b87d36c7917d9a4df6a7454a",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d05",
+      "editorial_id": "PES-D05",
+      "titulo": "Antes de marcar o corte de cabelo",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Antes de marcar o corte de cabelo.",
+      "situacao_id": "pes-d05-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Antes de marcar o corte de cabelo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D05-R01",
+        "PES-D05-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D05-X01"
+      ],
+      "regra_original_sha256": "9297a48096c7e73161ad03d2f3de6be37f9c6e7eccf285dd05965afd26e34a31",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d06",
+      "editorial_id": "PES-D06",
+      "titulo": "Como o jovem quer participar da consulta?",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Como o jovem quer participar da consulta?.",
+      "situacao_id": "pes-d06-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Como o jovem quer participar da consulta??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        96,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D06-R01",
+        "PES-D06-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D06-X01"
+      ],
+      "regra_original_sha256": "f8243bdb12380ab9c73e1a88e1b0059b8afef6d31927695a0a6ff6da1e32d7f7",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d07",
+      "editorial_id": "PES-D07",
+      "titulo": "O irmão também precisa de um adulto",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: O irmão também precisa de um adulto.",
+      "situacao_id": "pes-d07-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O irmão também precisa de um adulto?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D07-R01",
+        "PES-D07-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D07-X01"
+      ],
+      "regra_original_sha256": "ab3a67d9c818db64732788dbdc59efbfab7f9515c3bd7c9bb3e48c0e37cb981e",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d08",
+      "editorial_id": "PES-D08",
+      "titulo": "Quem estará lá enquanto estou longe?",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Quem estará lá enquanto estou longe?.",
+      "situacao_id": "pes-d08-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quem estará lá enquanto estou longe??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D08-R01",
+        "PES-D08-R02",
+        "PES-D08-R03",
+        "PES-D08-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D08-X01"
+      ],
+      "regra_original_sha256": "73a255e3713457077483e037473960285fdf3541dc63f7f2a60948f3ce104258",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d09",
+      "editorial_id": "PES-D09",
+      "titulo": "As perguntas estão se acumulando",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: As perguntas estão se acumulando.",
+      "situacao_id": "pes-d09-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: As perguntas estão se acumulando?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D09-R01",
+        "PES-D09-RC"
+      ],
+      "exclusoes_ids": [
+        "PES-D09-X01",
+        "PES-D09-X02"
+      ],
+      "regra_original_sha256": "fba0a631c7d3da1dcd17fd793d64432d0edc8618a7c36affc241ffdc20e2b88a",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d10",
+      "editorial_id": "PES-D10",
+      "titulo": "Gente parou para olhar",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Gente parou para olhar.",
+      "situacao_id": "pes-d10-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Gente parou para olhar?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D10-R01",
+        "PES-D10-R02",
+        "PES-D10-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D10-X01",
+        "PES-D10-X02"
+      ],
+      "regra_original_sha256": "5929c296478dc021a6f87638f6802e0904b9ab36f58c3f029e2687d87b02a0ac",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d11",
+      "editorial_id": "PES-D11",
+      "titulo": "O alto-falante começou de repente",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: O alto-falante começou de repente.",
+      "situacao_id": "pes-d11-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O alto-falante começou de repente?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D11-R01",
+        "PES-D11-R02",
+        "PES-D11-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D11-X01",
+        "PES-D11-X02"
+      ],
+      "regra_original_sha256": "0ff895d33a65ab4f9fab69d98ec368f95fb3a0089cd9ec23484a725dfeb006dc",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d14",
+      "editorial_id": "PES-D14",
+      "titulo": "Disputa pelo mesmo brinquedo",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Disputa pelo mesmo brinquedo.",
+      "situacao_id": "pes-d14-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Disputa pelo mesmo brinquedo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        95
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D14-R01",
+        "PES-D14-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D14-X01",
+        "PES-D14-X02"
+      ],
+      "regra_original_sha256": "678b62675f223e21df30c0cad736c94bc1bbc68bb1e565ae46f29f1761d0cb9b",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d15",
+      "editorial_id": "PES-D15",
+      "titulo": "O adulto percebe que vai gritar",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: O adulto percebe que vai gritar.",
+      "situacao_id": "pes-d15-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O adulto percebe que vai gritar?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D15-R01"
+      ],
+      "exclusoes_ids": [
+        "PES-D15-X01",
+        "PES-D15-X02"
+      ],
+      "regra_original_sha256": "17835b68485c98abeb21fa44f962644abcbbc39fbd8340d81ec92d07a48e0354",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d17",
+      "editorial_id": "PES-D17",
+      "titulo": "Não sabemos quando o ônibus vem",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Não sabemos quando o ônibus vem.",
+      "situacao_id": "pes-d17-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Não sabemos quando o ônibus vem?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        48,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D17-R01",
+        "PES-D17-R02",
+        "PES-D17-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D17-X01",
+        "PES-D17-X02"
+      ],
+      "regra_original_sha256": "fb90d777f29c1b84c185d5924b14c616f7ffaa0c413bdaef92d1eed952ee590a",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d18",
+      "editorial_id": "PES-D18",
+      "titulo": "Um erro na lição virou impasse",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Um erro na lição virou impasse.",
+      "situacao_id": "pes-d18-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Um erro na lição virou impasse?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        72,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D18-R01",
+        "PES-D18-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D18-X01",
+        "PES-D18-X02"
+      ],
+      "regra_original_sha256": "dd7d62a49bc6db5c7d9862a9abaa82346e23392aeb846cba4bc39eb1d6ebfd2d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d19",
+      "editorial_id": "PES-D19",
+      "titulo": "Várias visitas querem um abraço",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Várias visitas querem um abraço.",
+      "situacao_id": "pes-d19-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Várias visitas querem um abraço?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D19-R01",
+        "PES-D19-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D19-X01",
+        "PES-D19-X02"
+      ],
+      "regra_original_sha256": "a2e8b2287ce35d681860f1d343ad7d176ff8dd95d3b3af2c6ea26b58b39a317c",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d20",
+      "editorial_id": "PES-D20",
+      "titulo": "O passeio precisa acabar mais cedo",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: O passeio precisa acabar mais cedo.",
+      "situacao_id": "pes-d20-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O passeio precisa acabar mais cedo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D20-R01",
+        "PES-D20-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D20-X01",
+        "PES-D20-X02"
+      ],
+      "regra_original_sha256": "c50f89b094482d0a8738762f28ebc4c080605b0ba9b2b893adb57708a9ad1ea8",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d21",
+      "editorial_id": "PES-D21",
+      "titulo": "Antes de a turma mudar de sala",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Antes de a turma mudar de sala.",
+      "situacao_id": "pes-d21-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Antes de a turma mudar de sala?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D21-R01",
+        "PES-D21-R02",
+        "PES-D21-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D21-X01"
+      ],
+      "regra_original_sha256": "feff51ba42d81e518d9bde5fa19690e2f0f7a4d22e1826a37ecd8b1ba3a09ac0",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d22",
+      "editorial_id": "PES-D22",
+      "titulo": "Na apresentação, quem pode ajudar?",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Na apresentação, quem pode ajudar?.",
+      "situacao_id": "pes-d22-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Na apresentação, quem pode ajudar??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        96,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D22-R01",
+        "PES-D22-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D22-X01"
+      ],
+      "regra_original_sha256": "b34cbd1f9d420be4bf854666c0cd56bea389bf29705374b855679453079bed84",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d23",
+      "editorial_id": "PES-D23",
+      "titulo": "O pedido que se perdeu na troca de cuidador",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: O pedido que se perdeu na troca de cuidador.",
+      "situacao_id": "pes-d23-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O pedido que se perdeu na troca de cuidador?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D23-R01",
+        "PES-D23-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D23-X01"
+      ],
+      "regra_original_sha256": "b8251746383ed9748ab9f2ed8c4d5e71fa39c28582cc981581362302b8f68e2b",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d24",
+      "editorial_id": "PES-D24",
+      "titulo": "Depois de ouvir gritos entre irmãos",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Depois de ouvir gritos entre irmãos.",
+      "situacao_id": "pes-d24-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Depois de ouvir gritos entre irmãos?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D24-R01",
+        "PES-D24-R02",
+        "PES-D24-R03"
+      ],
+      "exclusoes_ids": [
+        "PES-D24-X01"
+      ],
+      "regra_original_sha256": "614ca39502dcb522484e9d7a05410954f6bc728367899ff890c75c633700d395",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d25",
+      "editorial_id": "PES-D25",
+      "titulo": "Quando o pesadelo já passou",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "noite"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: noite. Cenário: Quando o pesadelo já passou.",
+      "situacao_id": "pes-d25-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quando o pesadelo já passou?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        48,
+        143
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D25-R01",
+        "PES-D25-R02",
+        "PES-D25-R03"
+      ],
+      "exclusoes_ids": [
+        "PES-D25-X01"
+      ],
+      "regra_original_sha256": "1e7699e306dc74b00c261f92c9b4a006990dc66bc6ebc34c1cd5e28fc1683118",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d26",
+      "editorial_id": "PES-D26",
+      "titulo": "Poder escolher o que contar à turma",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Poder escolher o que contar à turma.",
+      "situacao_id": "pes-d26-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Poder escolher o que contar à turma?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        84,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D26-R01"
+      ],
+      "exclusoes_ids": [
+        "PES-D26-X01"
+      ],
+      "regra_original_sha256": "edc8ce3cfc437d239133dc8722981068b7e531103346886193ad49dcdd1257a4",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d27",
+      "editorial_id": "PES-D27",
+      "titulo": "O que fazer com a coleira que ficou?",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: O que fazer com a coleira que ficou?.",
+      "situacao_id": "pes-d27-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: O que fazer com a coleira que ficou??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D27-R01",
+        "PES-D27-R02",
+        "PES-D27-R03"
+      ],
+      "exclusoes_ids": [
+        "PES-D27-X01"
+      ],
+      "regra_original_sha256": "31cbbea55b3602a0dc5cc1b0e8d59ae64b2cea0ff36b6ac6ed7a2e67366313cb",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d28",
+      "editorial_id": "PES-D28",
+      "titulo": "Que detalhe contar na consulta?",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Que detalhe contar na consulta?.",
+      "situacao_id": "pes-d28-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Que detalhe contar na consulta??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D28-R01",
+        "PES-D28-R02",
+        "PES-D28-R03",
+        "PES-D28-RC",
+        "PES-D28-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D28-X01"
+      ],
+      "regra_original_sha256": "e2b1dbb1482b5a397612ead1d0db31bf291dfd3794dc1aeed6c9d6227c732c86",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d29",
+      "editorial_id": "PES-D29",
+      "titulo": "Quando o horário anunciado falhou",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Quando o horário anunciado falhou.",
+      "situacao_id": "pes-d29-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quando o horário anunciado falhou?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D29-R01",
+        "PES-D29-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-D29-X01"
+      ],
+      "regra_original_sha256": "81f75b3b0a8595a4498e72cd5c9c86b2db974b1ab18b7c7c13d0c0b8ba7f58ac",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d30",
+      "editorial_id": "PES-D30",
+      "titulo": "Dois convites, pouca energia",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Dois convites, pouca energia.",
+      "situacao_id": "pes-d30-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Dois convites, pouca energia?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        96,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D30-R01",
+        "PES-D30-R02",
+        "PES-D30-R03",
+        "PES-D30-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D30-X01"
+      ],
+      "regra_original_sha256": "18071048fadc7f5657daf8f7f1aa525ec8fa750f026f66cd341b571f893fb074",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-d32",
+      "editorial_id": "PES-D32",
+      "titulo": "Algumas partes do plano não ajudaram",
+      "origem": "expansao",
+      "bloco": "momentos_dificeis",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Algumas partes do plano não ajudaram.",
+      "situacao_id": "pes-d32-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Algumas partes do plano não ajudaram?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-D32-R01",
+        "PES-D32-R02",
+        "PES-D32-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-D32-X01"
+      ],
+      "regra_original_sha256": "6684d5b15be3df71121d349534f56a2bc57162388b18a5f9c065e9da2d2c8390",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e01",
+      "editorial_id": "PES-E01",
+      "titulo": "Espelho de gestos",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Espelho de gestos.",
+      "situacao_id": "pes-e01-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Espelho de gestos?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        36
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E01-R01",
+        "PES-E01-RC",
+        "PES-E01-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E01-X01"
+      ],
+      "regra_original_sha256": "887aca43e21e3f9cad212d9fc008a73516796da1b1816c867c5acb0acc9e1e2c",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e02",
+      "editorial_id": "PES-E02",
+      "titulo": "Cadê o par da meia?",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Cadê o par da meia?.",
+      "situacao_id": "pes-e02-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Cadê o par da meia??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        36
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E02-R01",
+        "PES-E02-R02",
+        "PES-E02-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E02-X01"
+      ],
+      "regra_original_sha256": "cf8a2e4b3969b1e0b866b5aac5e8a61c59ffaa55cadbff40bb79ed7ec3dd7f55",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e03",
+      "editorial_id": "PES-E03",
+      "titulo": "Uma lembrança em duas cenas",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Uma lembrança em duas cenas.",
+      "situacao_id": "pes-e03-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Uma lembrança em duas cenas?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        36
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E03-R01",
+        "PES-E03-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E03-X01"
+      ],
+      "regra_original_sha256": "4eb3d82b5b4bfbac2cdbc9d0b9a75f0c5c52835fe9dbdeeca2aab6f29178665c",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e04",
+      "editorial_id": "PES-E04",
+      "titulo": "Quem viu primeiro?",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Quem viu primeiro?.",
+      "situacao_id": "pes-e04-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quem viu primeiro??",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        35
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E04-R01",
+        "PES-E04-R02",
+        "PES-E04-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E04-X01"
+      ],
+      "regra_original_sha256": "957b3a72bea908678d9e95cb01402c6b1cedac69be35b8c8da2ce60fd94f16b8",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e05",
+      "editorial_id": "PES-E05",
+      "titulo": "Vale dizer “chega”",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Vale dizer “chega”.",
+      "situacao_id": "pes-e05-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Vale dizer “chega”?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        35
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E05-R01",
+        "PES-E05-R02",
+        "PES-E05-RC",
+        "PES-E05-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E05-X01"
+      ],
+      "regra_original_sha256": "54c10406250809791f898515f0a42daea87ffce127eafd0cb83e7eb169e9c55f",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e06",
+      "editorial_id": "PES-E06",
+      "titulo": "Agência de correio de faz de conta",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Agência de correio de faz de conta.",
+      "situacao_id": "pes-e06-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Agência de correio de faz de conta?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        71
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E06-R01",
+        "PES-E06-R02",
+        "PES-E06-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E06-X01"
+      ],
+      "regra_original_sha256": "ae2c3b73ac3629567f75389bae3928d4a516af499f85902bfca9f2cab507b3c4",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e07",
+      "editorial_id": "PES-E07",
+      "titulo": "A história que ganhou um desvio",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: A história que ganhou um desvio.",
+      "situacao_id": "pes-e07-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: A história que ganhou um desvio?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        71
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E07-R01",
+        "PES-E07-R02",
+        "PES-E07-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E07-X01"
+      ],
+      "regra_original_sha256": "cbbe0cb5bce5cb97cb4a0d8a41d9854cdd3aef5c21e0842b9bf9683982bf1565",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e08",
+      "editorial_id": "PES-E08",
+      "titulo": "Reunir figuras por duas regras",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Reunir figuras por duas regras.",
+      "situacao_id": "pes-e08-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Reunir figuras por duas regras?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        71
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E08-R01",
+        "PES-E08-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E08-X01"
+      ],
+      "regra_original_sha256": "57e39be14c2287e6e930e167d37d47f1de8475f8d13e4b33502970dc2a0968a0",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e09",
+      "editorial_id": "PES-E09",
+      "titulo": "Recompor uma paisagem",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Recompor uma paisagem.",
+      "situacao_id": "pes-e09-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Recompor uma paisagem?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        71
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E09-R01",
+        "PES-E09-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E09-X01"
+      ],
+      "regra_original_sha256": "3cb26b587c7d74eb0d0126d6ef5f681f00d3119b4272127b53bdb619e10fcd15",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e10",
+      "editorial_id": "PES-E10",
+      "titulo": "Memória em dupla, pares da mesma equipe",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Memória em dupla, pares da mesma equipe.",
+      "situacao_id": "pes-e10-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Memória em dupla, pares da mesma equipe?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        95
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E10-R01",
+        "PES-E10-R02",
+        "PES-E10-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E10-X01"
+      ],
+      "regra_original_sha256": "dd536de486741b2c51f24b65d76ba37fec55e1859f26e1f09ae849771a712675",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e11",
+      "editorial_id": "PES-E11",
+      "titulo": "Regar a planta que precisa de água",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Regar a planta que precisa de água.",
+      "situacao_id": "pes-e11-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Regar a planta que precisa de água?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        95
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E11-R01",
+        "PES-E11-R02",
+        "PES-E11-R03",
+        "PES-E11-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E11-X01"
+      ],
+      "regra_original_sha256": "0b31cff2916f77e7854aefe84b38aaa9b51a5fbe218de7c547483317ba070d51",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e12",
+      "editorial_id": "PES-E12",
+      "titulo": "Adivinhe pela pista que falta",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Adivinhe pela pista que falta.",
+      "situacao_id": "pes-e12-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Adivinhe pela pista que falta?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        95
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E12-R01",
+        "PES-E12-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E12-X01"
+      ],
+      "regra_original_sha256": "f1360951c36ff9ec8ea4ee985bf390beb7b6343083c4c05aa6c3eb96b226915a",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e13",
+      "editorial_id": "PES-E13",
+      "titulo": "Guiar o lápis pelo labirinto",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Guiar o lápis pelo labirinto.",
+      "situacao_id": "pes-e13-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Guiar o lápis pelo labirinto?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        95
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E13-R01",
+        "PES-E13-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E13-X01"
+      ],
+      "regra_original_sha256": "8768c141d04aafec092503415c5ba4fbe7849d30fd8e41aa1afe23a258fd099f",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e14",
+      "editorial_id": "PES-E14",
+      "titulo": "Arrumar a prateleira para achar um livro",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Arrumar a prateleira para achar um livro.",
+      "situacao_id": "pes-e14-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Arrumar a prateleira para achar um livro?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        119
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E14-R01",
+        "PES-E14-R02",
+        "PES-E14-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E14-X01"
+      ],
+      "regra_original_sha256": "359464f6cee13c917cc81d16fe2195a3b2f2ef62cecc444b269993d4aad4b5aa",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e15",
+      "editorial_id": "PES-E15",
+      "titulo": "Pedir o tipo de ajuda que serve",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Pedir o tipo de ajuda que serve.",
+      "situacao_id": "pes-e15-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Pedir o tipo de ajuda que serve?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        155
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E15-R01",
+        "PES-E15-R02",
+        "PES-E15-RC",
+        "PES-E15-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E15-X01"
+      ],
+      "regra_original_sha256": "3e765e2544c49bb433f08e4ffb8c9d8a8104e8d7d383e5f251cb341feba6205b",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e16",
+      "editorial_id": "PES-E16",
+      "titulo": "Quando entendi outra coisa",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Quando entendi outra coisa.",
+      "situacao_id": "pes-e16-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quando entendi outra coisa?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        72,
+        155
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E16-R01",
+        "PES-E16-R02",
+        "PES-E16-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E16-X01"
+      ],
+      "regra_original_sha256": "827b0b48e751f7a763189c584fe3de013e6a8a47a7f74cf6ec230dd8c691771b",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e17",
+      "editorial_id": "PES-E17",
+      "titulo": "Resgatar o mapa da ilha",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Resgatar o mapa da ilha.",
+      "situacao_id": "pes-e17-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Resgatar o mapa da ilha?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        84,
+        155
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E17-R01",
+        "PES-E17-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E17-X01"
+      ],
+      "regra_original_sha256": "2efb1e33d9eb3059b9ae20cc3b7387ee2159e69f103898b5ad5a11c90f3e80be",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e18",
+      "editorial_id": "PES-E18",
+      "titulo": "Inventar uma resposta musical",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Inventar uma resposta musical.",
+      "situacao_id": "pes-e18-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Inventar uma resposta musical?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        84,
+        155
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E18-R01",
+        "PES-E18-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E18-X01"
+      ],
+      "regra_original_sha256": "2f6b735c59dc8f3f7f409e6c3433aa86baa9fd0c2302ea72f637b8ca7ef4fbf9",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e19",
+      "editorial_id": "PES-E19",
+      "titulo": "Ler a página com a opinião da criança",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Ler a página com a opinião da criança.",
+      "situacao_id": "pes-e19-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Ler a página com a opinião da criança?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        72,
+        155
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E19-R01",
+        "PES-E19-R02",
+        "PES-E19-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E19-X01"
+      ],
+      "regra_original_sha256": "d772b5aaf40ce3376e98d042fd2875620c3e65a16c3ad40ae9a248da2408604d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e20",
+      "editorial_id": "PES-E20",
+      "titulo": "Guardar a roupa onde dá para pegar",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Guardar a roupa onde dá para pegar.",
+      "situacao_id": "pes-e20-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Guardar a roupa onde dá para pegar?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        96,
+        131
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E20-R01",
+        "PES-E20-R02",
+        "PES-E20-RC",
+        "PES-E20-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E20-X01"
+      ],
+      "regra_original_sha256": "be552dc497e2f2886cc38aa6e4ce84dde32c63328e1aaaa09f4a5b36e53be9aa",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e21",
+      "editorial_id": "PES-E21",
+      "titulo": "A travessia com três folhas",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: A travessia com três folhas.",
+      "situacao_id": "pes-e21-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: A travessia com três folhas?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        84,
+        155
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E21-R01",
+        "PES-E21-R02",
+        "PES-E21-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E21-X01"
+      ],
+      "regra_original_sha256": "4514d5e0212efb58850cad445697d0478077995cd9699a52493727311ccac743",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e22",
+      "editorial_id": "PES-E22",
+      "titulo": "Dobrar as toalhas para caber na cesta",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Dobrar as toalhas para caber na cesta.",
+      "situacao_id": "pes-e22-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Dobrar as toalhas para caber na cesta?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        132,
+        155
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E22-R01",
+        "PES-E22-R02",
+        "PES-E22-R03",
+        "PES-E22-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E22-X01"
+      ],
+      "regra_original_sha256": "eb6a0f859dcf67aeb9282c3b0899913d71176795be1acefa1f417676b250e54c",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e23",
+      "editorial_id": "PES-E23",
+      "titulo": "Uma pergunta para a visita à biblioteca",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Uma pergunta para a visita à biblioteca.",
+      "situacao_id": "pes-e23-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Uma pergunta para a visita à biblioteca?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        84,
+        155
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E23-R01",
+        "PES-E23-R02",
+        "PES-E23-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E23-X01"
+      ],
+      "regra_original_sha256": "7c18a3cafce8056f57f7e3d658372c4f10a5eb7aff47cbe8377bbaa70f806d8d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e24",
+      "editorial_id": "PES-E24",
+      "titulo": "Escolher o que entra no recado",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Escolher o que entra no recado.",
+      "situacao_id": "pes-e24-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Escolher o que entra no recado?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        84,
+        155
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E24-R01",
+        "PES-E24-R02",
+        "PES-E24-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E24-X01"
+      ],
+      "regra_original_sha256": "c6eb5314595e1b050f9d025680faf42cbde4261844041ccbc0cba1a1a04b9553",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e25",
+      "editorial_id": "PES-E25",
+      "titulo": "Planejar um minizine de um tema seu",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Planejar um minizine de um tema seu.",
+      "situacao_id": "pes-e25-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Planejar um minizine de um tema seu?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E25-R01",
+        "PES-E25-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E25-X01"
+      ],
+      "regra_original_sha256": "233d648e237d45650533308e7911d9d91efe9de134909612dd49cebee4328c36",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e26",
+      "editorial_id": "PES-E26",
+      "titulo": "Combinar uma janela sem interrupções",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Combinar uma janela sem interrupções.",
+      "situacao_id": "pes-e26-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Combinar uma janela sem interrupções?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E26-R01",
+        "PES-E26-R02",
+        "PES-E26-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E26-X01"
+      ],
+      "regra_original_sha256": "64b54c5f695a098eeb7028b24311ba644aa631e2d566ddb86b428be9feb5e164",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e27",
+      "editorial_id": "PES-E27",
+      "titulo": "Escolher uma função no encontro do grupo",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Escolher uma função no encontro do grupo.",
+      "situacao_id": "pes-e27-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Escolher uma função no encontro do grupo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E27-R01",
+        "PES-E27-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E27-X01"
+      ],
+      "regra_original_sha256": "97d4858d7b04bb9149359a148c556300a78e0bb2847ceb4c126275eefdb705e2",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e28",
+      "editorial_id": "PES-E28",
+      "titulo": "Uma cena com direção nos bastidores",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Uma cena com direção nos bastidores.",
+      "situacao_id": "pes-e28-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Uma cena com direção nos bastidores?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E28-R01",
+        "PES-E28-R02",
+        "PES-E28-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E28-X01"
+      ],
+      "regra_original_sha256": "429f40b0d4af3ad60e1c0260e456e114f9b87df3802b994c3a2dd92f57b6b05d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e29",
+      "editorial_id": "PES-E29",
+      "titulo": "Marcar onde retomar amanhã",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Marcar onde retomar amanhã.",
+      "situacao_id": "pes-e29-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Marcar onde retomar amanhã?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E29-R01",
+        "PES-E29-R02",
+        "PES-E29-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E29-X01"
+      ],
+      "regra_original_sha256": "614929be8fd2a9964cfa1bf3afcb26b469d43adae23c899630906790f4e3bd3e",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e30",
+      "editorial_id": "PES-E30",
+      "titulo": "Rever uma regra do jogo com quem ficou de fora",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "brincar"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: brincar. Cenário: Rever uma regra do jogo com quem ficou de fora.",
+      "situacao_id": "pes-e30-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Rever uma regra do jogo com quem ficou de fora?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E30-R01",
+        "PES-E30-R02",
+        "PES-E30-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E30-X01"
+      ],
+      "regra_original_sha256": "bcce82f747d3626f7192412d4ebc6f97c19ac9934ae4eb678693533bb4fc45a8",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e31",
+      "editorial_id": "PES-E31",
+      "titulo": "Transformar uma dúvida numa pergunta de estudo",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Transformar uma dúvida numa pergunta de estudo.",
+      "situacao_id": "pes-e31-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Transformar uma dúvida numa pergunta de estudo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E31-R01",
+        "PES-E31-R02",
+        "PES-E31-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E31-X01"
+      ],
+      "regra_original_sha256": "1bfc07f218726ca93cd3d31730e4bcd3ce5bc1272b76413a3cf6dd55159ff276",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-e32",
+      "editorial_id": "PES-E32",
+      "titulo": "Decidir juntos sem votar em voz alta",
+      "origem": "expansao",
+      "bloco": "estimular",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Decidir juntos sem votar em voz alta.",
+      "situacao_id": "pes-e32-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Decidir juntos sem votar em voz alta?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        156,
+        179
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-E32-R01",
+        "PES-E32-R02",
+        "PES-E32-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-E32-X01"
+      ],
+      "regra_original_sha256": "c7157d2eebd558fc0b8ce1012f111967b67b94a8ff35d7b67ead45d696986260",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a01",
+      "editorial_id": "PES-A01",
+      "titulo": "Quando o corpo pede uma parada",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Quando o corpo pede uma parada.",
+      "situacao_id": "pes-a01-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quando o corpo pede uma parada?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        35
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A01-R01",
+        "PES-A01-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-A01-X01"
+      ],
+      "regra_original_sha256": "be204fe794099eb88da634d2f037cee1e95573c95d597fc84809da3f08063339",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a02",
+      "editorial_id": "PES-A02",
+      "titulo": "Descansar acordada na hora da antiga soneca",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "noite"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: noite. Cenário: Descansar acordada na hora da antiga soneca.",
+      "situacao_id": "pes-a02-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Descansar acordada na hora da antiga soneca?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        35
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A02-R01",
+        "PES-A02-R02",
+        "PES-A02-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A02-X01"
+      ],
+      "regra_original_sha256": "5bbc9698f6f940748a1496ab655fc7298ad845a427307bcf2c6272b34fd31d9d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a03",
+      "editorial_id": "PES-A03",
+      "titulo": "Levar um objeto querido para uma visita",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Levar um objeto querido para uma visita.",
+      "situacao_id": "pes-a03-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Levar um objeto querido para uma visita?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        59
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A03-R01",
+        "PES-A03-R02",
+        "PES-A03-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A03-X01"
+      ],
+      "regra_original_sha256": "8ad3bb9e256d33e32c891a6f6948dcd9d583ecdd59083d4fd4a049f7d30d9bb0",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a04",
+      "editorial_id": "PES-A04",
+      "titulo": "Descobrir a quem recorrer na escola nova",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Descobrir a quem recorrer na escola nova.",
+      "situacao_id": "pes-a04-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Descobrir a quem recorrer na escola nova?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        48,
+        71
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A04-R01",
+        "PES-A04-R02",
+        "PES-A04-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A04-X01"
+      ],
+      "regra_original_sha256": "8fad587aabef36ac3879b3f8af264a7a1076ad53b2850ca3eb7b29a29528b50d",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a05",
+      "editorial_id": "PES-A05",
+      "titulo": "Depois da festa, deixar o resto para depois",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Depois da festa, deixar o resto para depois.",
+      "situacao_id": "pes-a05-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Depois da festa, deixar o resto para depois?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        71
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A05-R01"
+      ],
+      "exclusoes_ids": [
+        "PES-A05-X01"
+      ],
+      "regra_original_sha256": "8ae71b74b62be8743747a61320fe87b1504c1cfcbae09b09e6f275844f9a7a2b",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a06",
+      "editorial_id": "PES-A06",
+      "titulo": "Montar um lugar de pausa que fica aberto",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Montar um lugar de pausa que fica aberto.",
+      "situacao_id": "pes-a06-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Montar um lugar de pausa que fica aberto?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        95
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A06-R01",
+        "PES-A06-R02",
+        "PES-A06-R03",
+        "PES-A06-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A06-X01"
+      ],
+      "regra_original_sha256": "1a8d29fd056f2041ae4bf4d87d780b4177cb0607ad351d488fc088e57daebbe1",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a07",
+      "editorial_id": "PES-A07",
+      "titulo": "Quando a roupa incomoda",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Quando a roupa incomoda.",
+      "situacao_id": "pes-a07-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quando a roupa incomoda?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A07-R01",
+        "PES-A07-R02",
+        "PES-A07-PART",
+        "PES-A07-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-A07-X01"
+      ],
+      "regra_original_sha256": "f30de50833b3f153cd9fe773f820d90236644d6b808a5f178326386738bcbe6b",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a08",
+      "editorial_id": "PES-A08",
+      "titulo": "Dar espaço ao movimento que faz bem",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Dar espaço ao movimento que faz bem.",
+      "situacao_id": "pes-a08-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Dar espaço ao movimento que faz bem?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A08-R01",
+        "PES-A08-R02",
+        "PES-A08-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-A08-X01"
+      ],
+      "regra_original_sha256": "51c1d298ce417a893601f5d5514fcf9a8fd331d94ad882c7d162beb69505e405",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a09",
+      "editorial_id": "PES-A09",
+      "titulo": "Receber na saída da escola sem fazer entrevista",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Receber na saída da escola sem fazer entrevista.",
+      "situacao_id": "pes-a09-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Receber na saída da escola sem fazer entrevista?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        107
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A09-R01",
+        "PES-A09-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-A09-X01"
+      ],
+      "regra_original_sha256": "e909fd5582d5c328be6547445beb49616f82b0e9afb4e9c02dd98e1e21dc1fe6",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a10",
+      "editorial_id": "PES-A10",
+      "titulo": "Quando duas pessoas querem usar a sala de jeitos diferentes",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Quando duas pessoas querem usar a sala de jeitos diferentes.",
+      "situacao_id": "pes-a10-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quando duas pessoas querem usar a sala de jeitos diferentes?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        48,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A10-R01",
+        "PES-A10-R02",
+        "PES-A10-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-A10-X01"
+      ],
+      "regra_original_sha256": "87cf09e9ddeda3b3b1844081bd4f94f4f1d9bd0f7c8b254ba631fd555f3c0e0a",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a11",
+      "editorial_id": "PES-A11",
+      "titulo": "Dar uma folga aos avisos de um grupo",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Dar uma folga aos avisos de um grupo.",
+      "situacao_id": "pes-a11-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Dar uma folga aos avisos de um grupo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        132,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A11-R01",
+        "PES-A11-R02",
+        "PES-A11-R03",
+        "PES-A11-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A11-X01"
+      ],
+      "regra_original_sha256": "3636ffee5ff745e3128b67a1b51658b06e5507ed6acf88c4c75b960672abfcf1",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a12",
+      "editorial_id": "PES-A12",
+      "titulo": "Combinar um gesto que quer dizer “preciso sair um pouco”",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Combinar um gesto que quer dizer “preciso sair um pouco”.",
+      "situacao_id": "pes-a12-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Combinar um gesto que quer dizer “preciso sair um pouco”?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        48,
+        179
+      ],
+      "momentos_originais": [
+        "treino"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A12-R01",
+        "PES-A12-R02",
+        "PES-A12-RC",
+        "PES-A12-PART",
+        "PES-A12-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-A12-X01"
+      ],
+      "regra_original_sha256": "3ea67b20832f6e6e84a64e0d5671a8abad2f93d520fe5cd73b44b248fba2b172",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a13",
+      "editorial_id": "PES-A13",
+      "titulo": "Combinar com a clínica onde aguardar a consulta",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "transicoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: transicoes. Cenário: Combinar com a clínica onde aguardar a consulta.",
+      "situacao_id": "pes-a13-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Combinar com a clínica onde aguardar a consulta?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A13-R01",
+        "PES-A13-R02",
+        "PES-A13-PART",
+        "PES-A13-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-A13-X01"
+      ],
+      "regra_original_sha256": "a3b9fe0780cc0981e104988d0b0ff26cf6a86ab3fe1a9722b58895179c8f3f4e",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a14",
+      "editorial_id": "PES-A14",
+      "titulo": "Reservar um pedaço da semana sem compromisso",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Reservar um pedaço da semana sem compromisso.",
+      "situacao_id": "pes-a14-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Reservar um pedaço da semana sem compromisso?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        72,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A14-R01",
+        "PES-A14-R02",
+        "PES-A14-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A14-X01"
+      ],
+      "regra_original_sha256": "ed2b054339780edb4aca91a63c5d83a734509e69ac9ff1d377a80f863a9231be",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a15",
+      "editorial_id": "PES-A15",
+      "titulo": "Tomar ar sem precisar fazer um passeio inteiro",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Tomar ar sem precisar fazer um passeio inteiro.",
+      "situacao_id": "pes-a15-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Tomar ar sem precisar fazer um passeio inteiro?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A15-R01",
+        "PES-A15-R02",
+        "PES-A15-R03",
+        "PES-A15-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A15-X01"
+      ],
+      "regra_original_sha256": "32e9d2b1fada7b9eab26c3334557049c8461be50282d49dbdbc2cf92d5e6e3b0",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a16",
+      "editorial_id": "PES-A16",
+      "titulo": "Tirar a notícia difícil do modo repetição",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Tirar a notícia difícil do modo repetição.",
+      "situacao_id": "pes-a16-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Tirar a notícia difícil do modo repetição?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        60,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A16-R01",
+        "PES-A16-R02",
+        "PES-A16-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A16-X01"
+      ],
+      "regra_original_sha256": "39505ac0247ddd3ea12c586a832551fef8d68967914e2bda47efc194ee597869",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a17",
+      "editorial_id": "PES-A17",
+      "titulo": "Depois do choro, pedir que a roda se desfaça",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Depois do choro, pedir que a roda se desfaça.",
+      "situacao_id": "pes-a17-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Depois do choro, pedir que a roda se desfaça?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A17-R01",
+        "PES-A17-R02",
+        "PES-A17-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-A17-X01"
+      ],
+      "regra_original_sha256": "b224e06b5ea037f335f5a78314958440db6004a8d987842b52739e3229d02bad",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a18",
+      "editorial_id": "PES-A18",
+      "titulo": "Devolver o hobby ao tempo livre",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Devolver o hobby ao tempo livre.",
+      "situacao_id": "pes-a18-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Devolver o hobby ao tempo livre?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        72,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A18-R01",
+        "PES-A18-R02",
+        "PES-A18-PART",
+        "PES-A18-POP"
+      ],
+      "exclusoes_ids": [
+        "PES-A18-X01"
+      ],
+      "regra_original_sha256": "f56203c6a3588b517b1638a2e046f63e06db0f9046365d176992c7075defa9ab",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a19",
+      "editorial_id": "PES-A19",
+      "titulo": "Dar tempo para falar com um amigo",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Dar tempo para falar com um amigo.",
+      "situacao_id": "pes-a19-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Dar tempo para falar com um amigo?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        132,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A19-R01",
+        "PES-A19-R02",
+        "PES-A19-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A19-X01"
+      ],
+      "regra_original_sha256": "45ab7e830f6e08e5fd0b6426bc0d4238416c6cf9c69947d462bf737365dd64ee",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a20",
+      "editorial_id": "PES-A20",
+      "titulo": "Privacidade com um reencontro combinado",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "autonomia"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: autonomia. Cenário: Privacidade com um reencontro combinado.",
+      "situacao_id": "pes-a20-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Privacidade com um reencontro combinado?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        132,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A20-R01",
+        "PES-A20-R02",
+        "PES-A20-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A20-X01"
+      ],
+      "regra_original_sha256": "cd9fcb31a4879d0bef7a464dac54b279ec13568e725fc509044df484f59b5a29",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a21",
+      "editorial_id": "PES-A21",
+      "titulo": "Perguntar se é hora de ouvir ou pensar em soluções",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "emocoes"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: emocoes. Cenário: Perguntar se é hora de ouvir ou pensar em soluções.",
+      "situacao_id": "pes-a21-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Perguntar se é hora de ouvir ou pensar em soluções?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        132,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A21-R01",
+        "PES-A21-R02",
+        "PES-A21-PART"
+      ],
+      "exclusoes_ids": [
+        "PES-A21-X01"
+      ],
+      "regra_original_sha256": "b85e8a0eb6ea9f312ad511da42bc755242ef0ac09839b50ba36f0aadf850e5bb",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a22",
+      "editorial_id": "PES-A22",
+      "titulo": "Quando o adulto passou do tom",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Quando o adulto passou do tom.",
+      "situacao_id": "pes-a22-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Quando o adulto passou do tom?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        36,
+        179
+      ],
+      "momentos_originais": [
+        "depois"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A22-R01",
+        "PES-A22-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-A22-X01"
+      ],
+      "regra_original_sha256": "f917345df20471f0935ab3a57ecca5078315a084321c1620ce3231d416b3e9ee",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a23",
+      "editorial_id": "PES-A23",
+      "titulo": "Passar o cuidado de mão em mão",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Passar o cuidado de mão em mão.",
+      "situacao_id": "pes-a23-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Passar o cuidado de mão em mão?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "na_hora"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A23-R01",
+        "PES-A23-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-A23-X01"
+      ],
+      "regra_original_sha256": "3e61ca53f8a0785abeb5d918757e2585d01d4c33db3763dc64e5aeb3beb4abf7",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    },
+    {
+      "id": "pes-a24",
+      "editorial_id": "PES-A24",
+      "titulo": "Pedir que alguém tire uma tarefa da sua lista",
+      "origem": "expansao",
+      "bloco": "acalmar",
+      "focos": [
+        "cuidadores"
+      ],
+      "motivo_ordenacao": "Relacionado ao foco escolhido: cuidadores. Cenário: Pedir que alguém tire uma tarefa da sua lista.",
+      "situacao_id": "pes-a24-situacao",
+      "pergunta_situacao": "Você quer apoio para esta situação: Pedir que alguém tire uma tarefa da sua lista?",
+      "resposta_necessaria": "sim",
+      "idade_inclusiva_meses": [
+        24,
+        179
+      ],
+      "momentos_originais": [
+        "antes"
+      ],
+      "motor_para_liberacao": "assessExpanded + confirmação de momento/risco",
+      "requisitos_privados_ids": [
+        "PES-A24-R01",
+        "PES-A24-R02"
+      ],
+      "exclusoes_ids": [
+        "PES-A24-X01"
+      ],
+      "regra_original_sha256": "49a93a48002be13b2b5a0bdd3a5b27a35c8da29501133ff5714796f18a4d10f4",
+      "estado_inicial": "sugestao_a_confirmar",
+      "acao_inicial": "Ver se cabe agora",
+      "autoriza_uso_ou_repasse": false
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+/* Agora Sei — landing page, v1.0 (Isaque, 18/11/2026)
+   Peça de tela larga. Usa os tokens e as peças de ../tokens.css e ../componentes.css;
+   aqui fica só o que é da página, com o prefixo "lp-". */
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+.lp.as-app { display: block; }
+.lp-centro { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
+.lp section { scroll-margin-top: 6rem; }
+.lp-titulo { font-family: var(--as-fonte-titulo); font-weight: 400; font-size: clamp(1.875rem, 1.3rem + 2.4vw, 3rem); line-height: 1.1; letter-spacing: -0.016em; text-wrap: balance; max-width: 22ch; }
+.lp-apoio { max-width: 34rem; font-size: 1.125rem; line-height: 1.55; color: var(--as-tinta-suave); text-wrap: pretty; }
+.lp-cabeca { display: grid; gap: var(--as-e-4); margin-bottom: var(--as-e-8); }
+.lp-secao { padding-block: clamp(4rem, 9vw, 7.5rem); }
+
+/* ── Navegação ───────────────────────────────────────────────────────── */
+.lp-nav-area { position: sticky; top: 0.625rem; z-index: 40; padding-top: 0.625rem; pointer-events: none; }
+.lp-nav { pointer-events: auto; display: flex; align-items: center; justify-content: space-between; gap: var(--as-e-4); width: min(100% - 1.5rem, 66rem); min-height: 3.75rem; margin-inline: auto; padding: 0.5rem 0.5rem 0.5rem 1.125rem; border-radius: var(--as-r-pilula); background: var(--as-superficie); box-shadow: 0 0 0 1px rgb(42 33 64 / 0.06), var(--as-sombra-2); }
+.lp-nav-links { display: none; gap: 0.25rem; }
+.lp-nav-links a { padding: 0.5rem 0.875rem; border-radius: var(--as-r-pilula); color: var(--as-tinta-suave); font-size: var(--as-t-menor); font-weight: var(--as-peso-medio); text-decoration: none; white-space: nowrap; transition: color var(--as-rapido) ease, background-color var(--as-rapido) ease; }
+.lp-nav-links a:hover { color: var(--as-tinta); background: var(--as-superficie-funda); }
+.lp-nav .as-botao { min-height: 2.75rem; border-radius: var(--as-r-pilula); white-space: nowrap; }
+
+/* ── Abertura ────────────────────────────────────────────────────────── */
+.lp-heroi { display: grid; gap: var(--as-e-8); align-items: center; padding-block: clamp(2rem, 5vw, 3.5rem) clamp(3rem, 7vw, 5rem); }
+.lp-heroi-texto { display: grid; gap: var(--as-e-5); justify-items: start; }
+.lp-heroi h1 { font-family: var(--as-fonte-titulo); font-weight: 400; font-size: clamp(2.0625rem, 0.6rem + 6.5vw, 3.625rem); line-height: 1.06; letter-spacing: -0.022em; }
+.lp-heroi h1 span { display: block; }
+.lp-marca-texto { display: inline !important; padding-inline: 0.08em; background: linear-gradient(transparent 60%, var(--as-sol) 60% 93%, transparent 93%); }
+.lp-heroi-acoes { display: flex; flex-wrap: wrap; gap: var(--as-e-3); }
+.lp-heroi-acoes .as-botao { border-radius: var(--as-r-pilula); white-space: nowrap; }
+.lp-palco { position: relative; width: min(100%, 32rem); margin-inline: auto; padding-block: 0.5rem 1.5rem; }
+.lp-palco-mancha { position: absolute; inset: -4% -8% -2% -8%; width: 116%; height: 106%; color: var(--as-sol-claro); }
+.lp-palco .lp-celular { position: relative; z-index: 1; margin-left: auto; margin-right: 6%; }
+.lp-palco-colagem { position: absolute; z-index: 2; left: -11%; bottom: -1%; width: 54%; height: auto; border-radius: var(--as-r-4); rotate: -3deg; box-shadow: 0 0 0 6px var(--as-superficie), 0 16px 26px -8px rgb(42 33 64 / 0.28); }   /* v2.0: a cena em guache entra como uma estampa, com margem branca e leve inclinação */
+.lp-ficha { position: absolute; z-index: 3; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.875rem 0.5rem 0.5rem; border-radius: var(--as-r-3); background: var(--as-superficie); box-shadow: var(--as-sombra-2); font-size: var(--as-t-menor); font-weight: var(--as-peso-medio); line-height: 1.2; white-space: nowrap; }
+.lp-ficha > :first-child { display: grid; place-items: center; flex: none; width: 2rem; height: 2rem; border-radius: 50%; background: var(--as-sol-claro); }
+.lp-ficha img { width: 2rem; height: 2rem; border-radius: 50%; }
+.lp-ficha small { display: block; font-size: 0.6875rem; font-weight: 400; color: var(--as-tinta-suave); }
+.lp-ficha:nth-of-type(1) { left: 0; top: 9%; rotate: -4deg; }
+.lp-ficha:nth-of-type(2) { right: -5%; top: 34%; rotate: 3deg; }
+.lp-ficha:nth-of-type(3) { left: 2%; top: 36%; rotate: 2deg; }
+
+/* ── Celular ─────────────────────────────────────────────────────────── */
+.lp-celular { position: relative; width: var(--lp-celular, 16.5rem); max-width: 100%; aspect-ratio: 390 / 844; padding: 0.4375rem; border-radius: 2.5rem; background: var(--as-tinta); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.10), 0 34px 60px -30px rgb(42 33 64 / 0.6), 0 14px 26px -18px rgb(42 33 64 / 0.45); }
+.lp-celular img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 2.0625rem; background: var(--as-papel); }
+.lp-celular--pilha img { position: absolute; inset: 0.4375rem; width: calc(100% - 0.875rem); height: calc(100% - 0.875rem); opacity: 0; transition: opacity var(--as-lento) var(--as-saida); }
+.lp-celular--pilha img:first-child { opacity: 1; }
+[data-passo="2"] .lp-celular--pilha img:first-child, [data-passo="3"] .lp-celular--pilha img:first-child, [data-passo="4"] .lp-celular--pilha img:first-child { opacity: 0; }
+[data-passo="2"] .lp-celular--pilha img:nth-child(2), [data-passo="3"] .lp-celular--pilha img:nth-child(3), [data-passo="4"] .lp-celular--pilha img:nth-child(4) { opacity: 1; }
+
+/* ── Acolhimento ─────────────────────────────────────────────────────── */
+.lp-escuro { background: var(--as-tinta) var(--as-grao) 0 0 / 220px 220px; background-blend-mode: soft-light; color: var(--as-sobre-acao); }
+.lp-escuro .lp-apoio { color: #DDD6F0; }
+.lp-acolhe { display: grid; gap: var(--as-e-7); align-items: center; }
+.lp-acolhe .lp-titulo { max-width: 19ch; font-size: clamp(1.875rem, 1.2rem + 3vw, 3.25rem); }
+.lp-acolhe img { width: min(100%, 26rem); height: auto; margin-inline: auto; }
+
+/* ── Situações ───────────────────────────────────────────────────────── */
+.lp-situacoes { scroll-padding-inline: 1.25rem; display: grid; grid-auto-flow: column; grid-auto-columns: min(78vw, 19rem); gap: var(--as-e-4); margin-inline: -1.25rem; padding: 0.25rem 1.25rem 1rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.lp-situacao { display: grid; gap: var(--as-e-3); align-content: start; scroll-snap-align: start; }
+.lp-situacao img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--as-r-4); box-shadow: var(--as-sombra-2); transition: transform var(--as-medio) var(--as-saida), box-shadow var(--as-medio) var(--as-saida); }
+.lp-situacao h3 { display: flex; align-items: start; gap: 0.5rem; font-family: var(--as-fonte-titulo); font-weight: 400; font-size: 1.375rem; line-height: 1.2; }
+.lp-situacao h3 .as-icone { margin-top: 0.12em; color: var(--as-fam-tinta); }
+.lp-situacao p { color: var(--as-tinta-suave); font-size: var(--as-t-menor); line-height: 1.5; max-width: 34ch; }
+@media (hover: hover) { .lp-situacao:hover img { transform: translateY(-4px) rotate(-0.6deg); box-shadow: var(--as-sombra-3); } }
+
+/* ── Como funciona ───────────────────────────────────────────────────── */
+.lp-passos { display: grid; gap: var(--as-e-9); }
+.lp-passo { display: grid; gap: var(--as-e-4); justify-items: start; }
+.lp-passo-aba { display: inline-grid; place-items: center; min-width: 3rem; height: 2.25rem; padding-inline: 0.875rem; border-radius: var(--as-r-2) var(--as-r-2) 0 0; background: var(--as-sol-claro); color: var(--as-tinta); font-family: var(--as-fonte-titulo); font-size: 1.25rem; line-height: 1; }
+.lp-passo h3 { font-family: var(--as-fonte-titulo); font-weight: 400; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem); line-height: 1.15; letter-spacing: -0.01em; text-wrap: balance; max-width: 18ch; }
+.lp-passo p { max-width: 28rem; color: var(--as-tinta-suave); font-size: 1.125rem; line-height: 1.55; }
+.lp-passo .lp-celular { --lp-celular: 14.5rem; margin-top: var(--as-e-3); }
+.lp-passos-palco { display: none; }
+
+/* ── O card por dentro ───────────────────────────────────────────────── */
+.lp-vitrine-abas { display: flex; gap: 0.25rem; margin: 0 1rem -1px; position: relative; z-index: 1; }
+.lp-vitrine input { position: absolute; opacity: 0; pointer-events: none; }
+.lp-vitrine-abas label { flex: 1 1 0; display: inline-flex; align-items: center; justify-content: center; gap: 0.375rem; min-height: 3rem; padding: 0.5rem 0.375rem; border: 1px solid var(--as-linha); border-radius: var(--as-r-2) var(--as-r-2) 0 0; background: var(--as-superficie-funda); color: var(--as-tinta-suave); font-size: var(--as-t-mini); font-weight: var(--as-peso-medio); line-height: 1.15; text-align: center; cursor: pointer; transition: background-color var(--as-rapido) ease, color var(--as-rapido) ease; }
+.lp-vitrine-abas label .as-icone { display: none; }
+.lp-vitrine-painel { padding: var(--as-e-6) var(--as-e-5); border: 1px solid var(--as-linha); border-radius: var(--as-r-4); background: var(--as-superficie); box-shadow: var(--as-sombra-1); }
+.lp-vitrine-item { display: none; gap: var(--as-e-6); align-items: center; }
+.lp-vitrine-item .lp-celular { --lp-celular: 16rem; aspect-ratio: 390 / 610; margin-inline: auto; }
+.lp-vitrine-texto { display: grid; gap: var(--as-e-3); }
+.lp-vitrine-texto h3 { font-family: var(--as-fonte-titulo); font-weight: 400; font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); line-height: 1.15; }
+.lp-vitrine-texto p { color: var(--as-tinta-suave); font-size: 1.125rem; line-height: 1.55; max-width: 26rem; }
+#lp-aba-1:checked ~ .lp-vitrine-abas label[for="lp-aba-1"], #lp-aba-2:checked ~ .lp-vitrine-abas label[for="lp-aba-2"], #lp-aba-3:checked ~ .lp-vitrine-abas label[for="lp-aba-3"], #lp-aba-4:checked ~ .lp-vitrine-abas label[for="lp-aba-4"] { margin-top: -0.375rem; border-bottom-color: var(--as-superficie); background: var(--as-superficie); color: var(--as-tinta); font-weight: var(--as-peso-forte); box-shadow: inset 0 3px 0 var(--as-sol); }
+#lp-aba-1:checked ~ .lp-vitrine-painel .lp-vitrine-item:nth-child(1), #lp-aba-2:checked ~ .lp-vitrine-painel .lp-vitrine-item:nth-child(2), #lp-aba-3:checked ~ .lp-vitrine-painel .lp-vitrine-item:nth-child(3), #lp-aba-4:checked ~ .lp-vitrine-painel .lp-vitrine-item:nth-child(4) { display: grid; animation: lp-troca var(--as-medio) var(--as-saida); }
+#lp-aba-1:focus-visible ~ .lp-vitrine-abas label[for="lp-aba-1"], #lp-aba-2:focus-visible ~ .lp-vitrine-abas label[for="lp-aba-2"], #lp-aba-3:focus-visible ~ .lp-vitrine-abas label[for="lp-aba-3"], #lp-aba-4:focus-visible ~ .lp-vitrine-abas label[for="lp-aba-4"] { outline: 3px solid var(--as-foco); outline-offset: 2px; }
+@keyframes lp-troca { from { opacity: 0; transform: translateY(0.375rem); } to { opacity: 1; transform: none; } }
+
+/* ── Honesto ─────────────────────────────────────────────────────────── */
+.lp-honesto { display: grid; gap: var(--as-e-8); align-items: center; }
+.lp-honesto-listas { display: grid; gap: var(--as-e-7); }
+.lp-honesto h3 { margin-bottom: var(--as-e-3); font-size: 1.125rem; font-weight: var(--as-peso-forte); }
+.lp-honesto .as-lista { gap: 0.875rem; font-size: 1.0625rem; }
+.lp-estado { display: grid; gap: var(--as-e-3); padding-top: var(--as-e-5); border-top: 2px solid var(--as-tinta); }
+.lp-estado p { color: var(--as-tinta-suave); max-width: 34rem; }
+.lp-honesto > .lp-celular { --lp-celular: 15.5rem; margin-inline: auto; }
+
+/* ── Perguntas ───────────────────────────────────────────────────────── */
+.lp-perguntas { display: grid; gap: var(--as-e-7); }
+.lp-faq { display: grid; max-width: 46rem; }
+.lp-faq details { border-top: 1px solid var(--as-linha); }
+.lp-faq details:last-child { border-bottom: 1px solid var(--as-linha); }
+.lp-faq summary { display: flex; align-items: center; justify-content: space-between; gap: var(--as-e-4); min-height: 4rem; padding-block: var(--as-e-4); font-size: 1.1875rem; font-weight: var(--as-peso-forte); line-height: 1.3; cursor: pointer; list-style: none; }
+.lp-faq summary::-webkit-details-marker { display: none; }
+.lp-faq summary .as-icone { flex: none; width: 1.5rem; height: 1.5rem; padding: 0.5rem; box-sizing: content-box; border-radius: 50%; background: var(--as-superficie-funda); transition: transform var(--as-medio) var(--as-saida), background-color var(--as-rapido) ease; }
+.lp-faq details[open] summary .as-icone { transform: rotate(45deg); background: var(--as-sol-claro); }
+.lp-faq details p { max-width: 40rem; padding-bottom: var(--as-e-5); color: var(--as-tinta-suave); font-size: 1.0625rem; line-height: 1.6; }
+
+/* ── Fecho e rodapé ──────────────────────────────────────────────────── */
+.lp-fecho { display: grid; gap: var(--as-e-6); align-items: center; padding: clamp(2rem, 6vw, 4.5rem); border-radius: clamp(1.5rem, 3vw, 2.5rem); overflow: hidden; }
+.lp-fecho-texto { display: grid; gap: var(--as-e-5); justify-items: start; }
+.lp-fecho .as-botao { border-radius: var(--as-r-pilula); }
+.lp-fecho img { width: min(100%, 24rem); height: auto; margin-inline: auto; filter: drop-shadow(0 18px 22px rgb(0 0 0 / 0.3)); }
+.lp-rodape { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--as-e-4); padding-block: var(--as-e-7); color: var(--as-tinta-suave); font-size: var(--as-t-mini); }
+.lp-rodape nav { display: flex; flex-wrap: wrap; gap: var(--as-e-4); }
+.lp-rodape a { color: var(--as-tinta-suave); }
+
+/* ── Telas maiores ───────────────────────────────────────────────────── */
+@media (max-width: 47.99em) {
+  .lp-nav { padding-left: 0.875rem; gap: var(--as-e-2); }
+  .lp-nav .as-marca { font-size: 1.1875rem; gap: 0.5rem; }
+  .lp-nav .as-marca img { width: 1.75rem; height: 1.75rem; }
+  .lp-nav .as-botao { padding-inline: 0.875rem; font-size: 0.9375rem; }
+  .lp-ficha { position: static; rotate: none !important; }
+  .lp-fichas { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: var(--as-e-5); position: relative; z-index: 3; }
+  .lp-palco .lp-celular { --lp-celular: 14.5rem; margin-right: 0; }
+  .lp-palco-colagem { top: 54%; bottom: auto; left: -5%; width: 47%; }
+  .lp-palco { padding-bottom: 0; }
+  .lp-heroi-acoes .as-botao { flex: 1 1 100%; }
+}
+@media (min-width: 48em) {
+  .lp-fichas { display: contents; }
+  .lp-situacoes { grid-auto-flow: row; grid-template-columns: repeat(12, minmax(0, 1fr)); margin-inline: 0; padding: 0; overflow: visible; gap: var(--as-e-7) var(--as-e-5); }
+  .lp-situacao { grid-column: span 3; }
+  .lp-situacao:nth-child(-n + 2) { grid-column: span 6; }
+  .lp-situacao:nth-child(-n + 2) h3 { font-size: 1.75rem; }
+  .lp-situacao:nth-child(-n + 2) p { font-size: 1.0625rem; max-width: 38ch; }
+  .lp-acolhe { grid-template-columns: 1.15fr 0.85fr; }
+  .lp-vitrine-abas label { font-size: var(--as-t-corpo); }
+  .lp-vitrine-abas label .as-icone { display: block; }
+  .lp-vitrine-painel { padding: var(--as-e-8); }
+  .lp-vitrine-item { grid-template-columns: 1fr auto; gap: var(--as-e-8); }
+  .lp-honesto-listas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lp-estado { grid-column: 1 / -1; }
+  .lp-fecho { grid-template-columns: 1.1fr 0.9fr; }
+}
+@media (min-width: 60em) {
+  .lp-nav-links { display: flex; }
+  .lp-heroi { grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr); gap: var(--as-e-7); min-height: min(46rem, calc(100dvh - 7rem)); }
+  .lp-heroi h1 { font-size: clamp(2.5rem, 0.4rem + 3.6vw, 3.625rem); }
+  .lp-heroi h1 > span { white-space: nowrap; }
+  .lp-passos-grade { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: var(--as-e-9); align-items: start; }
+  .lp-passos { gap: 0; }
+  .lp-passo { min-height: 62vh; align-content: center; }
+  .lp-passo .lp-celular { display: none; }
+  .lp-passos-palco { position: sticky; top: calc(50vh - 17.5rem); display: grid; place-items: center; padding: var(--as-e-7) var(--as-e-5); border-radius: var(--as-r-5); background: var(--as-sol-claro) var(--as-grao) 0 0 / 220px 220px; }
+  .lp-passos-palco .lp-celular { --lp-celular: 15.5rem; }
+  .lp-honesto { grid-template-columns: minmax(0, 1fr) auto; gap: var(--as-e-9); }
+}
+
+/* ── Movimento ───────────────────────────────────────────────────────── */
+@keyframes lp-sobe { from { opacity: 0; transform: translateY(1.25rem); } to { opacity: 1; transform: none; } }
+@keyframes lp-pousa { from { opacity: 0; transform: translateY(-0.75rem) scale(0.94); } to { opacity: 1; transform: none; } }
+.lp-palco .lp-celular { animation: lp-sobe 700ms var(--as-saida) both; }
+.lp-palco-colagem { animation: lp-sobe 800ms var(--as-saida) 120ms both; }
+.lp-ficha { animation: lp-pousa 520ms var(--as-saida) both; }
+.lp-ficha:nth-of-type(1) { animation-delay: 420ms; } .lp-ficha:nth-of-type(2) { animation-delay: 560ms; } .lp-ficha:nth-of-type(3) { animation-delay: 700ms; }
+.lp-js .lp-revela { opacity: 0; transform: translateY(1rem); transition: opacity 600ms var(--as-saida), transform 600ms var(--as-saida); }
+.lp-js .lp-revela.lp-visto { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .lp *, .lp *::before, .lp *::after { animation-duration: 1ms !important; animation-delay: 0ms !important; transition-duration: 1ms !important; }
+  .lp-js .lp-revela { opacity: 1; transform: none; }
+}
+
+.lp main { overflow-x: clip; }
+@media (max-width: 47.99em) { .lp-palco-mancha { inset: -3% 0 -2% 0; width: 100%; height: 105%; } }
+
+/* Mude uma resposta: a personalização acontecendo, com as saídas reais do app. */
+.lp-troca { display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; margin-top: clamp(2rem, 5vw, 3.5rem); text-align: left; }
+@media (min-width: 56em) { .lp-troca { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); align-items: center; } }
+.lp-troca-sabe { display: grid; gap: 1.125rem; }
+.lp-troca-sabe h3 { font-family: var(--as-fonte-titulo); font-weight: 400; font-size: 1.5rem; line-height: 1.2; }
+.lp-troca-sabe ul { display: grid; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.lp-troca-sabe li { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); gap: 0.75rem; align-items: start; line-height: 1.45; }
+.lp-troca-sabe li .as-icone { margin-top: 0.15em; }
+.lp-troca-nota { color: var(--as-tinta-suave); font-size: var(--as-t-mini); line-height: 1.45; }
+.lp-troca-demo { padding: clamp(1rem, 3vw, 1.75rem); border-radius: var(--as-r-5); background: var(--as-superficie-funda); }
+.lp-troca-demo .as-troca-saida { min-height: 17.75rem; }
+.lp-troca-demo .as-troca-titulo { font-family: var(--as-fonte-titulo); font-weight: 400; font-size: 1.25rem; margin-bottom: 0.25rem; }

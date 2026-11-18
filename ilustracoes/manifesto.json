@@ -1,0 +1,1029 @@
+{
+  "versao": "2.1.0",
+  "nota": "Ilustrações do Agora Sei. O app procura a do card, depois a da família, depois a padrão. \"acabamento: guache\" marca as imagens pintadas, o estilo do produto; \"reserva\" guarda a colagem de papel anterior e \"vetor\", a versão em SVG da mesma cena.",
+  "cards": {
+    "brincar-convite-verbal": {
+      "arquivo": "guache/cards/brincar-convite-verbal.webp",
+      "alt": "Avó ajoelhada oferece dois brinquedos, uma bola e um bloco; a menina aponta para um deles.",
+      "acabamento": "guache",
+      "reserva": "cards/brincar-convite-verbal.webp",
+      "vetor": "cards/brincar-convite-verbal.svg"
+    },
+    "brincar-desenho-livre": {
+      "arquivo": "guache/cards/brincar-desenho-livre.webp",
+      "alt": "Menina desenha rabiscos numa folha grande; a avó, sentada ao lado, segura um giz e só observa.",
+      "acabamento": "guache",
+      "reserva": "cards/brincar-desenho-livre.webp",
+      "vetor": "cards/brincar-desenho-livre.svg"
+    },
+    "brincar-em-paralelo": {
+      "arquivo": "guache/cards/brincar-em-paralelo.webp",
+      "alt": "Pai e filho sentados lado a lado, cada um com a própria pilha de blocos.",
+      "acabamento": "guache",
+      "reserva": "cards/brincar-em-paralelo.webp",
+      "vetor": "cards/brincar-em-paralelo.svg"
+    },
+    "brincar-escolha-livre": {
+      "arquivo": "guache/cards/brincar-escolha-livre.webp",
+      "alt": "Mãe e filha sentadas no tapete montam uma torre de blocos; a menina põe o bloco de cima e a mãe só acompanha.",
+      "acabamento": "guache",
+      "reserva": "cards/brincar-escolha-livre.webp",
+      "vetor": "cards/brincar-escolha-livre.svg"
+    },
+    "brincar-faz-de-conta": {
+      "arquivo": "guache/cards/brincar-faz-de-conta.webp",
+      "alt": "Menino dentro de uma caixa de papelão que virou carrinho, com um volante de papelão; a mãe, ajoelhada ao lado, segura uma colher de pau.",
+      "acabamento": "guache",
+      "reserva": "cards/brincar-faz-de-conta.webp",
+      "vetor": "cards/brincar-faz-de-conta.svg"
+    },
+    "brincar-observar-preferencias": {
+      "arquivo": "guache/cards/brincar-observar-preferencias.webp",
+      "alt": "Menino no tapete escolhe entre uma bola, blocos e um livro; a cuidadora observa de perto, com um bloquinho no colo.",
+      "acabamento": "guache",
+      "reserva": "cards/brincar-observar-preferencias.webp",
+      "vetor": "cards/brincar-observar-preferencias.svg"
+    },
+    "transicoes-duas-figuras": {
+      "arquivo": "guache/cards/transicoes-duas-figuras.webp",
+      "alt": "Mãe aponta, na parede, a primeira de duas figuras ligadas por uma seta: brincar e depois comer; o menino olha.",
+      "acabamento": "guache",
+      "reserva": "cards/transicoes-duas-figuras.webp",
+      "vetor": "cards/transicoes-duas-figuras.svg"
+    },
+    "transicoes-frase-curta": {
+      "arquivo": "guache/cards/transicoes-frase-curta.webp",
+      "alt": "Pai agachado na altura do filho indica a mesa com um prato; um balão de fala em branco mostra que a frase é curta.",
+      "acabamento": "guache",
+      "reserva": "cards/transicoes-frase-curta.webp",
+      "vetor": "cards/transicoes-frase-curta.svg"
+    },
+    "transicoes-menos-estimulos": {
+      "arquivo": "guache/cards/transicoes-menos-estimulos.webp",
+      "alt": "Menino abraça um coelho de pelúcia num pufe, com um abafador de ruído ao lado; a avó diminui a luz do abajur perto da porta.",
+      "acabamento": "guache",
+      "reserva": "cards/transicoes-menos-estimulos.webp",
+      "vetor": "cards/transicoes-menos-estimulos.svg"
+    },
+    "transicoes-mudanca-combinada": {
+      "arquivo": "guache/cards/transicoes-mudanca-combinada.webp",
+      "alt": "Mãe e filha olham uma folha com duas figuras: uma árvore riscada por uma linha pontilhada, uma seta e uma casa.",
+      "acabamento": "guache",
+      "reserva": "cards/transicoes-mudanca-combinada.webp",
+      "vetor": "cards/transicoes-mudanca-combinada.svg"
+    },
+    "transicoes-objeto-familiar": {
+      "arquivo": "guache/cards/transicoes-objeto-familiar.webp",
+      "alt": "Cuidadora agachada mostra um sapato à menina, que segura um brinquedo; ao fundo, uma porta entreaberta.",
+      "acabamento": "guache",
+      "reserva": "cards/transicoes-objeto-familiar.webp",
+      "vetor": "cards/transicoes-objeto-familiar.svg"
+    },
+    "transicoes-preparar-saida": {
+      "arquivo": "guache/cards/transicoes-preparar-saida.webp",
+      "alt": "Menina agachada arruma os sapatos ao lado da mochila e da garrafa de água; o pai espera com a mão na maçaneta.",
+      "acabamento": "guache",
+      "reserva": "cards/transicoes-preparar-saida.webp",
+      "vetor": "cards/transicoes-preparar-saida.svg"
+    },
+    "noite-livro-escolhido": {
+      "arquivo": "guache/cards/noite-livro-escolhido.webp",
+      "alt": "Avó sentada na beira da cama oferece dois livros; a menina, de pijama, aponta para um. Um abajur aceso e a lua na janela.",
+      "acabamento": "guache",
+      "reserva": "cards/noite-livro-escolhido.webp",
+      "vetor": "cards/noite-livro-escolhido.svg"
+    },
+    "noite-organizar-ambiente": {
+      "arquivo": "guache/cards/noite-organizar-ambiente.webp",
+      "alt": "Mãe ajeita a manta da cama; o menino, na cama, abraça um coelho de pelúcia. Abajur aceso e cortina meio fechada sobre a lua.",
+      "acabamento": "guache",
+      "reserva": "cards/noite-organizar-ambiente.webp",
+      "vetor": "cards/noite-organizar-ambiente.svg"
+    },
+    "noite-preparar-sequencia": {
+      "arquivo": "guache/cards/noite-preparar-sequencia.webp",
+      "alt": "Pai e filho de pijama olham três figuras na parede: banheira, escova de dentes e livro; o menino aponta a primeira. A lua aparece na janela.",
+      "acabamento": "guache",
+      "reserva": "cards/noite-preparar-sequencia.webp",
+      "vetor": "cards/noite-preparar-sequencia.svg"
+    },
+    "emocoes-acolher-sem-cobrar": {
+      "arquivo": "guache/cards/emocoes-acolher-sem-cobrar.webp",
+      "alt": "Menina sentada abraça os joelhos, chateada; a mãe senta ao lado, na mesma altura, sem tocar. Blocos caídos perto.",
+      "acabamento": "guache",
+      "reserva": "cards/emocoes-acolher-sem-cobrar.webp",
+      "vetor": "cards/emocoes-acolher-sem-cobrar.svg"
+    },
+    "emocoes-nomear-com-cuidado": {
+      "arquivo": "guache/cards/emocoes-nomear-com-cuidado.webp",
+      "alt": "Pai e filho sentados frente a frente; entre eles, três discos com um zigue-zague, uma onda e um sol. O menino toca um deles.",
+      "acabamento": "guache",
+      "reserva": "cards/emocoes-nomear-com-cuidado.webp",
+      "vetor": "cards/emocoes-nomear-com-cuidado.svg"
+    },
+    "emocoes-pausa-do-adulto": {
+      "arquivo": "guache/cards/emocoes-pausa-do-adulto.webp",
+      "alt": "Mãe sentada de olhos fechados, com a mão no peito, solta o ar devagar; ao fundo, a menina brinca com blocos.",
+      "acabamento": "guache",
+      "reserva": "cards/emocoes-pausa-do-adulto.webp",
+      "vetor": "cards/emocoes-pausa-do-adulto.svg"
+    },
+    "autonomia-dividir-tarefa": {
+      "arquivo": "guache/cards/autonomia-dividir-tarefa.webp",
+      "alt": "Menino num banquinho, diante da pia, segura a escova de dentes e olha três figuras na parede: escova, copo e toalha, a primeira já marcada. A mãe espera com a toalha.",
+      "acabamento": "guache",
+      "reserva": "cards/autonomia-dividir-tarefa.webp",
+      "vetor": "cards/autonomia-dividir-tarefa.svg"
+    },
+    "autonomia-duas-roupas": {
+      "arquivo": "guache/cards/autonomia-duas-roupas.webp",
+      "alt": "Duas camisetas sobre a cama, uma amarela e uma azul; o menino estende a mão para uma e o pai espera um passo atrás.",
+      "acabamento": "guache",
+      "reserva": "cards/autonomia-duas-roupas.webp",
+      "vetor": "cards/autonomia-duas-roupas.svg"
+    },
+    "autonomia-guardar-um-item": {
+      "arquivo": "guache/cards/autonomia-guardar-um-item.webp",
+      "alt": "Menina coloca um bloco na caixa de brinquedos; a avó, ajoelhada, espera com a mão aberta.",
+      "acabamento": "guache",
+      "reserva": "cards/autonomia-guardar-um-item.webp",
+      "vetor": "cards/autonomia-guardar-um-item.svg"
+    },
+    "cuidadores-anotar-sequencia": {
+      "arquivo": "guache/cards/cuidadores-anotar-sequencia.webp",
+      "alt": "Na cozinha, a mãe prende um bilhete na geladeira com um ímã; a cuidadora, com uma caneca, lê.",
+      "acabamento": "guache",
+      "reserva": "cards/cuidadores-anotar-sequencia.webp",
+      "vetor": "cards/cuidadores-anotar-sequencia.svg"
+    },
+    "cuidadores-rever-expectativa": {
+      "arquivo": "guache/cards/cuidadores-rever-expectativa.webp",
+      "alt": "Avó e mãe sentadas no chão conversam com uma folha e um lápis entre elas; ao fundo, o menino brinca com blocos.",
+      "acabamento": "guache",
+      "reserva": "cards/cuidadores-rever-expectativa.webp",
+      "vetor": "cards/cuidadores-rever-expectativa.svg"
+    },
+    "cuidadores-um-combinado": {
+      "arquivo": "guache/cards/cuidadores-um-combinado.webp",
+      "alt": "Mãe e pai seguram juntos a mesma folha com um combinado; a menina brinca com uma bola entre eles.",
+      "acabamento": "guache",
+      "reserva": "cards/cuidadores-um-combinado.webp",
+      "vetor": "cards/cuidadores-um-combinado.svg"
+    },
+    "PES-D01": {
+      "arquivo": "guache/fichas/pes-d01.webp",
+      "alt": "Adolescente no sofá mostra ao pai, na tela do videogame portátil, onde dá para salvar; o pai escuta ao lado.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D02": {
+      "arquivo": "guache/fichas/pes-d02.webp",
+      "alt": "Na calçada, a mãe agachada mostra o portão fechado do parque à menina, que segura uma bola.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D03": {
+      "arquivo": "guache/fichas/pes-d03.webp",
+      "alt": "Na porta da creche, o pai cumprimenta a educadora; o menino, de mochila, fica perto dele.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D04": {
+      "arquivo": "guache/fichas/pes-d04.webp",
+      "alt": "A avó, na calçada, segura a foto de um portão azul ao lado do próprio portão azul da escola.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D05": {
+      "arquivo": "guache/fichas/pes-d05.webp",
+      "alt": "Menino à mesa aponta um pente e uma toalha enquanto conta o que incomodou; a cuidadora, do outro lado, escuta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D06": {
+      "arquivo": "guache/fichas/pes-d06.webp",
+      "alt": "No consultório, a adolescente fala diretamente com a médica; a mãe fica sentada um pouco atrás, ao lado dela.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D07": {
+      "arquivo": "guache/fichas/pes-d07.webp",
+      "alt": "Mãe e avó conversam de pé; o menino desenha numa mesinha e a menina brinca com blocos no seu tapete, cada um no seu espaço.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D08": {
+      "arquivo": "guache/fichas/pes-d08.webp",
+      "alt": "Na porta de casa, o pai, de saída, confere com a cuidadora um bilhete e o telefone.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D09": {
+      "arquivo": "guache/fichas/pes-d09.webp",
+      "alt": "A mãe fica sentada no chão, calma e disponível; o pai e a avó se afastam para conversar entre si.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D10": {
+      "arquivo": "guache/fichas/pes-d10.webp",
+      "alt": "No corredor do mercado, o menino sentado abraça os joelhos; a cuidadora fica agachada perto e um funcionário libera a passagem.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D11": {
+      "arquivo": "guache/fichas/pes-d11.webp",
+      "alt": "Num saguão, um funcionário abaixa o som do alto-falante; o menino tapa os ouvidos e o pai mostra uma saída tranquila.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D14": {
+      "arquivo": "guache/fichas/pes-d14.webp",
+      "alt": "Duas crianças querem o mesmo caminhão; a avó, ajoelhada, mostra um trem ao alcance.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D15": {
+      "arquivo": "guache/fichas/pes-d15.webp",
+      "alt": "A mãe se afasta e pede ao pai que assuma; os dois olham para o menino, sentado no tapete.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D17": {
+      "arquivo": "guache/fichas/pes-d17.webp",
+      "alt": "No terminal, a avó confere o painel de horários.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D18": {
+      "arquivo": "guache/fichas/pes-d18.webp",
+      "alt": "O pai marca com um clipe uma página do caderno e afasta o material.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D19": {
+      "arquivo": "guache/fichas/pes-d19.webp",
+      "alt": "A mãe recebe as visitas na porta; do outro lado da sala, o menino observa de longe, livre para se aproximar ou não.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D20": {
+      "arquivo": "guache/fichas/pes-d20.webp",
+      "alt": "Pai e filho saem da feira por um caminho livre; ao fundo, a avó avisa o grupo.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D21": {
+      "arquivo": "guache/fichas/pes-d21.webp",
+      "alt": "Na sala nova, a estudante guarda a mochila num escaninho que a professora indica.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D22": {
+      "arquivo": "guache/fichas/pes-d22.webp",
+      "alt": "Estudante e professor conversam em particular, com a sequência da apresentação em cartões sobre a mesa.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D23": {
+      "arquivo": "guache/fichas/pes-d23.webp",
+      "alt": "Na porta da cozinha, a cuidadora e a avó conferem juntas um recado.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D24": {
+      "arquivo": "guache/fichas/pes-d24.webp",
+      "alt": "Mãe e filho sentados na cama de um quarto fechado conversam com calma.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D25": {
+      "arquivo": "guache/fichas/pes-d25.webp",
+      "alt": "À noite, o menino sentado na cama olha para o pai, de pé na porta entreaberta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D26": {
+      "arquivo": "guache/fichas/pes-d26.webp",
+      "alt": "Na entrada da sala, o professor conversa em particular com a estudante.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D27": {
+      "arquivo": "guache/fichas/pes-d27.webp",
+      "alt": "O menino guarda a coleira ao lado da foto do cachorro; a avó fica ao lado dele.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D28": {
+      "arquivo": "guache/fichas/pes-d28.webp",
+      "alt": "A mãe, à mesa, preenche uma folha com três campos.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D29": {
+      "arquivo": "guache/fichas/pes-d29.webp",
+      "alt": "Na creche, o pai acaba de chegar, agacha-se e escuta a menina antes de pegar a mochila.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D30": {
+      "arquivo": "guache/fichas/pes-d30.webp",
+      "alt": "Dois convites sobre a mesa, com espaço vazio entre eles; a cuidadora pensa.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-D32": {
+      "arquivo": "guache/fichas/pes-d32.webp",
+      "alt": "Adolescente e pai revisam uma anotação sobre a luz; ao lado, o abajur aceso baixinho.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E01": {
+      "arquivo": "guache/fichas/pes-e01.webp",
+      "alt": "Mãe e menina pequena sentadas frente a frente abrem as mãos em turnos.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E02": {
+      "arquivo": "guache/fichas/pes-e02.webp",
+      "alt": "A avó e a menina pequena no tapete, com duas meias listradas e outro par de meias; a menina levanta uma.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E03": {
+      "arquivo": "guache/fichas/pes-e03.webp",
+      "alt": "Pai e menina pequena junto à janela com um passarinho; ela abre os braços como asas e ele escuta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E04": {
+      "arquivo": "guache/fichas/pes-e04.webp",
+      "alt": "Cuidadora e menina pequena sentadas olham uma sombra na parede; a menina aponta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E05": {
+      "arquivo": "guache/fichas/pes-e05.webp",
+      "alt": "A mãe cantava e para quando a menina pequena mostra a mão pedindo para encerrar.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E06": {
+      "arquivo": "guache/fichas/pes-e06.webp",
+      "alt": "Menino no correio de faz de conta, uma caixa de papelão, entrega uma carta dobrada ao pai.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E07": {
+      "arquivo": "guache/fichas/pes-e07.webp",
+      "alt": "Avó e menina diante de uma tartaruga de brinquedo e uma portinha aberta; a menina mostra o que há do outro lado.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E08": {
+      "arquivo": "guache/fichas/pes-e08.webp",
+      "alt": "No chão, quatro folhas grandes com círculos e quadrados lisos e listrados; o menino junta as listradas e a mãe observa.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E09": {
+      "arquivo": "guache/fichas/pes-e09.webp",
+      "alt": "A cuidadora segura metade de um desenho de barco no mar; a menina gira a outra metade para encaixar.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E10": {
+      "arquivo": "guache/fichas/pes-e10.webp",
+      "alt": "Pai e filho, do mesmo lado da mesa, jogam memória com quatro cartas; o menino aponta uma.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E11": {
+      "arquivo": "guache/fichas/pes-e11.webp",
+      "alt": "O menino rega a planta com um copo leve; a avó aponta onde a água deve cair.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E12": {
+      "arquivo": "guache/fichas/pes-e12.webp",
+      "alt": "Mãe e filho à mesa comparam uma meia, uma almofada e um livro.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E13": {
+      "arquivo": "guache/fichas/pes-e13.webp",
+      "alt": "Num labirinto desenhado, a cuidadora espera com o lápis na bifurcação e o menino indica o caminho.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E14": {
+      "arquivo": "guache/fichas/pes-e14.webp",
+      "alt": "O menino põe um livro de capa para a frente numa prateleira baixa; o pai, ajoelhado, olha da altura dele.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E15": {
+      "arquivo": "guache/fichas/pes-e15.webp",
+      "alt": "O menino diante de um quebra-cabeça; a avó, ao lado, espera com as mãos no colo antes de ajudar.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E16": {
+      "arquivo": "guache/fichas/pes-e16.webp",
+      "alt": "A adolescente mostra o capacete da bicicleta para explicar; a mãe faz uma pausa e escuta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E17": {
+      "arquivo": "guache/fichas/pes-e17.webp",
+      "alt": "Adolescente e pai sobre o mapa de uma ilha com duas rotas e um barquinho de papel; ela escolhe uma rota.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E18": {
+      "arquivo": "guache/fichas/pes-e18.webp",
+      "alt": "Avó bate de leve no próprio joelho e a adolescente responde com uma palma.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E19": {
+      "arquivo": "guache/fichas/pes-e19.webp",
+      "alt": "A avó para a leitura do gibi e a adolescente aponta um quadrinho e comenta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E20": {
+      "arquivo": "guache/fichas/pes-e20.webp",
+      "alt": "A adolescente guarda o moletom preferido na frente de uma gaveta baixa; a mãe observa.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E21": {
+      "arquivo": "guache/fichas/pes-e21.webp",
+      "alt": "Pai e adolescente jogam numa trilha de cinco casas, com três cartas de avanço ao lado.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E22": {
+      "arquivo": "guache/fichas/pes-e22.webp",
+      "alt": "A adolescente dobra uma toalha de mão ao lado de uma cesta; a avó observa.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E23": {
+      "arquivo": "guache/fichas/pes-e23.webp",
+      "alt": "No balcão da biblioteca, a adolescente entrega ao bibliotecário a pergunta desenhada sobre gibis; o pai espera atrás.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E24": {
+      "arquivo": "guache/fichas/pes-e24.webp",
+      "alt": "A adolescente segura o recado e decide o destino dele; a mãe, ao lado, de mãos vazias.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E25": {
+      "arquivo": "guache/fichas/pes-e25.webp",
+      "alt": "A adolescente mostra uma revistinha dobrada com a capa e uma página em branco; o pai olha.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E26": {
+      "arquivo": "guache/fichas/pes-e26.webp",
+      "alt": "A adolescente fica na escrivaninha com o celular ao alcance; a mãe sai e deixa a porta encostada.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E27": {
+      "arquivo": "guache/fichas/pes-e27.webp",
+      "alt": "Jovens e o pai em volta da mesa, cada um com um cartão de função; dois dividem o mesmo cartão.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E28": {
+      "arquivo": "guache/fichas/pes-e28.webp",
+      "alt": "A adolescente dirige a cena e o pai atua segurando um bilhete.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E29": {
+      "arquivo": "guache/fichas/pes-e29.webp",
+      "alt": "A adolescente marca a margem do caderno onde vai retomar; a avó acompanha.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E30": {
+      "arquivo": "guache/fichas/pes-e30.webp",
+      "alt": "Num jogo de tabuleiro, a ampulheta foi deixada de lado; um jovem indica a jogada apontando.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E31": {
+      "arquivo": "guache/fichas/pes-e31.webp",
+      "alt": "A adolescente destaca um trecho do livro e anota sua dúvida num papel; a mãe está por perto.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-E32": {
+      "arquivo": "guache/fichas/pes-e32.webp",
+      "alt": "Grupo em volta da mesa reúne sugestões em papéis dobrados; um jovem contribui com um gesto.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A01": {
+      "arquivo": "guache/fichas/pes-a01.webp",
+      "alt": "A menina pequena esfrega os olhos perto dos brinquedos; a mãe aponta para uma poltrona baixa.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A02": {
+      "arquivo": "guache/fichas/pes-a02.webp",
+      "alt": "A menina pequena, acordada, sentada no tapete com um urso grande; o pai está por perto.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A03": {
+      "arquivo": "guache/fichas/pes-a03.webp",
+      "alt": "O menino coloca o coelho de pelúcia numa bolsa aberta; a avó espera ao lado.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A04": {
+      "arquivo": "guache/fichas/pes-a04.webp",
+      "alt": "Na entrada da escola nova, uma professora recebe a mãe e o menino.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A05": {
+      "arquivo": "guache/fichas/pes-a05.webp",
+      "alt": "O pai guarda a sacola da festa enquanto a menina vai para seu canto na sala.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A06": {
+      "arquivo": "guache/fichas/pes-a06.webp",
+      "alt": "O menino descansa numa cadeira no canto da sala, com passagem livre; a cuidadora está à vista.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A07": {
+      "arquivo": "guache/fichas/pes-a07.webp",
+      "alt": "Duas camisetas de cortes diferentes sobre a cama; o menino aponta uma e a mãe espera.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A08": {
+      "arquivo": "guache/fichas/pes-a08.webp",
+      "alt": "O menino movimenta as mãos no meio da sala; o pai afasta uma mesinha para deixar espaço.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A09": {
+      "arquivo": "guache/fichas/pes-a09.webp",
+      "alt": "No portão da escola, a avó cumprimenta o menino e indica o caminho de casa.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A10": {
+      "arquivo": "guache/fichas/pes-a10.webp",
+      "alt": "A adolescente descansa no sofá e o menino brinca com um xilofone do outro lado; o pai fica entre os dois.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A11": {
+      "arquivo": "guache/fichas/pes-a11.webp",
+      "alt": "A adolescente silencia um grupo no celular, sentada num pufe; a mãe lê ao fundo.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A12": {
+      "arquivo": "guache/fichas/pes-a12.webp",
+      "alt": "A adolescente faz seu sinal de pausa e o pai caminha ao lado indicando uma porta aberta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A13": {
+      "arquivo": "guache/fichas/pes-a13.webp",
+      "alt": "Na recepção da clínica, a avó e o menino conferem onde aguardar.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A14": {
+      "arquivo": "guache/fichas/pes-a14.webp",
+      "alt": "A família olha a semana no calendário; a adolescente aponta o espaço em branco.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A15": {
+      "arquivo": "guache/fichas/pes-a15.webp",
+      "alt": "Adolescente e avó sentadas num banco à sombra, com o caminho de volta para casa à vista.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A16": {
+      "arquivo": "guache/fichas/pes-a16.webp",
+      "alt": "Com a TV desligada, a avó fica sentada perto da adolescente, disponível.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A17": {
+      "arquivo": "guache/fichas/pes-a17.webp",
+      "alt": "O menino sentado num banco; o pai fica à distância; ao fundo, a mãe pede com discrição que os outros voltem ao que faziam.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A18": {
+      "arquivo": "guache/fichas/pes-a18.webp",
+      "alt": "A adolescente olha seus mapas desenhados; o pai deixa os lápis ao alcance e se afasta.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A19": {
+      "arquivo": "guache/fichas/pes-a19.webp",
+      "alt": "A adolescente fala ao telefone numa poltrona; a mãe está na cozinha, ao fundo.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A20": {
+      "arquivo": "guache/fichas/pes-a20.webp",
+      "alt": "A adolescente lê na cama; a avó bate na porta antes de se aproximar.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A21": {
+      "arquivo": "guache/fichas/pes-a21.webp",
+      "alt": "Adolescente e pai lado a lado no sofá; o telefone do pai está guardado.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A22": {
+      "arquivo": "guache/fichas/pes-a22.webp",
+      "alt": "O menino continua a brincar com blocos; a mãe, a alguns passos, fala com ele com a mão no peito.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A23": {
+      "arquivo": "guache/fichas/pes-a23.webp",
+      "alt": "O pai, de saída, explica ao menino onde estará; a avó confirma que fica com ele.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    },
+    "PES-A24": {
+      "arquivo": "guache/fichas/pes-a24.webp",
+      "alt": "A avó chega com as compras; a cuidadora confere na porta com o menino ao lado.",
+      "acabamento": "guache",
+      "reserva": null,
+      "vetor": null
+    }
+  },
+  "familias": {
+    "brincar": {
+      "arquivo": "guache/cards/brincar-convite-verbal.webp",
+      "alt": "Avó ajoelhada oferece dois brinquedos, uma bola e um bloco; a menina aponta para um deles.",
+      "variantes": [
+        {
+          "arquivo": "familias/brincar.svg",
+          "alt": "Adulto e criança sentados no chão montando uma torre de blocos"
+        },
+        {
+          "arquivo": "familias/brincar-2.svg",
+          "alt": "Duas mãos, uma grande e uma pequena, colocam blocos na mesma torre, uma de cada vez"
+        },
+        {
+          "arquivo": "familias/brincar-3.svg",
+          "alt": "Folha com rabiscos coloridos feitos pela criança, gizes espalhados e uma mão pequena desenhando"
+        },
+        {
+          "arquivo": "familias/brincar-4.svg",
+          "alt": "Caixa de papelão transformada em carrinho, com uma panela e uma colher de pau ao lado"
+        },
+        {
+          "arquivo": "familias/brincar-5.svg",
+          "alt": "Três brinquedos lado a lado e uma mão pequena indo em direção ao preferido"
+        },
+        {
+          "arquivo": "familias/brincar-6.svg",
+          "alt": "Duas mãos adultas oferecem dois brinquedos e a criança aponta para um deles"
+        }
+      ],
+      "vetor": "familias/brincar.svg",
+      "acabamento": "guache",
+      "reserva": "cards/brincar-convite-verbal.webp"
+    },
+    "transicoes": {
+      "arquivo": "guache/cards/transicoes-duas-figuras.webp",
+      "alt": "Mãe aponta, na parede, a primeira de duas figuras ligadas por uma seta: brincar e depois comer; o menino olha.",
+      "variantes": [
+        {
+          "arquivo": "familias/transicoes.svg",
+          "alt": "Adulto agachado mostra um sapato à criança; na parede, dois quadros indicam agora e depois"
+        },
+        {
+          "arquivo": "familias/transicoes-2.svg",
+          "alt": "Folha de papel com dois desenhos ligados por uma seta: o que acontece agora e o que vem depois"
+        },
+        {
+          "arquivo": "familias/transicoes-3.svg",
+          "alt": "Mochila, sapatos e garrafa de água reunidos perto da porta, prontos para a saída"
+        },
+        {
+          "arquivo": "familias/transicoes-4.svg",
+          "alt": "Adulto agachado diz à criança, com uma frase curta, qual é a próxima ação"
+        },
+        {
+          "arquivo": "familias/transicoes-5.svg",
+          "alt": "Um plano riscado de leve e uma seta que leva ao novo plano combinado"
+        },
+        {
+          "arquivo": "familias/transicoes-6.svg",
+          "alt": "Canto preparado para uma troca mais confortável: abafador de ruído, luz baixa e uma almofada perto da porta"
+        }
+      ],
+      "vetor": "familias/transicoes.svg",
+      "acabamento": "guache",
+      "reserva": "cards/transicoes-duas-figuras.webp"
+    },
+    "noite": {
+      "arquivo": "guache/cards/noite-livro-escolhido.webp",
+      "alt": "Avó sentada na beira da cama oferece dois livros; a menina, de pijama, aponta para um. Um abajur aceso e a lua na janela.",
+      "variantes": [
+        {
+          "arquivo": "familias/noite.svg",
+          "alt": "Adulto sentado ao lado da cama lê um livro para a criança deitada; a lua aparece na janela"
+        },
+        {
+          "arquivo": "familias/noite-2.svg",
+          "alt": "Canto tranquilo com almofada, manta dobrada, livro e uma luz baixa"
+        },
+        {
+          "arquivo": "familias/noite-3.svg",
+          "alt": "Duas mãos adultas oferecem dois livros e uma mão pequena escolhe um deles"
+        }
+      ],
+      "vetor": "familias/noite.svg",
+      "acabamento": "guache",
+      "reserva": "cards/noite-livro-escolhido.webp"
+    },
+    "emocoes": {
+      "arquivo": "guache/cards/emocoes-acolher-sem-cobrar.webp",
+      "alt": "Menina sentada abraça os joelhos, chateada; a mãe senta ao lado, na mesma altura, sem tocar. Blocos caídos perto.",
+      "variantes": [
+        {
+          "arquivo": "familias/emocoes.svg",
+          "alt": "Criança sentada com um rabisco de frustração sobre a cabeça; o adulto fica ao lado, na mesma altura, sem forçar contato"
+        },
+        {
+          "arquivo": "familias/emocoes-2.svg",
+          "alt": "Um rabisco emaranhado que aos poucos se desfaz em uma linha calma, ao lado de um copo de água e uma almofada"
+        },
+        {
+          "arquivo": "familias/emocoes-3.svg",
+          "alt": "Adulto sentado de olhos fechados, com a mão no peito, respira antes de responder; a criança brinca ao fundo"
+        }
+      ],
+      "vetor": "familias/emocoes.svg",
+      "acabamento": "guache",
+      "reserva": "cards/emocoes-acolher-sem-cobrar.webp"
+    },
+    "autonomia": {
+      "arquivo": "guache/cards/autonomia-dividir-tarefa.webp",
+      "alt": "Menino num banquinho, diante da pia, segura a escova de dentes e olha três figuras na parede: escova, copo e toalha, a primeira já marcada. A mãe espera com a toalha.",
+      "variantes": [
+        {
+          "arquivo": "familias/autonomia.svg",
+          "alt": "Criança sentada calça o próprio sapato seguindo três quadros de passos; o adulto acompanha de longe"
+        },
+        {
+          "arquivo": "familias/autonomia-2.svg",
+          "alt": "Três objetos em sequência — escova de dentes, copo e toalha — ligados por um caminho pontilhado"
+        },
+        {
+          "arquivo": "familias/autonomia-3.svg",
+          "alt": "Duas camisetas lado a lado e uma mão pequena escolhendo uma delas"
+        }
+      ],
+      "vetor": "familias/autonomia.svg",
+      "acabamento": "guache",
+      "reserva": "cards/autonomia-dividir-tarefa.webp"
+    },
+    "cuidadores": {
+      "arquivo": "guache/cards/cuidadores-anotar-sequencia.webp",
+      "alt": "Na cozinha, a mãe prende um bilhete na geladeira com um ímã; a cuidadora, com uma caneca, lê.",
+      "variantes": [
+        {
+          "arquivo": "familias/cuidadores.svg",
+          "alt": "Dois adultos seguram juntos a mesma folha com um combinado; a criança brinca perto deles"
+        },
+        {
+          "arquivo": "familias/cuidadores-2.svg",
+          "alt": "Bilhete preso na parede com um combinado da casa e duas marcas, uma de cada adulto"
+        },
+        {
+          "arquivo": "familias/cuidadores-3.svg",
+          "alt": "Dois adultos sentados frente a frente conversam sobre um combinado, com a folha entre eles"
+        }
+      ],
+      "vetor": "familias/cuidadores.svg",
+      "acabamento": "guache",
+      "reserva": "cards/cuidadores-anotar-sequencia.webp"
+    }
+  },
+  "geral": {
+    "entrada": {
+      "arquivo": "guache/geral/entrada.webp",
+      "alt": "Mãe e filha sentadas diante de três fichas em leque; a menina aponta para a do meio. Um sol nasce atrás das fichas.",
+      "acabamento": "guache",
+      "reserva": "geral/entrada.webp",
+      "vetor": "geral/entrada.svg"
+    },
+    "vazio": {
+      "arquivo": "guache/geral/vazio.webp",
+      "alt": "Caixa de fichas aberta, só com as divisórias, ainda sem nenhuma ficha.",
+      "acabamento": "guache",
+      "reserva": "geral/vazio.webp",
+      "vetor": "geral/vazio.svg"
+    },
+    "sem-recomendacao": {
+      "arquivo": "guache/geral/sem-recomendacao.webp",
+      "alt": "Uma ficha em branco com o sol meio encoberto por uma nuvem.",
+      "acabamento": "guache",
+      "reserva": "geral/sem-recomendacao.webp",
+      "vetor": "geral/sem-recomendacao.svg"
+    },
+    "sem-criancas": {
+      "arquivo": "guache/geral/sem-criancas.webp",
+      "alt": "Uma criança ao centro e dois lugares vazios, marcados só por uma mancha clara, ao lado de um sinal de mais.",
+      "acabamento": "guache",
+      "reserva": "geral/sem-criancas.webp",
+      "vetor": "geral/sem-criancas.svg"
+    },
+    "padrao": {
+      "arquivo": "geral/padrao.svg",
+      "alt": "Um card de atividade sobre a mesa"
+    },
+    "avaliacao": {
+      "arquivo": "guache/geral/avaliacao.webp",
+      "alt": "Duas adultas sentadas em cadeiras conversam frente a frente; uma delas segura um bloco de notas.",
+      "acabamento": "guache",
+      "reserva": "geral/avaliacao.webp",
+      "vetor": "geral/avaliacao.svg"
+    },
+    "boas-vindas-acolhimento": {
+      "arquivo": "guache/geral/boas-vindas-acolhimento.webp",
+      "alt": "Mãe cansada, sentada no chão e encostada no sofá, com a mão na testa; brinquedos espalhados e a menina brincando perto.",
+      "acabamento": "guache",
+      "reserva": "geral/boas-vindas-acolhimento.webp",
+      "vetor": null
+    },
+    "boas-vindas-conte": {
+      "arquivo": "guache/geral/boas-vindas-conte.webp",
+      "alt": "Pai segura uma folha com três itens, o primeiro já marcado; o menino mostra o coelho de pelúcia preferido.",
+      "acabamento": "guache",
+      "reserva": "geral/boas-vindas-conte.webp",
+      "vetor": null
+    },
+    "boas-vindas-kit": {
+      "arquivo": "guache/geral/boas-vindas-kit.webp",
+      "alt": "Uma mão tira uma ficha da caixa de fichas; outras duas fichas estão à frente e um sol aparece atrás.",
+      "acabamento": "guache",
+      "reserva": "geral/boas-vindas-kit.webp",
+      "vetor": null
+    },
+    "boas-vindas-ajuste": {
+      "arquivo": "guache/geral/boas-vindas-ajuste.webp",
+      "alt": "Avó vira uma ficha no chão, ao lado da menina; perto delas, três marcas redondas: feito, pausa e trocar.",
+      "acabamento": "guache",
+      "reserva": "geral/boas-vindas-ajuste.webp",
+      "vetor": null
+    }
+  },
+  "avatares": [
+    {
+      "id": "sol",
+      "arquivo": "avatares/sol.svg",
+      "alt": "Avatar sol"
+    },
+    {
+      "id": "folha",
+      "arquivo": "avatares/folha.svg",
+      "alt": "Avatar folha"
+    },
+    {
+      "id": "onda",
+      "arquivo": "avatares/onda.svg",
+      "alt": "Avatar onda"
+    },
+    {
+      "id": "lua",
+      "arquivo": "avatares/lua.svg",
+      "alt": "Avatar lua"
+    },
+    {
+      "id": "monte",
+      "arquivo": "avatares/monte.svg",
+      "alt": "Avatar monte"
+    },
+    {
+      "id": "flor",
+      "arquivo": "avatares/flor.svg",
+      "alt": "Avatar flor"
+    },
+    {
+      "id": "pipa",
+      "arquivo": "avatares/pipa.svg",
+      "alt": "Avatar pipa"
+    },
+    {
+      "id": "nuvem",
+      "arquivo": "avatares/nuvem.svg",
+      "alt": "Avatar nuvem"
+    }
+  ],
+  "padrao": {
+    "arquivo": "geral/padrao.svg",
+    "alt": "Um card de atividade sobre a mesa"
+  }
+}

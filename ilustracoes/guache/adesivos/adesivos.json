@@ -1,0 +1,149 @@
+{
+ "gerado_de": "ilustracoes/_fonte/adesivos.mjs",
+ "referencia": {
+  "job": "85eb5889-4068-4be3-945d-20afa5e516e6",
+  "arquivo": "guache/piloto/cor-1-terra-fria.webp"
+ },
+ "modelo": {
+  "id": "gpt_image_2_6",
+  "quality": "xhigh",
+  "resolution": "2k",
+  "creditos": 4.5
+ },
+ "novos": [
+  {
+   "id": "nuvem-e-sol",
+   "arquivo": "adesivos/nuvem-e-sol.webp",
+   "alt": "Nuvem com um sol aparecendo."
+  },
+  {
+   "id": "caneca-e-colher",
+   "arquivo": "adesivos/caneca-e-colher.webp",
+   "alt": "Caneca e colher de pau."
+  },
+  {
+   "id": "cartao-com-figura",
+   "arquivo": "adesivos/cartao-com-figura.webp",
+   "alt": "Cartão com uma figura."
+  },
+  {
+   "id": "balao-de-fala",
+   "arquivo": "adesivos/balao-de-fala.webp",
+   "alt": "Um balão de fala."
+  },
+  {
+   "id": "livro-aberto",
+   "arquivo": "adesivos/livro-aberto.webp",
+   "alt": "Livro aberto."
+  },
+  {
+   "id": "mao-apontando",
+   "arquivo": "adesivos/mao-apontando.webp",
+   "alt": "Mão de criança apontando."
+  },
+  {
+   "id": "cartoes-de-figuras",
+   "arquivo": "adesivos/cartoes-de-figuras.webp",
+   "alt": "Três cartões com figuras."
+  },
+  {
+   "id": "carrinho",
+   "arquivo": "adesivos/carrinho.webp",
+   "alt": "Carrinho de madeira."
+  },
+  {
+   "id": "giz-de-cera",
+   "arquivo": "adesivos/giz-de-cera.webp",
+   "alt": "Três gizes de cera e um rabisco."
+  },
+  {
+   "id": "bola",
+   "arquivo": "adesivos/bola.webp",
+   "alt": "Bola de brincar."
+  },
+  {
+   "id": "livros",
+   "arquivo": "adesivos/livros.webp",
+   "alt": "Dois livros empilhados."
+  },
+  {
+   "id": "chocalho",
+   "arquivo": "adesivos/chocalho.webp",
+   "alt": "Chocalho de madeira."
+  },
+  {
+   "id": "balde-e-patinho",
+   "arquivo": "adesivos/balde-e-patinho.webp",
+   "alt": "Balde com água e um patinho."
+  },
+  {
+   "id": "cachorro-de-pelucia",
+   "arquivo": "adesivos/cachorro-de-pelucia.webp",
+   "alt": "Cachorro de pelúcia."
+  },
+  {
+   "id": "bule-de-brinquedo",
+   "arquivo": "adesivos/bule-de-brinquedo.webp",
+   "alt": "Bule e xícara de brinquedo."
+  },
+  {
+   "id": "boneco-com-capa",
+   "arquivo": "adesivos/boneco-com-capa.webp",
+   "alt": "Boneco de madeira com capa."
+  },
+  {
+   "id": "papel-e-lapis",
+   "arquivo": "adesivos/papel-e-lapis.webp",
+   "alt": "Folha de papel e lápis."
+  },
+  {
+   "id": "impressora",
+   "arquivo": "adesivos/impressora.webp",
+   "alt": "Impressora com uma folha saindo."
+  },
+  {
+   "id": "almofada-e-manta",
+   "arquivo": "adesivos/almofada-e-manta.webp",
+   "alt": "Almofada com uma manta dobrada."
+  },
+  {
+   "id": "tapete",
+   "arquivo": "adesivos/tapete.webp",
+   "alt": "Tapete vazio."
+  },
+  {
+   "id": "mao-aberta",
+   "arquivo": "adesivos/mao-aberta.webp",
+   "alt": "Mão aberta."
+  },
+  {
+   "id": "lampada",
+   "arquivo": "adesivos/lampada.webp",
+   "alt": "Abajur aceso."
+  },
+  {
+   "id": "bonecos-juntos",
+   "arquivo": "adesivos/bonecos-juntos.webp",
+   "alt": "Cinco bonecos de madeira bem juntos."
+  },
+  {
+   "id": "um-adulto",
+   "arquivo": "adesivos/um-adulto.webp",
+   "alt": "Um boneco de madeira."
+  },
+  {
+   "id": "tres-adultos",
+   "arquivo": "adesivos/tres-adultos.webp",
+   "alt": "Três bonecos de madeira lado a lado."
+  }
+ ],
+ "reaproveitados": {
+  "blocos": "objeto-blocos",
+  "tenis": "objeto-tenis",
+  "lua": "objeto-lua-e-estrelas",
+  "camiseta": "objeto-camiseta",
+  "baloes": "objeto-baloes-de-conversa",
+  "coelho": "objeto-coelho-de-pelucia",
+  "abafador": "objeto-abafador"
+ }
+}

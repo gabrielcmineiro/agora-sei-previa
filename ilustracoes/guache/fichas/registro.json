@@ -1,0 +1,191 @@
+{
+ "nota": "Imagens geradas por IA (Higgsfield, gpt_image_2_6, xhigh, 2k, 3:2) com a referência de estilo do projeto (job 85eb5889-4068-4be3-945d-20afa5e516e6). Não são pintura à mão. Cenas em ilustracoes/_fonte/fichas-novas.mjs.",
+ "conjunto": "84 fichas de catálogo: regras-88.json com destino \"catalogo\"; ficam de fora as rotas PES-D12, PES-D13, PES-D16, PES-D31 (contagem.json). Mais 1 extra: piloto-idades/piloto-encerrar-13-refeita.",
+ "jobs": {
+  "pes-d01": "a21ad740-3d20-4ee8-9590-dae68e662be0",
+  "pes-d02": "01e3a7c7-f0a6-44f2-85fc-eaae1fefea33",
+  "pes-d03": "e48368f8-1cbc-4dc2-a52b-5f806eaa7065",
+  "pes-d04": "29748b6e-449b-4744-b93d-ecef95feb026",
+  "pes-d05": "3bc2f1a8-a3bd-4193-bfde-20e024f127a6",
+  "pes-d06": "7de6115f-2f14-4b6d-afb3-c35df7af7b13",
+  "pes-d07": "67b752c0-8e52-4ebf-af81-c8b10484f538",
+  "pes-d08": "c41c80d9-98fa-4e38-b805-5e66a5a3268f",
+  "pes-d09": "0339c3a2-a02f-46a1-83c1-6e4a16b5cf50",
+  "pes-d10": "4bf30973-c6f4-4492-b24d-cb775c8974b8",
+  "pes-d11": "79162549-9489-4130-85e2-1a5f00fe0c24",
+  "pes-d14": "7e75b6d2-5fde-4252-8f3c-ce8296a56ba2",
+  "pes-d15": "28c87dbc-de3f-414c-a569-6f82ea76f061",
+  "pes-d17": "008c66ce-1b86-4048-a227-5f2adaf0c711",
+  "pes-d18": "00ef1d21-3185-4f53-9645-d54a774c95b4",
+  "pes-d19": "070b36b6-6470-41f8-8030-40486ab4a3a7",
+  "pes-d20": "3687f434-3e71-4c73-a380-0d5ed23f2be7",
+  "pes-d21": "25fb25ed-e38b-4c5c-8560-c6052d7aabb1",
+  "pes-d22": "28e951dd-afdc-4add-811e-fdc44db16612",
+  "pes-d23": "cece1324-d278-4a24-821a-8b4d0257862e",
+  "pes-d24": "a5a8a391-cb96-4f3e-9f2d-f82193d72622",
+  "pes-d25": "86ba7298-1334-478c-ac22-1a6daca32c00",
+  "pes-d26": "f5e8be5a-8a83-4360-8f3e-e249f8c7026b",
+  "pes-d27": "0a8985aa-2d87-4e9f-8e20-b476e5276aee",
+  "pes-d28": "336dfde8-4ac6-4e00-a3c7-83780c0c5d9f",
+  "pes-d29": "cf5dafe6-cf0f-4cab-a0de-8be4377ff5d5",
+  "pes-d30": "d651b02b-f89c-43b6-920c-5b20cffa5705",
+  "pes-d32": "c5cc47da-9275-452b-af7f-925d4181cc28",
+  "pes-e01": "41bb247a-0359-4703-9f76-23293b82221e",
+  "pes-e02": "a5d3d467-ab93-4e3b-9986-1efaac76589d",
+  "pes-e03": "4ca284e5-e375-4a3b-b6c4-c8dacfe3fdb5",
+  "pes-e04": "e0ad067c-d891-47d9-a834-30349987033b",
+  "pes-e05": "af994b39-76e6-4ad0-b166-ab9af7515b14",
+  "pes-e06": "16474440-24a0-4337-a8f7-20928946cc90",
+  "pes-e07": "0a62a882-e647-46c2-8d3e-b51227473279",
+  "pes-e08": "27022fd2-7e19-4a42-882c-1585aa78fc01",
+  "pes-e09": "fb8bef28-c1af-4d42-bf75-bf909dd43ca7",
+  "pes-e10": "647ad8cf-037f-49c2-bebe-f3ef6e2e1b99",
+  "pes-e11": "903e9b92-d88c-4b38-b7f1-8609a3e01bb8",
+  "pes-e12": "86ccdf29-ccaa-40a3-8474-5581b7d4cc8e",
+  "pes-e13": "c9abb2a9-d636-489b-8a88-d2be9040457b",
+  "pes-e14": "79890e3d-6efe-4285-8e3f-f14d541fbd84",
+  "pes-e15": "c61df253-841d-4b04-8579-3585ed07bde9",
+  "pes-e16": "b4606b3f-fc2b-4f8b-b2ef-6391c582bb64",
+  "pes-e17": "6570ec9e-b66a-4280-9f6d-d943b801654c",
+  "pes-e18": "288a25fd-6199-4a67-841a-175356e5e382",
+  "pes-e19": "3b24db68-be99-4985-aa5a-330013ba8dc9",
+  "pes-e20": "a5ffce10-4632-4a9b-bc5e-ab2b1ae1584c",
+  "pes-e21": "2402622c-ff76-469a-8ee7-dcc48650cdbc",
+  "pes-e22": "ed6eff79-5929-4d61-885e-48add94d644c",
+  "pes-e23": "65654509-bbc4-4f65-8540-19b9a646a487",
+  "pes-e24": "c5461f22-298a-47a9-b4ba-f5d0bc8f4e4c",
+  "pes-e25": "51cb100f-db48-4c04-823b-c564643162a3",
+  "pes-e26": "38238f6a-117e-4c20-b57c-1eb51ba0c022",
+  "pes-e27": "7870935e-c29b-4a25-b74a-586c1c09f260",
+  "pes-e28": "8d8d1fcc-3df6-4620-9818-5b22d843a19b",
+  "pes-e29": "d211f977-1dad-4e9a-bd9e-bc0a0bbef5d1",
+  "pes-e30": "1d07bd6b-f514-4dfc-8b89-7d320d8b89dc",
+  "pes-e31": "c740d4d5-549a-4615-a28f-37d37f7ef7c5",
+  "pes-e32": "08f9865f-cfe4-4f9b-a97e-644c0b1a9489",
+  "pes-a01": "e8d7d3a2-42de-4017-a18d-18174aeaa044",
+  "pes-a02": "a67784e0-9d09-46d1-9336-8bc974531288",
+  "pes-a03": "6743a7d0-1198-45ba-9378-6bd649f8aad2",
+  "pes-a04": "accb6e50-9508-4585-b6fe-fdc7a7bebf25",
+  "pes-a05": "192b2fdc-aec8-4642-bfd2-1f581cbf2228",
+  "pes-a06": "2e3bcc58-f4e9-4e9b-a6fb-b2d35b4333e0",
+  "pes-a07": "30bed6eb-31fe-4843-acd2-af8d9de23c03",
+  "pes-a08": "aa3a83a5-b4f7-487c-b2fb-aea0f374ba16",
+  "pes-a09": "35cdc17a-79fd-44a9-8a00-9e2a23167b76",
+  "pes-a10": "2c51ff5e-2888-4bac-8c49-bf3360c1d6cb",
+  "pes-a11": "33b8ebb4-67ee-40d1-87a7-75c45d843c3a",
+  "pes-a12": "c39c019f-6929-4edb-84f8-b76a06a3eb72",
+  "pes-a13": "ba8f0d8d-7ec0-490f-8d7c-f10e65608ac0",
+  "pes-a14": "580939e0-5a63-4029-abdf-a18555d56e4b",
+  "pes-a15": "56490991-2dbc-4d0d-9e41-fb57edd4f908",
+  "pes-a16": "1a2d7a4f-55cf-487a-9892-09c9997ea3f8",
+  "pes-a17": "0fbdffab-23d8-4fa4-afb6-7a7b9e43877b",
+  "pes-a18": "07ba3399-4fe0-4cab-a1cd-92029fcbfc70",
+  "pes-a19": "af327f49-2724-40a3-b5da-add4ae6bbc4b",
+  "pes-a20": "bd935763-83c6-4103-8232-a60e75a07b55",
+  "pes-a21": "cd077440-18c1-4372-97df-c1ae9a256843",
+  "pes-a22": "886e151f-d4cb-4c86-80f6-bb33980c5702",
+  "pes-a23": "1352426f-1c5e-4783-9505-d4863cc4089a",
+  "pes-a24": "6a268415-fa19-4c14-93e5-1dc962d019b9",
+  "piloto-encerrar-13-refeita": "edc15ff7-ff90-4613-ba76-07bce411ba84"
+ },
+ "refeitas": [
+  {
+   "nome": "pes-e19",
+   "job_original": "5d51123f-febf-41ad-b929-3dbf01a73598",
+   "job_refeito": "3b24db68-be99-4985-aa5a-330013ba8dc9",
+   "motivo": "a cuidadora jovem (trança, camisa azul) saía quase idêntica à adolescente de 13 anos (tranças, moletom azul) e parecia uma segunda adolescente",
+   "resultado": "adulto trocado (avó, pai ou mãe); conferida na folha, mantida a refeita"
+  },
+  {
+   "nome": "pes-e23",
+   "job_original": "a9bd1e30-6d5f-4aac-8f58-947fa6f674b1",
+   "job_refeito": "65654509-bbc4-4f65-8540-19b9a646a487",
+   "motivo": "a cuidadora jovem (trança, camisa azul) saía quase idêntica à adolescente de 13 anos (tranças, moletom azul) e parecia uma segunda adolescente",
+   "resultado": "adulto trocado (avó, pai ou mãe); conferida na folha, mantida a refeita"
+  },
+  {
+   "nome": "pes-e27",
+   "job_original": "fc1f4df2-fb49-4808-b68d-c3a5f3b3c192",
+   "job_refeito": "7870935e-c29b-4a25-b74a-586c1c09f260",
+   "motivo": "a cuidadora jovem (trança, camisa azul) saía quase idêntica à adolescente de 13 anos (tranças, moletom azul) e parecia uma segunda adolescente",
+   "resultado": "adulto trocado (avó, pai ou mãe); conferida na folha, mantida a refeita"
+  },
+  {
+   "nome": "pes-e31",
+   "job_original": "5ae78768-cdc4-41ab-9149-aaa488a1bc28",
+   "job_refeito": "c740d4d5-549a-4615-a28f-37d37f7ef7c5",
+   "motivo": "a cuidadora jovem (trança, camisa azul) saía quase idêntica à adolescente de 13 anos (tranças, moletom azul) e parecia uma segunda adolescente",
+   "resultado": "adulto trocado (avó, pai ou mãe); conferida na folha, mantida a refeita"
+  },
+  {
+   "nome": "pes-a10",
+   "job_original": "5d05cbe3-aa9f-4b1b-8269-8ed75857ca7c",
+   "job_refeito": "2c51ff5e-2888-4bac-8c49-bf3360c1d6cb",
+   "motivo": "a cuidadora jovem (trança, camisa azul) saía quase idêntica à adolescente de 13 anos (tranças, moletom azul) e parecia uma segunda adolescente",
+   "resultado": "adulto trocado (avó, pai ou mãe); conferida na folha, mantida a refeita"
+  },
+  {
+   "nome": "pes-a14",
+   "job_original": "580939e0-5a63-4029-abdf-a18555d56e4b",
+   "job_refeito": "6d425c83-a09e-42e3-b335-15e47e0b1b08",
+   "motivo": "mãe de braços cruzados (postura que o piloto refeito acabou de corrigir)",
+   "resultado": "refeita saiu pior (braço solto, sem corpo, apontando o calendário); mantida a original"
+  },
+  {
+   "nome": "pes-a15",
+   "job_original": "62418c65-fd56-4de2-ac4d-21265f6088da",
+   "job_refeito": "56490991-2dbc-4d0d-9e41-fb57edd4f908",
+   "motivo": "a cuidadora jovem (trança, camisa azul) saía quase idêntica à adolescente de 13 anos (tranças, moletom azul) e parecia uma segunda adolescente",
+   "resultado": "adulto trocado (avó, pai ou mãe); conferida na folha, mantida a refeita"
+  }
+ ],
+ "falhas": [],
+ "suspeitas_que_ficaram": [
+  {
+   "nome": "pes-a14",
+   "motivo": "mãe de braços cruzados; a refeita teve um braço solto e foi descartada (limite de uma refação)"
+  },
+  {
+   "nome": "pes-e27",
+   "motivo": "refeita: nenhum par de jovens divide o mesmo cartão, como a cena pedia; o resto está certo"
+  },
+  {
+   "nome": "pes-a10",
+   "motivo": "refeita com o pai no lugar da cuidadora; o menino de 4 anos parece um pouco mais novo, perto de 3"
+  },
+  {
+   "nome": "pes-a24",
+   "motivo": "a cuidadora jovem e o menino de 8 anos estão certos, mas ela segue parecida com a adolescente do elenco; aqui não há adolescente na cena, então não confunde"
+  },
+  {
+   "nome": "pes-d14",
+   "motivo": "ponto médio 59,5 meses: usado o menino de 8 anos (CAIO8) ao lado da menina de 3; para uma ficha de 2 a 7 anos o menino pode parecer velho demais"
+  },
+  {
+   "nome": "pes-d01",
+   "motivo": "linha de ilustração não cita criança (\"adulto ouvindo\"), mas a cena mostra a adolescente explicando ao pai, porque \"ouvindo\" pede alguém falando"
+  },
+  {
+   "nome": "adulto-so (pes-d04, d08, d09, d17, d18, d23, d28, d30)",
+   "motivo": "destinatário adulto e linha sem criança: só adultos, conforme a regra; algumas cenas (d09, d18, d30) ficam abstratas sem a criança"
+  }
+ ],
+ "saldo_antes": 1335.75,
+ "saldo_depois": 921.75,
+ "creditos": {
+  "gasto": 414.0,
+  "pedidos": 92,
+  "por_imagem": 4.5,
+  "detalhe": "85 iniciais (84 fichas + 1 piloto) + 7 refeitas"
+ },
+ "folhas_de_contato": [
+  "/tmp/as-fichas/folha-01.jpg",
+  "/tmp/as-fichas/folha-02.jpg",
+  "/tmp/as-fichas/folha-03.jpg",
+  "/tmp/as-fichas/folha-04.jpg",
+  "/tmp/as-fichas/folha-05.jpg",
+  "/tmp/as-fichas/folha-06.jpg",
+  "/tmp/as-fichas/folha-07.jpg",
+  "/tmp/as-fichas/folha-08.jpg"
+ ]
+}
