@@ -14,7 +14,7 @@ const atr = (nome, valor) => (valor === undefined || valor === null || valor ===
 export const ESTADOS = {
   rascunho_nao_revisado: {rotulo: 'Rascunho, sem revisão', icone: 'estado-rascunho', tom: 'atencao'},
   fonte_conferida: {rotulo: 'Fonte conferida, sem revisão profissional', icone: 'estado-fonte', tom: 'info'},
-  revisao_por_agente: {rotulo: 'Revisado por agente, não por profissional', icone: 'estado-agente', tom: 'info'},
+  revisao_por_agente: {rotulo: 'Sem revisão profissional', icone: 'estado-agente', tom: 'info'},
   aprovado_humano: {rotulo: 'Aprovado por profissional', icone: 'estado-humano', tom: 'ok'},
   suspenso: {rotulo: 'Suspenso', icone: 'estado-suspenso', tom: 'cuidado'},
   sintetico: {rotulo: 'Exemplo sintético', icone: 'estado-exemplo', tom: 'tracejada'},
@@ -89,10 +89,10 @@ export function opcao({nome, valor, rotulo, dica = '', tipo = 'single', marcada 
   return `<label class="as-opcao${neutra ? ' as-opcao--neutra' : ''}${classe ? ` ${esc(classe)}` : ''}"><input type="${tipo === 'multi' ? 'checkbox' : 'radio'}" name="${esc(nome)}" value="${esc(valor)}"${marcada ? ' checked' : ''}${desativada ? ' disabled' : ''}${obrigatoria && tipo !== 'multi' ? ' required' : ''}${atr('data-testid', testid)}><span class="as-opcao-caixa">${figura || marca}<span class="as-opcao-texto"><span class="as-opcao-nome">${esc(rotulo)}</span>${dica ? `<span class="as-opcao-dica">${esc(dica)}</span>` : ''}</span>${figura ? marca : ''}</span></label>`;
 }
 // visual: as opções viram blocos em duas colunas, com adesivo (arte), número ou ícone em cima e o nome embaixo. Não use em risco, diagnóstico e suporte.
-export function pergunta({chave, titulo, dica = '', tipo = 'single', opcoes = [], neutras = [], valor, duas = false, menor = false, obrigatoria = true, visual = false}) {
+export function pergunta({chave, titulo, principal = false, dica = '', tipo = 'single', opcoes = [], neutras = [], valor, duas = false, menor = false, obrigatoria = true, visual = false}) {
   const marcada = v => (Array.isArray(valor) ? valor.includes(v) : valor === v);
   const fazer = (o, neutra) => opcao({nome: chave, valor: o.valor, rotulo: o.rotulo, dica: o.dica, icone: o.icone, familia: o.familia, arte: neutra ? '' : o.arte, numero: neutra ? '' : o.numero, classe: visual && !neutra ? 'as-g-opcao' : '', desativada: o.desativada, tipo: neutra && tipo === 'multi' ? 'multi' : tipo, marcada: marcada(o.valor), neutra, obrigatoria});
-  return `<fieldset class="as-pergunta" data-testid="quiz-${esc(chave)}"><legend class="as-pergunta-titulo${menor ? ' as-pergunta-titulo--menor' : ''}">${esc(titulo)}</legend>${dica ? `<p class="as-pergunta-dica">${esc(dica)}</p>` : ''}<div class="as-opcoes${duas ? ' as-opcoes--duas' : ''}${visual ? ' as-opcoes--visual' : ''}">${opcoes.map(o => fazer(o, false)).join('')}</div>${neutras.length ? `<div class="as-opcoes-neutras">${neutras.map(o => fazer(o, true)).join('')}</div>` : ''}</fieldset>`;
+  return `<fieldset class="as-pergunta" data-testid="quiz-${esc(chave)}"><legend class="as-pergunta-titulo${menor ? ' as-pergunta-titulo--menor' : ''}">${principal ? `<h1>${esc(titulo)}</h1>` : esc(titulo)}</legend>${dica ? `<p class="as-pergunta-dica">${esc(dica)}</p>` : ''}<div class="as-opcoes${duas ? ' as-opcoes--duas' : ''}${visual ? ' as-opcoes--visual' : ''}">${opcoes.map(o => fazer(o, false)).join('')}</div>${neutras.length ? `<div class="as-opcoes-neutras">${neutras.map(o => fazer(o, true)).join('')}</div>` : ''}</fieldset>`;
 }
 
 // ── Card resumido ─────────────────────────────────────────────────────
@@ -105,7 +105,7 @@ export function pergunta({chave, titulo, dica = '', tipo = 'single', opcoes = []
 // porque: uma frase curta. No kit cabe em até três linhas; no modo compacto o rótulo vira "Para <criança>:" e o texto fica em até duas.
 export function cardResumo({card, familia, imagem, porque = '', href, modo = '', selo = '', consulta = false, motivo = '', salvo = false, materiais = [], crianca = '', prefixo = 'kit-item', nivel = 2, marca = ''}) {
   const cls = ['as-card', modo && `as-card--${modo}`, consulta && 'as-card--consulta'].filter(Boolean).join(' ');
-  const fatos = [`<li>${icone('relogio')}${esc(card.contexto?.tempo_min)} min</li>`, materiais.length ? `<li>${icone('materiais')}${esc(materiais.join(', '))}</li>` : ''].join('');
+  const fatos = [Number.isFinite(card.contexto?.tempo_min) ? `<li>${icone('relogio')}${esc(card.contexto.tempo_min)} min</li>` : '' , materiais.length ? `<li>${icone('materiais')}${esc(materiais.join(', '))}</li>` : ''].join('');
   const linha = consulta
     ? `<p class="as-card-porque as-card-porque--atencao">${icone('info')}<span><b>Só para consulta.</b> ${esc(motivo)}</span></p>`
     : porque ? `<p class="as-card-porque" data-testid="kit-why-${esc(card.id)}">${icone('porque')}<span><b>${modo === 'compacto' && crianca ? `Para ${esc(crianca)}` : `Por que apareceu${crianca ? ` para ${esc(crianca)}` : ''}`}:</b> ${esc(porque)}</span></p>` : '';
@@ -169,17 +169,16 @@ export function filtro({rotulo, icone: ic = '', pressionado = false, href, famil
 // rota: 'home' | 'explore' | 'saved' | 'profiles' | 'help' | '' (nenhuma marcada).
 // semNav: sem a barra de baixo (boas-vindas, quiz, erro). semRodape: sem o rodapé (boas-vindas, montando o kit).
 // crianca: {nome, avatar} ou null. base: {design, ilustracoes}. links: troca os destinos (padrão: rotas #/…).
-export function moldura({rota = '', crianca = null, conteudoHtml, base = {design: '../design', ilustracoes: '../ilustracoes'}, links = ROTAS, semNav = false, semRodape = false, estreito = false, largo = false, textoDemo = 'Demonstração: dados fictícios, conteúdo em revisão'}) {
+export function moldura({rota = '', appLinks = false, crianca = null, conteudoHtml, base = {design: '../design', ilustracoes: '../ilustracoes'}, links = ROTAS, semNav = false, semRodape = false, estreito = false, largo = false}) {
   const L = {...ROTAS, ...links};
   const nav = semNav ? '' : `<nav class="as-nav" aria-label="Principal">${NAV.map(([r, ic, t]) => `<a class="as-nav-item" href="${esc(L[r])}"${r === rota ? ' aria-current="page"' : ''}>${icone(ic)}<span>${t}</span></a>`).join('')}</nav>`;
   const seletor = crianca
     ? `<a class="as-crianca-ativa" href="${esc(L.profiles)}" data-testid="active-child" aria-label="Criança ativa: ${esc(crianca.nome)}. Trocar de criança">${avatar({src: crianca.avatar, tamanho: 'p'})}<span class="as-crianca-ativa-texto"><span class="as-crianca-ativa-rotulo">Criança ativa</span><span class="as-crianca-ativa-nome">${esc(crianca.nome)}</span></span>${icone('trocar')}</a>`
     : '';
   return `<a class="as-pular" href="#conteudo">Pular para o conteúdo</a>
-<p class="as-faixa-demo" data-testid="demo-banner">${icone('info')}<span>${esc(textoDemo)}</span></p>
-<header class="as-topo"><a class="as-marca" href="${esc(L.inicio)}"><img src="${esc(base.design)}/marca/simbolo.svg" alt="" width="40" height="40">Agora Sei</a>${seletor}</header>
+<header class="as-topo"><a class="as-marca" href="${esc(L.inicio)}"><img src="${esc(base.design)}/marca/simbolo.svg" alt="" width="40" height="40">Agora Sei</a><div class="header-tools">${appLinks && rota!=='apoio' ? `<a class="support-link" href="#/apoio">${icone('ajuda')} Apoio agora</a>` : ''}${seletor}</div></header>
 <div class="as-moldura${semNav ? ' as-moldura--sem-nav' : ''}">${nav}<main class="as-conteudo${estreito ? ' as-conteudo--estreito' : ''}" id="conteudo" tabindex="-1">${conteudoHtml}</main></div>
-${semRodape ? '' : `<footer class="as-rodape${semNav ? ' as-rodape--sem-nav' : ''}"><span>Protótipo. Conteúdo em revisão; não substitui acompanhamento profissional.</span><a class="as-link" href="${esc(L.reset ?? '#/reset')}" data-testid="reset">Reiniciar demonstração</a></footer>`}`;
+${semRodape ? '' : `<footer class="as-rodape${semNav ? ' as-rodape--sem-nav' : ''}">${appLinks ? `${rota==='welcome'||rota==='situacoes'||(rota==='home'&&!crianca)?'':'<a href="#/situacoes">Situações</a>'}<a href="#/help">Quero ajuda profissional</a><a href="../index.html">Sobre o Agora Sei</a>` : ''}${(!appLinks||crianca||rota==='reset')?`<a class="as-link" href="${esc(L.reset ?? '#/reset')}" data-testid="reset">Apagar dados do app</a>`:''}</footer>`}`;
 }
 
 // ══ v1.1 · Satisfação ══════════════════════════════════════════════════

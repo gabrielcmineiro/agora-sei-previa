@@ -54,7 +54,7 @@ export function validateCatalog(rawCards,rawDesafios){
  const cards=[];
  for(const c of rawCards.cards){const errors=cardErrors(c,ds,fs);if(counts.get(c?.id)>1)errors.push('id_duplicado');if(errors.length){for(const code of errors)problems.push({cardId:c?.id,code,text:`Card excluído: ${code}.`});continue;}
  const copy=structuredClone(c);if(copy.por_que.forca_da_evidencia!=='nao_classificada'&&(!str(copy.por_que.justificativa_da_forca)||!copy.por_que.fontes.some(f=>f.conferencia==='conferida')))copy.por_que.forca_da_evidencia='nao_classificada';cards.push(copy);}
- const orientacoes={...rawDesafios.orientacoes};for(const key of ['sinal_de_risco','dor_frequente','ronco_com_pausas','desconforto'])if(!str(orientacoes[key])){orientacoes[key]='Esta situação pede avaliação individual. Esta demonstração não oferece orientação específica.';problems.push({cardId:null,code:'orientacao',text:`Orientação ausente: ${key}.`});}
+ const orientacoes={...rawDesafios.orientacoes};for(const key of ['sinal_de_risco','dor_frequente','ronco_com_pausas','desconforto'])if(!str(orientacoes[key])){orientacoes[key]='Esta situação pede uma avaliação individual.';problems.push({cardId:null,code:'orientacao',text:`Orientação ausente: ${key}.`});}
  return {catalog:{version:rawCards.versao,cards,desafios:ds.map(d=>({...d,estado:d.estado==='ativo'&&!cards.some(c=>c.desafio===d.id)?'em_preparacao':d.estado})),familias:structuredClone(fs),coverage:[...coverage],orientacoes,expansion:structuredClone(rawDesafios.mapa_de_expansao||[]),limits:rawDesafios.limites||''},problems};
 }
 export const lastFeedback=(profile,id)=>(profile?.feedback||[]).filter(f=>f.cardId===id).at(-1);
@@ -67,7 +67,7 @@ export function assess(card,profile,catalog){
  const ds=catalog?.desafios||[{id:card?.desafio,familia:card?.familia}],fs=catalog?.familias||[{id:card?.familia}];
  const errs=cardErrors(card,ds,fs);
  if(errs.length){check('schema',false,'Conteúdo indisponível: estrutura, fonte ou revisão inválida.');return {compatible:false,reasons:trace.map(t=>t.text),trace};}
- check('schema',true,'Estrutura do card conferida.');check('status',true,'Conteúdo demonstrativo em revisão.');check('fonte',true,card.status==='sintetico'?'Exemplo sintético.':'Referências disponíveis para consulta; sem comprovação do card.');
+ check('schema',true,'Estrutura do card conferida.');check('status',true,'Estado editorial da ficha conferido.');check('fonte',true,card.status==='sintetico'?'Exemplo sintético.':'Referências disponíveis para consulta; sem comprovação do card.');
  const e=card.elegibilidade;
  check('age',Number.isFinite(profile?.ageMonths)&&profile.ageMonths>=e.idade_meses[0]&&profile.ageMonths<=e.idade_meses[1],`Idade informada: ${profile?.ageMonths??'não informada'} meses; faixa do card: ${e.idade_meses.join(' a ')}.`, 'ageMonths',!Number.isFinite(profile?.ageMonths));
  const riskKnown=knownList(a.risks,values('risks'));
@@ -78,7 +78,7 @@ export function assess(card,profile,catalog){
  check('understanding',e.compreensao.includes(u),`Forma de compreensão: ${VOCAB.understanding[u]}.`,'understanding',u==='nao_sei'&&!e.compreensao.includes(u));
  for(const req of e.requisitos){const field=req==='outro_adulto'?'caregivers':'steps',v=a[field],unknown=!v||['nao_sei','nao_informado'].includes(v);const pass=req==='outro_adulto'?v==='varios':req==='segue_um_passo'?['um','dois'].includes(v):v==='dois';check('requirement',pass,`Requisito ${req==='outro_adulto'?'outro cuidador':req==='segue_um_passo'?'pedido de um passo':'pedido de dois passos'}: ${pass?'informado':'não confirmado'}.`,field,unknown);}
  for(const m of card.contexto.materiais){const k=knownList(a.resources,values('resources'));check('material',k&&a.resources.includes(m),`Material: ${VOCAB.resources[m]} ${k&&a.resources.includes(m)?'informado':'não confirmado'}.`,'resources',!k);}
- check('time',Number.isFinite(a.minutes)&&a.minutes>=card.contexto.tempo_min,`Proposta de ${card.contexto.tempo_min} min; tempo informado: ${a.minutes??'não sei'}.`,'minutes',!Number.isFinite(a.minutes));
+ check('time',Number.isFinite(a.minutes)&&a.minutes>=card.contexto.tempo_min,`Esta ficha pede ${card.contexto.tempo_min} minutos. ${Number.isFinite(a.minutes)?'Você marcou '+a.minutes+' minutos.':'O tempo disponível ainda precisa ser confirmado.'}`,'minutes',!Number.isFinite(a.minutes));
  for(const ex of card.exclusoes){const field=ex in VOCAB.sensitivities?'sensitivities':'risks',k=knownList(a[field],values(field));check('exclusion',k&&!a[field].includes(ex),`Cuidado ${VOCAB[field][ex]}: ${k&&!a[field].includes(ex)?'não informado como presente':'não descartado'}.`,field,!k);}
  if(e.diagnosticos?.length&&!e.diagnosticos.includes('qualquer'))check('diagnosis',arr(a.diagnoses)&&a.diagnoses.some(x=>e.diagnosticos.includes(x)),'Condição de público específica deste conteúdo.');
  const f=lastFeedback(profile,card.id);check('feedback',!['nao_quero','desconforto'].includes(f?.kind),['nao_quero','desconforto'].includes(f?.kind)?'Sugestão retirada deste perfil; disponível apenas para consulta.':'Sugestão não retirada neste perfil.');

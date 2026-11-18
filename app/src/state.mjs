@@ -1,5 +1,5 @@
 import {profileAge} from '../../motor/kit.mjs';
-export const DEMO_TERMS_VERSION='demo-2026-11-18.1';
+export const DEMO_TERMS_VERSION='2026-11-18.2';
 export const STORAGE_KEY='agora-sei-demo-v1';
 const stamps=new WeakMap(),locked=new WeakSet();
 const object=x=>x&&typeof x==='object'&&!Array.isArray(x);

@@ -57,7 +57,7 @@
       "bloqueado_por": [
         "dor_frequente"
       ],
-      "nota": "6 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+      "nota": "6 fichas sem revisão profissional. Cobertura por idade e diagnóstico varia por card."
     },
     {
       "id": "transicoes",
@@ -67,7 +67,7 @@
       "bloqueado_por": [
         "dor_frequente"
       ],
-      "nota": "6 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+      "nota": "6 fichas sem revisão profissional. Cobertura por idade e diagnóstico varia por card."
     },
     {
       "id": "noite",
@@ -78,7 +78,7 @@
         "dor_frequente",
         "ronco_com_pausas"
       ],
-      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+      "nota": "3 fichas sem revisão profissional. Cobertura por idade e diagnóstico varia por card."
     },
     {
       "id": "emocoes",
@@ -88,7 +88,7 @@
       "bloqueado_por": [
         "dor_frequente"
       ],
-      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+      "nota": "3 fichas sem revisão profissional. Cobertura por idade e diagnóstico varia por card."
     },
     {
       "id": "autonomia",
@@ -98,7 +98,7 @@
       "bloqueado_por": [
         "dor_frequente"
       ],
-      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+      "nota": "3 fichas sem revisão profissional. Cobertura por idade e diagnóstico varia por card."
     },
     {
       "id": "cuidadores",
@@ -108,7 +108,7 @@
       "bloqueado_por": [
         "dor_frequente"
       ],
-      "nota": "3 cards demonstrativos; conteúdo não aprovado por profissional. Cobertura por idade e diagnóstico varia por card."
+      "nota": "3 fichas sem revisão profissional. Cobertura por idade e diagnóstico varia por card."
     },
     {
       "id": "momentos_dificeis",
@@ -133,8 +133,8 @@
     }
   ],
   "orientacoes": {
-    "sinal_de_risco": "O catálogo demonstrativo não atende autolesão, agressão com lesão ou fuga. Se houver perigo imediato, priorize proteção e procure um serviço de urgência local; em outras situações, busque avaliação individual. Este estado não oferece protocolo nem encaminhamento comercial.",
-    "dor_frequente": "Dor frequente precisa de avaliação de saúde. Não atribua o comportamento apenas à rotina ou ao diagnóstico; os cards desta demonstração ficam suspensos para essa situação.",
+    "sinal_de_risco": "As fichas de rotina não se aplicam a autolesão, agressão com lesão ou fuga. Se houver perigo imediato, priorize proteção e procure um serviço de urgência local; em outras situações, busque avaliação individual.",
+    "dor_frequente": "Dor frequente precisa de avaliação de saúde. Não atribua o comportamento apenas à rotina ou ao diagnóstico; deixe as fichas de rotina de lado nessa situação.",
     "ronco_com_pausas": "Pausas na respiração durante o sono precisam de avaliação de saúde; não trate com cards de rotina. Se houver dificuldade para respirar agora, procure atendimento de urgência.",
     "desconforto": "Interrompa a sugestão que causou desconforto. Registre o contexto sem inferir causa e busque orientação se persistir ou houver risco."
   },
@@ -165,5 +165,5 @@
       "estado": "fora_do_escopo"
     }
   ],
-  "limites": "108 fichas, com recortes próprios entre 2 e 14 anos e 11 meses; quatro orientações em rotas próprias. Conteúdo editorial em revisão, sem eficácia do aplicativo demonstrada."
+  "limites": "108 fichas, com recortes próprios entre 2 e 14 anos e 11 meses; quatro orientações em rotas próprias. Cada ficha indica seus cuidados e limites."
 }
