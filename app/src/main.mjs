@@ -1,3 +1,5 @@
+import {applyEdition, matchesProfile, referencesForProfile} from './reading.mjs';
+import {readerHead, examples, originNote, readingSection} from './reading-ui.mjs';
 import {buildKit,profileAge,effectiveProfile,dateKey} from '../../motor/kit.mjs';
 import {RISK_QUESTIONS} from '../../motor/risco.mjs';
 import {publicCopy} from './public-copy.mjs';
@@ -40,8 +42,8 @@ function notice(text,persistent=false){const navigating=!!pendingToast;clearTime
 function noticeValid(n){return n&&n.profileId===state.activeId&&n.raw===raw;}
 function mountNotice(){
  const message=root.querySelector('.as-recado');if(!message)return;
- const bar=root.querySelector('.as-barra-acoes');
- if(bar){bar.prepend(message);bar.style.flexWrap='wrap';message.style.flexBasis='100%';const ficha=root.querySelector('.as-ficha');if(ficha)ficha.style.paddingBottom=(bar.offsetHeight+24)+'px';}
+ const bar=root.querySelector('.reader-tools')||root.querySelector('.as-barra-acoes');
+ if(bar?.matches('.reader-tools')){bar.after(message);}else if(bar){bar.prepend(message);bar.style.flexWrap='wrap';message.style.flexBasis='100%';const ficha=root.querySelector('.as-ficha');if(ficha)ficha.style.paddingBottom=(bar.offsetHeight+24)+'px';}
  else {message.style.scrollMarginTop=((root.querySelector('.as-topo')?.offsetHeight||0)+16)+'px';message.scrollIntoView({block:'nearest'});}
  const current=toastContext;
  const expire=()=>{if(current!==toastContext)return;if(message.contains(document.activeElement)){toastTimer=setTimeout(expire,500);return;}message.remove();toast='';toastContext=null;undoFavorite=null;};
@@ -75,7 +77,7 @@ function home(){
  ${botao('Ver sugestões',{tipo:'submit',tom:'primario',iconeFim:'seta-direita'})}</form>`+other;
  const result=buildKit(kitMap,child.answers.priority,{...safe,intervalo_idade:profileAge(child),retirada:'nao',risco_positivo:'nao',rascunho:'nao'});
  const cardById=new Map(catalog.cards.map(c=>[c.id,c]));
- const visible=items=>items.map(it=>cardById.get(it.id)).filter(c=>c&&availableToReview(c,child,catalog));
+ const visible=items=>items.map(it=>cardById.get(it.id)).filter(c=>showCard(c)&&availableToReview(c,child,catalog));
  const controls=`<div class="home-links">${link('Ajustar tempo ou materiais','context')}${action('A situação mudou','recheck-kit')}</div>`;
  return intro+Object.entries(result.blocos).map(([block,group])=>{
   const cards=visible([...group.visiveis,...group.mais]);
@@ -209,25 +211,43 @@ function quizArt(key,value){
 
 function quizQuestions(){return QUESTIONS.filter(q=>!q.showIf||(p()?.quizDraft?.answers||p()?.answers||{}).diagnoses?.includes('autismo'));}
 function quiz(n){if(!hasAgeCoverage(p(),catalog))return coverage();const child=p(),draft=child.quizDraft?.answers||child.answers,qs=quizQuestions();n=Number.isInteger(n)?Math.max(0,Math.min(n,qs.length-1)):0;const q=qs[n];let options=q.options;if(['priority','queue'].includes(q.key))options=Object.fromEntries(catalog.desafios.filter(d=>!['momentos_dificeis','estimular','acalmar'].includes(d.id)&&d.estado==='ativo'&&(q.key!=='queue'||d.id!==draft.priority)).map(d=>[d.id,themeNames[d.id]||d.nome]));const optional=['queue','interests','diagnoses'].includes(q.key),multiple=q.type==='multi';const v=draft[q.key];const neutras=multiple?[{valor:'__none',rotulo:optional?'Prefiro não informar':'Nenhum destes'},...(!optional?[{valor:'nao_sei',rotulo:'Não sei'}]:[])]:[];return `<div class="quiz-head">${progresso({atual:n+1,total:qs.length})}${link('Salvar e sair','home')}</div><form id="quiz-form" data-profile="${esc(child.id)}" data-step="${n}">${pergunta({principal:true,visual:!['risks','diagnoses','support'].includes(q.key),chave:q.key,titulo:q.key==='priority'?'Qual desafio vem primeiro?':q.label,dica:q.key==='diagnoses'?'Opcional. Você pode seguir sem informar. Não inferimos diagnóstico.':q.key==='support'?'Somente o que está informado em laudo. Não determina o kit.':q.key==='queue'?'Escolha até dois desafios.':q.key==='interests'?'Até três interesses. Eles apenas ordenam sugestões.':multiple?'Marque as opções que se aplicam.':'',tipo:q.type,opcoes:Object.entries(options).map(([valor,rotulo])=>({valor,rotulo,arte:quizArt(q.key,valor),icone:['priority','queue'].includes(q.key)?valor:'',familia:['priority','queue'].includes(q.key)?valor:''})),neutras,valor:Array.isArray(v)&&!v.length?['__none']:q.key==='minutes'?(v===null?'nao_sei':String(v??'')):v,obrigatoria:q.required})}<div id="quiz-risk-notices" role="alert" aria-atomic="true">${riskHtml()}</div><p id="form-error" role="alert"></p><div class="as-quiz-acoes">${n?link('Voltar','quiz/'+(n-1)+selectedSuffix(route()[2])):link('Voltar','home')}${botao(n===qs.length-1?'Ver meu kit':'Continuar',{tipo:'submit',tom:'primario',testid:'quiz-next'})}</div></form>`;}
-function detail(id){const c=catalog.cards.find(c=>c.id===id);if(c?.regra_integracao)return expandedDetail(c);if(!c)return `${title('Conteúdo indisponível.','Este card saiu do catálogo. Seu registro permanece no histórico.')}${link('Ver salvos','saved')}`;const child=p(),check=assess(c,child,catalog),im=cardImage(c),f=lastFeedback(child,c.id),withdrawn=['desconforto','nao_quero'].includes(f?.kind);const why=c.por_que;const panels={
- como:`<details class="reader-prep"><summary>Antes de começar · materiais e cuidados</summary>${preparo({itens:[{icone:'materiais',texto:c.contexto.materiais_detalhados||'Confira os materiais dos passos.'},...(c.contexto.requisitos_nao_inferiveis||[]).map(texto=>({icone:'certo',texto})),{icone:'relogio',texto:c.contexto.nota_tempo||'Tempo aproximado, sem obrigação de completar.'}],limites:[c.editorial?.limite_do_quiz].filter(Boolean)})}</details><h2 class="as-titulo-2">Como começar</h2>${passos(c.passos)}`,
- porque:`<h2 class="as-titulo-2">${esc(why.principio)}</h2><p>${esc(why.explicacao||'')}</p><h3>Por que apareceu para ${esc(child.name)}?</h3>${lista(check.trace.filter(t=>t.passed&&['age','understanding','requirement','material','time'].includes(t.id)).map(t=>t.text))}<h3>Limites</h3><p>${etiquetaEstado(c.status)} ${etiquetaTipo(c.tipo)}</p><p>${esc(why.limites)}</p><p>Força da evidência: ${esc(FORCAS[why.forca_da_evidencia])}</p><p>${esc(why.justificativa_da_forca||'')}</p><div data-testid="card-sources">${why.fontes.map(fonte).join('')}</div><p class="as-miudo">Autoria: ${esc(c.revisao.autor)} · Revisão: ${esc(c.revisao.revisor||'sem revisão humana')} · Versão ${esc(c.versao)}</p>`,
+function showCard(card){return !!card && matchesProfile(card,p());}
+function unavailable(){return title('Ficha indisponível para este perfil','Em Explorar você encontra as fichas deste perfil.')+link('Ir para Explorar','explore');}
+function detail(id){const c=catalog.cards.find(c=>c.id===id);if(c&&!showCard(c))return unavailable();if(c?.regra_integracao)return expandedDetail(c);if(!c)return `${title('Conteúdo indisponível.','Este card saiu do catálogo. Seu registro permanece no histórico.')}${link('Ver salvos','saved')}`;const child=p(),check=assess(c,child,catalog),im=cardImage(c),f=lastFeedback(child,c.id),withdrawn=['desconforto','nao_quero'].includes(f?.kind);const why=c.por_que;const panels={
+ como:`<details class="reader-prep"><summary>Antes de começar · materiais e cuidados</summary>${preparo({itens:[{icone:'materiais',texto:c.contexto.materiais_detalhados||'Confira os materiais dos passos.'},...(c.contexto.requisitos_nao_inferiveis||[]).map(texto=>({icone:'certo',texto})),{icone:'relogio',texto:c.contexto.nota_tempo||'Tempo aproximado, sem obrigação de completar.'}],limites:[c.editorial?.limite_do_quiz].filter(Boolean)})}</details><h2 class="as-titulo-2">Como começar</h2>${passos(c.passos)}${examples(c)}`,
+ porque:`<h2 class="as-titulo-2">${esc(why.principio)}</h2><p>${esc(why.explicacao||'')}</p><h3>Por que apareceu para ${esc(child.name)}?</h3>${lista(check.trace.filter(t=>t.passed&&['age','understanding','requirement','material','time'].includes(t.id)).map(t=>t.text))}<h3>Limites</h3><p>${etiquetaEstado(c.status)} ${etiquetaTipo(c.tipo)}</p><p>${esc(why.limites)}</p>${originNote(c)}<div data-testid="card-sources">${why.fontes.map(fonte).join('')}</div><p class="as-miudo">Autoria: ${esc(c.revisao.autor)} · Revisão: ${esc(c.revisao.revisor||'sem revisão humana')} · Versão ${esc(c.versao)}</p>`,
  adaptar:`<h2 class="as-titulo-2">Variações para avaliar</h2>${adaptationsFor(c,child).map(adaptacao).join('')||'<p>Nenhuma adaptação corresponde às respostas atuais. Não force uma variação.</p>'}`,
  cuidados:`<h2 class="as-titulo-2">O que evitar</h2>${lista(c.evite,{tom:'evite'})}<h3>Se não der certo</h3>${lista(c.se_nao_der_certo)}<h3>Quando buscar ajuda</h3>${lista(c.procure_ajuda_se)}`};
- return `${cardBack(c,'home')}<article class="as-ficha" data-familia="${esc(c.familia)}"><header class="card-opening"><img src="${im.src}" alt="${esc(im.alt)}">${title(c.titulo,cardFacts(c))}</header>${!check.compatible?aviso({tom:'atencao',titulo:'Somente consulta',texto:check.reasons.join(' ')})+(check.trace.some(t=>t.id==='time'&&!t.passed)?link('Ajustar tempo disponível','context'):''):''}${f?.kind==='desconforto'?aviso({tom:'avaliacao',texto:catalog.orientacoes.desconforto,testid:'notice-desconforto'}):''}${abas({ativa:cardTab,itens:[['como','Como fazer','passos'],['porque','Por quê','porque'],['adaptar','Adaptar','adaptar'],['cuidados','Cuidados','cuidados']].map(([id,rotulo,icone])=>({id,rotulo,icone}))})}${painel(cardTab,panels[cardTab])}${check.compatible?action('Preparar para cuidador','share:'+id):''}${c.observacao?`<p><strong>O que observar:</strong> ${esc(c.observacao)}</p>`:''}${nota(FRASE_ACOMPANHAMENTO)}<div class="as-barra-acoes">${gSalvar({salvo:child.favorites.includes(id),agora:gesture?.kind==='favorite'&&gesture?.profile===child.id&&gesture?.card===id,testid:'card-save'}).replace('<button ',`<button data-action="favorite:${esc(id)}" `)}${check.compatible?action('Como coube hoje?','return:'+id,{tom:'primario'}):withdrawn?action('Rever retirada','restore:'+id):''}</div></article>`;}
-function saved(){const child=p();return `${title('Fichas salvas de '+child.name)}<div class="as-grade">${child.favorites.map(id=>{const c=catalog.cards.find(c=>c.id===id);return c?tile(c,null,'saved-item'):`<p>Card ${esc(id)} indisponível no catálogo atual. Registro preservado.</p>`;}).join('')||vazio({arte:art('vazio').src,titulo:'Sua caixa ainda está vazia.',texto:'Salve uma ideia para encontrar aqui depois.',acoesHtml:link('Explorar sugestões','explore')})}</div>${link('Ver nosso caminho','path',{testid:'path-open'})}`;}
+ return `<article class="as-ficha reading-page" data-familia="${esc(c.familia)}">${readerHead(c,cardBack(c,'explore'),cardFacts(c),im,child.favorites.includes(id),gesture?.kind==='favorite'&&gesture.card===id)}${!check.compatible?aviso({tom:'atencao',titulo:'Somente consulta',texto:check.reasons.join(' ')})+(check.trace.some(t=>t.id==='time'&&!t.passed)?link('Ajustar tempo disponível','context'):''):''}${f?.kind==='desconforto'?aviso({tom:'avaliacao',texto:catalog.orientacoes.desconforto,testid:'notice-desconforto'}):''}${abas({ativa:cardTab,itens:[['como','Como fazer','passos'],['porque','Origem','porque'],['adaptar','Adaptar','adaptar'],['cuidados','Cuidados','cuidados']].map(([id,rotulo,icone])=>({id,rotulo,icone}))})}${painel(cardTab,panels[cardTab])}${check.compatible?action('Preparar para cuidador','share:'+id):''}${c.observacao?`<p><strong>O que observar:</strong> ${esc(c.observacao)}</p>`:''}${nota(FRASE_ACOMPANHAMENTO)}<div class="as-barra-acoes">${check.compatible?action('Como coube hoje?','return:'+id,{tom:'primario'}):withdrawn?action('Rever retirada','restore:'+id):''}</div></article>`;}
+function libraryRow(card, label, testid) {
+ const saved=p()?.favorites.includes(card.id);
+ return `<a class="situation-row library-row" href="#/card/${esc(card.id)}" data-testid="${esc(testid)}">
+ <img src="${cardImage(card).src}" alt="" width="80" height="70" loading="lazy">
+ <span><strong>${esc(card.titulo)}</strong><small>${esc(label)}</small></span>
+ ${icone(saved?'salvos-cheio':'divisa-direita',saved?{rotulo:'Salva'}:{})}</a>`;
+}
+function saved(){
+ const child=p(),visible=child.favorites.map(id=>catalog.cards.find(c=>c.id===id)).filter(showCard);
+ return `<section class="reading-library">${title('Salvos','As fichas que você guardou para '+child.name+'.')}
+ ${visible.length?`<div class="library-list">${visible.map(c=>libraryRow(c,cardFacts(c),'saved-item-'+c.id)).join('')}</div>`:
+ vazio({arte:art('vazio').src,titulo:'Sua primeira ficha salva aparece aqui',texto:'Abra uma ficha em Explorar e toque em Salvar para voltar a ela depois.',acoesHtml:link('Explorar fichas','explore')})}
+ ${link('Ver nosso caminho','path',{testid:'path-open'})}</section>`;
+}
 function explore(){
- const child=p(), result=searchCards(catalog.cards,search,filter,kitMap);
- const sorted=result.cards.map(card=>({card,check:{compatible:availableToReview(card,child,catalog)}}));
- if(!search.trim())sorted.sort((a,b)=>Number(b.check.compatible)-Number(a.check.compatible));
- const row=({card,check})=>`<a class="situation-row" href="#/card/${esc(card.id)}" data-testid="explore-item-${esc(card.id)}"><img src="${cardImage(card).src}" alt="" width="80" height="64" loading="lazy"><span><strong>${esc(card.titulo)}</strong><small>${esc(ageRange(card))}${check.compatible?'':' · Só para consulta'}</small></span>${icone('divisa-direita')}</a>`;
- return `${title('Explorar fichas','Busque uma situação ou escolha um desafio.')}${searchForm('search-form',search)}
- <div class="as-filtros as-filtros--trilho" aria-label="Filtrar por desafio">${action('Todos','filter:',{pressionado:!filter})}${catalog.desafios.map(d=>action(themeNames[d.id]||d.nome,'filter:'+d.id,{pressionado:filter===d.id,testid:'search-theme-'+d.id})).join('')}</div>
- ${result.related&&sorted.length?'<p>Ideias relacionadas ao tema</p>':''}
+ const child=p(), result=searchCards(catalog.cards.filter(showCard),search,filter,kitMap);
+ const sorted=result.cards.map(card=>({card,compatible:availableToReview(card,child,catalog)}));
+ if(!search.trim())sorted.sort((a,b)=>Number(b.compatible)-Number(a.compatible));
+ const row=({card,compatible})=>libraryRow(card,cardFacts(card)+(compatible?'':' · Para consulta'),'explore-item-'+card.id);
+ return `<section class="reading-library">${title('Explorar fichas','Encontre uma ideia para o que está acontecendo com '+child.name+'.')}
+ ${searchForm('search-form',search)}
+ <div class="library-filters"><label for="library-topic">Desafio</label><select id="library-topic"><option value="">Todos os desafios</option>
+ ${catalog.desafios.map(d=>`<option value="${esc(d.id)}" ${filter===d.id?'selected':''}>${esc(themeNames[d.id]||d.nome)}</option>`).join('')}</select>
+ ${filter||search?action('Limpar','clear-library'):''}</div>
  ${result.notice?nota(result.notice):''}
- ${sorted.length?`<section class="situation-group"><h2 id="search-summary" tabindex="-1">${sorted.length===1?'1 ficha':sorted.length+' fichas'}</h2>${sorted.slice(0,8).map(row).join('')}
- ${sorted.length>8?`<details><summary>${extraSheets(sorted.length-8)}</summary>${sorted.slice(8).map(row).join('')}</details>`:''}</section>`:`<section id="search-summary" tabindex="-1">${vazio({arte:art('vazio').src,titulo:'Nenhuma ficha encontrada.',texto:'Tente outro termo ou selecione Todos para ampliar a busca.'})}</section>`}
- <details class="more"><summary>Cobertura do acervo</summary><p>As fichas têm faixas próprias entre 2 e 14 anos e 11 meses. Ao abrir uma ficha, confira para quem ela serve, os cuidados e as fontes.</p></details>`;
+ ${sorted.length?`<section class="library-list"><h2 id="search-summary" tabindex="-1">${sorted.length===1?'1 ficha':sorted.length+' fichas'}${search.trim()?' para “'+esc(search.trim())+'”':''}</h2>
+ ${sorted.slice(0,8).map(row).join('')}${sorted.length>8?`<details><summary>${extraSheets(sorted.length-8)}</summary>${sorted.slice(8).map(row).join('')}</details>`:''}</section>`:
+ `<section id="search-summary" tabindex="-1">${vazio({arte:art('vazio').src,titulo:'Nenhuma ficha encontrada',texto:'Tente uma palavra como sono, parque ou brincadeira. Você também pode limpar os filtros.'})}</section>`}
+ </section>`;
 }
 
 function path(){const c=p(),events=[...new Map(c.feedback.map(f=>[f.id,f])).values()];const tried=new Set(events.filter(f=>f.kind==='usamos').map(f=>f.cardId));return `${title('O caminho de '+c.name,'Um registro das suas tentativas, sem medir o desenvolvimento da criança.')}<div class="as-segmento">${link('Guardados','saved')}${link('Caminho','path',{pressionado:true})}</div><div data-testid="path-summary">${contagens([[tried.size,'ideias tentadas'],[c.favorites.length,'guardadas'],[new Set(events.filter(f=>['adaptar','nao_coube'].includes(f.kind)).map(f=>f.cardId)).size,'ideias para ajustar']])}</div>${events.length?registro({titulo:'O que vocês registraram',testid:'path-log',linhas:events.slice().reverse().map(f=>({rotulo:RETORNOS[f.kind]?.rotulo||'Registro',data:new Date(f.at).toLocaleDateString('pt-BR'),titulo:catalog.cards.find(x=>x.id===f.cardId)?.titulo||'Card fora do catálogo',nota:f.kind==='desconforto'?'Sugestão retirada. Avise quem recebeu uma cópia externa.':''}))}):vazio({arte:art('vazio').src,titulo:'Cada tentativa tem seu lugar.',texto:'Quando você registrar como uma ideia coube, ela aparece aqui.'})}<details class="more"><summary>Contexto que mudou</summary>${c.history.slice().reverse().map(h=>`<p>${h.kind==='criado'?'Perfil criado':h.changed.map(k=>({ageMonths:'Idade atualizada',name:'Apelido atualizado',avatar:'Símbolo atualizado',minutes:'Tempo disponível atualizado',resources:'Materiais atualizados',priority:'Foco atualizado'})[k]||QUESTIONS.find(q=>q.key===k)?.label||'Respostas atualizadas').join(' · ')}</p>`).join('')}</details>`;}
@@ -251,8 +271,10 @@ function errorScreen(){return vazio({arte:art('vazio').src,titulo:'Vamos preserv
 function armConfirmation(kind,id){clearNotice();confirmationIntent={kind,id,profileId:p()?.id,raw};}
 function canConfirm(kind,id){return confirmationIntent?.kind===kind&&confirmationIntent.id===id&&confirmationIntent.profileId===p()?.id&&confirmationIntent.raw===raw;}
 function confirmation(kind,id){if(kind==='delete')id=p()?.id;if(!canConfirm(kind,id))return `${title('Confira o contexto antes de continuar.','Abra esta ação dentro do app. Nenhum dado foi alterado.')}${link('Voltar ao app','home')}`;if(kind==='restore'&&(!catalog.cards.some(c=>c.id===id)||!['nao_quero','desconforto'].includes(lastFeedback(p(),id)?.kind)))return title('Esta retirada não está disponível.');const texts={reset:['Apagar os dados do Agora Sei neste navegador?','Todos os perfis, respostas e fichas salvas neste navegador serão apagados. Essa ação é definitiva.'],delete:['Excluir '+(p()?.name||'esta criança')+'?','Remove somente este perfil e seus registros.'],restore:['Devolver '+(catalog.cards.find(c=>c.id===id)?.titulo||'esta sugestão')+'?','Reveja o contexto e os cuidados. A restauração não confirma que a atividade é adequada agora.']};const [t,d]=texts[kind];return `${title(t,d)}<div class="flow-actions">${action(kind==='reset'?'Apagar todos os dados':kind==='delete'?'Excluir criança':'Confirmar restauração','confirm-'+kind+(id?':'+id:''),{tom:'primario',testid:kind==='reset'?'reset-confirm':undefined})}${link('Cancelar','home')}</div>`;}
-function render(){if(toast&&!noticeValid(toastContext))clearNotice();const [r,arg]=route();if(!catalog)return;let body,child=p();if(searchOwner!==state.activeId){searchOwner=state.activeId;search='';filter='';situationSearch='';}if(storageError&&!['reset','apoio'].includes(r))body=errorScreen();else if(['quiz','edit','delete','saved','card','explore','mount','restore','coverage','context','path'].includes(r)&&!child){go('profiles',true);return;}else {const pages={situacoes:()=>situacoes(arg),situacao:()=>situationPreview(arg),apoio:()=>supportPage(arg),home,profiles,add:()=>profileForm(false),edit:()=>profileForm(true),quiz:()=>quiz(Number(arg)||0),card:()=>detail(arg),saved,explore,help,coverage,plans,path,context:contextForm,welcome,reset:()=>confirmation('reset'),delete:()=>confirmation('delete'),restore:()=>confirmation('restore',arg),mount:ready};body=(Object.hasOwn(pages,r)?pages[r]:home)();}
- root.innerHTML=moldura({rota:r,appLinks:true,crianca:child?{nome:child.name,avatar:av(child)}:null,conteudoHtml:(toast?recado(toast,{icone:toastPersistent?'alerta':'certo',acao:undoFavorite?{rotulo:'Desfazer',testid:'save-undo'}:undefined}):'')+body,semRodape:!!storageError,semNav:!!storageError||['welcome','quiz','mount'].includes(r)||!child});
+function render(){if(toast&&!noticeValid(toastContext))clearNotice();const [r,arg]=route();if(!catalog)return;let body,child=p();const tailored=child?.answers?.diagnoses?.includes('autismo')===true;
+ if(referenceContext!==tailored){catalog.cards=allCards.map(card=>referencesForProfile(card,child));referenceContext=tailored;}
+ if(searchOwner!==state.activeId){tabReads.clear();readingOrigin=null;searchOwner=state.activeId;search='';filter='';situationSearch='';}if(storageError&&!['reset','apoio'].includes(r))body=errorScreen();else if(['quiz','edit','delete','saved','card','explore','mount','restore','coverage','context','path'].includes(r)&&!child){go('profiles',true);return;}else {const pages={situacoes:()=>situacoes(arg),situacao:()=>situationPreview(arg),apoio:()=>supportPage(arg),home,profiles,add:()=>profileForm(false),edit:()=>profileForm(true),quiz:()=>quiz(Number(arg)||0),card:()=>detail(arg),saved,explore,help,coverage,plans,path,context:contextForm,welcome,reset:()=>confirmation('reset'),delete:()=>confirmation('delete'),restore:()=>confirmation('restore',arg),mount:ready};body=(Object.hasOwn(pages,r)?pages[r]:home)();}
+ root.innerHTML=moldura({rota:r,secao:readingSection(r,readingOrigin?.profile===state.activeId&&readingOrigin?.card===arg?readingOrigin:null),appLinks:true,crianca:child?{nome:child.name,avatar:av(child)}:null,conteudoHtml:(toast?recado(toast,{icone:toastPersistent?'alerta':'certo',acao:undoFavorite?{rotulo:'Desfazer',testid:'save-undo'}:undefined}):'')+body,semRodape:!!storageError,semNav:!!storageError||['welcome','quiz','mount'].includes(r)||!child});
  const profileFormEl=root.querySelector('#profile-form');
  if(profileFormEl)updateProfileFields(profileFormEl);
  mountNotice();
@@ -260,8 +282,9 @@ function render(){if(toast&&!noticeValid(toastContext))clearNotice();const [r,ar
  if(message&&gesture && child && gesture.profile===child.id&&!toastPersistent){const icon=message.querySelector('.as-icone');if(icon)icon.outerHTML=gesture.kind==='attempt'?gCarimbo({agora:true,tamanho:'1.5rem'}):gCheck({agora:true,tamanho:'1.5rem'});}
  if(r==='home'&&child){const heading=root.querySelector('h1');if(heading&&heading.textContent==='Hoje com '+child.name)heading.innerHTML='Hoje com '+gSublinhado({texto:child.name});}
  root.querySelectorAll('.as-botao').forEach(b=>b.classList.add('as-g-toque'));
+ const saveControl=gesture?.kind==='favorite' && root.querySelector('[data-testid="card-save"]');
  const undo=gesture?.kind==='favorite'&&gesture.keyboard?root.querySelector('[data-testid="save-undo"]'):null;
- (undo||document.querySelector('main'))?.focus({preventScroll:true});
+ (undo||saveControl||document.querySelector('main'))?.focus({preventScroll:true});
  gesture=null;
 }
 
@@ -288,6 +311,17 @@ function cardFacts(c){
 }
 
 let readingOrigin=null;
+let allCards=[], referenceContext;
+const tabReads=new Map();
+function rememberRead() {
+ const [section,id]=route();
+ if(section!=='card'||!p())return;
+ const origin=readingOrigin?.profile===state.activeId&&readingOrigin?.card===id?readingOrigin:null;
+ const base=readingSection(section,origin);
+ tabReads.set(base,{path:location.hash,origin,y:window.scrollY,part:cardTab,profile:state.activeId,
+   open:Array.from(root.querySelectorAll('article details'),(d,i)=>d.open?i:-1).filter(i=>i>=0)});
+}
+let resuming=null;
 let situationSearch='';
 let searchOwner;
 function searchForm(id, value) {
@@ -300,7 +334,7 @@ function searchSummary(count) {
 const listLabels={situacoes:'Situações',explore:'Explorar fichas',saved:'Fichas salvas',home:'Meu kit'};
 function cardBack(c,fallback){
  const source=readingOrigin?.card===c.id && readingOrigin.profile===state.activeId ? readingOrigin.path : fallback;
- return `<a class="quiet-link" href="#/${esc(source)}">${icone('seta-esquerda')} ${esc(listLabels[source.split('/')[0]])}</a>`;
+ return `<a class="quiet-link" data-reader-back href="#/${esc(source)}">${icone('seta-esquerda')} ${esc(listLabels[source.split('/')[0]])}</a>`;
 }
 function restoreRow(previous){
  const origin=readingOrigin;
@@ -325,8 +359,8 @@ function situationRow(c,kit=false){
 function situacoes(focus=''){
  const selected=Object.hasOwn(themeNames,focus)?focus:'';
  const blocks={momentos_dificeis:'Momentos difíceis',estimular:'Para estimular',acalmar:'Para ajudar a acalmar'};
- const entries=kitMap.cards.filter(it=>!selected||it.focos.includes(selected));
- const cards=new Map(catalog.cards.map(c=>[c.id,c]));
+ const cards=new Map(catalog.cards.filter(showCard).map(c=>[c.id,c]));
+ const entries=kitMap.cards.filter(it=>cards.has(it.id)&&(!selected||it.focos.includes(selected)));
  const filtered=entries.map(entry=>cards.get(entry.id)).filter(Boolean);
  const found=searchCards(filtered,situationSearch,'',kitMap);
  const results=found.cards;
@@ -344,6 +378,7 @@ function situacoes(focus=''){
 
 function situationPreview(id){
  const c=catalog.cards.find(card=>card.id===id);
+ if(c&&!showCard(c))return unavailable();
  if(c && p())return detail(c.id);
  if(!c)return `${title('Ficha não encontrada')}${link('Ver situações','situacoes')}`;
  return `<section class="preview-card">${cardBack(c,'situacoes')}
@@ -360,21 +395,19 @@ function expandedDetail(original){
  const c=publicCopy(original), child=p(), r=c.regra_integracao;
  const withdrawn=['nao_quero','desconforto'].includes(lastFeedback(child,c.id)?.kind);
  const precheck=expandedPrecheck(original,child), variations=adaptationsFor(c,child).map(a=>a.mudanca);
- return `<article class="reader">${cardBack(c,'situacoes')}
- <div class="reader-heading"><img class="ficha-illustration" src="${cardImage(c).src}" alt="${esc(cardImage(c).alt)}">
- ${title(c.titulo)}<p>${esc(cardFacts(c))}</p></div>
+ return `<article class="reader reading-page">${readerHead(c,cardBack(c,'explore'),cardFacts(c),cardImage(c),child.favorites.includes(c.id),gesture?.kind==='favorite'&&gesture.card===c.id)}
  ${precheck?aviso({texto:precheck}):'<p class="field-note">Confira as condições antes de usar ou repassar a ficha.</p>'}
  <details class="reader-prep"><summary>Antes de começar · condições da ficha</summary>${lista(c.contexto.requisitos_nao_inferiveis)}</details>
- <section><h2>Como fazer</h2>${passos(c.passos)}</section>
+ <section><h2>Como fazer</h2>${passos(c.passos)}</section>${examples(c)}
  <section><h2>O que observar</h2><p>${esc(c.observacao)}</p></section>
  <details><summary>Por que esta ideia?</summary><p>${esc(c.por_que.explicacao)}</p>
  <p>${esc(r.pratica.categoria==='principio_ndbi_adaptado'?'A ficha adapta um princípio naturalista.':'Orientação geral com referências.')}</p></details>
  <details><summary>Adaptações para a criança</summary>${variations.length?lista(variations):'<p>Confira se alguma das situações abaixo corresponde ao momento.</p>'}
- ${lista(r.adaptacoes_contextuais.map(a=>a.quando+' '+a.mudanca+' '+a.aplicacao))}</details>
+ ${lista(r.adaptacoes_contextuais.map(a=>a.quando+'. '+a.mudanca+(a.aplicacao && !a.aplicacao.startsWith('Somente após o cuidador confirmar que a condição se aplica')?' '+a.aplicacao:'')))}</details>
  <section class="reader-care"><h2>O que evitar</h2>${lista(c.evite)}<h3>Quando interromper</h3>${lista(c.se_nao_der_certo)}<h3>Quando buscar ajuda</h3>${lista(c.procure_ajuda_se)}</section>
  <details><summary>Fontes e limites</summary><p>${esc(c.por_que.limites)}</p>${c.por_que.fontes.map(fonte).join('')}
- <h3>Fontes de encaminhamento</h3>${r.fontes_encaminhamento.map(fonte).join('')}</details>
- <div class="flow-actions">${withdrawn?action('Rever retirada','restore:'+c.id):''}${!precheck?action('Preparar para cuidador','share:'+c.id,{tom:'primario'})+action('Como coube hoje?','return:'+c.id):''}${action(child.favorites.includes(c.id)?'Remover dos salvos':'Salvar ficha','favorite:'+c.id)}</div></article>`;
+ ${r.fontes_encaminhamento.length?'<h3>Fontes de encaminhamento</h3>'+r.fontes_encaminhamento.map(fonte).join(''):''}</details>
+ <div class="flow-actions">${withdrawn?action('Rever retirada','restore:'+c.id):''}${!precheck?action('Preparar para cuidador','share:'+c.id,{tom:'primario'})+action('Como coube hoje?','return:'+c.id):''}</div></article>`;
 }
 
 function attemptField(name,label,options,required=true){
@@ -385,11 +418,13 @@ function attemptField(name,label,options,required=true){
   `<option value="${esc(value)}">${esc(text)}</option>`).join('')}</select></label>`;
 }
 
-function confirmExpanded(act,id){const c=catalog.cards.find(c=>c.id===id),child=p(),before=raw,r=c.regra_integracao;if(!child)return;lastUse=null;const blocked=expandedPrecheck(c,child);if(blocked){notice(blocked,true);render();return;}
+function confirmExpanded(act,id){const c=catalog.cards.find(c=>c.id===id),child=p(),before=raw,r=c.regra_integracao;if(!child||!showCard(c))return;lastUse=null;const blocked=expandedPrecheck(c,child);if(blocked){notice(blocked,true);render();return;}
+const profileQuestions=new Set((r.populacao?.condicoes||[]).filter(rule=>rule.valor==='sim'&&rule.campo.endsWith('-POP')).map(rule=>rule.campo.split('.').at(-1)));
+const fromOnboarding=q=>profileQuestions.has(q.id)&&child.answers?.diagnoses?.includes('autismo');
 const d=document.createElement('dialog');d.className='as-folha';d.setAttribute('aria-label','Conferir situação e requisitos');
 const answers=[['sim','Sim'],['nao','Não'],['nao_sei','Não sei']],labels=['Há segurança imediata para todos, sem emergência de saúde?','Está sem dor nova ou mudança súbita inexplicada?','O sofrimento está ausente ou leve, sem crise intensa?','Há adulto responsável disponível para acompanhar?','Os recursos, espaço e apoio existem no local do uso?'];
-d.innerHTML=`<form class="as-fluxo"><div class="attempt-heading"><h2>Confira esta tentativa</h2><button class="dismiss-attempt" type="button" data-action="close-dialog" aria-label="Fechar conferência">${icone('fechar')}</button></div><p>Para ${esc(child.name)}. As respostas valem só para esta ficha e este contexto.</p>${attemptField('situacao','É esta a situação?',[[r.situacao.id,r.situacao.rotulo],['outra','Outra situação']])}${attemptField('momento','Qual é o momento?',[['antes','Preparação'],['na_hora','Dificuldade leve agora'],['depois','Recuperação'],['treino','Prática tranquila']].filter(([id])=>r.momentos_permitidos.includes(id)))}${GATES.map((k,i)=>attemptField(k,labels[i],answers)).join('')}<h3>Sinais que precisam ser esclarecidos</h3><p>Confirme com quem acompanha a criança. Estas respostas valem apenas para esta tentativa.</p>${RISK_QUESTIONS.map(q=>attemptField(q.id,q.pergunta,answers)).join('')}<h3>Requisitos</h3>${r.requisitos.map(q=>attemptField(q.id,q.pergunta,answers)).join('')}<h3>Quando interromper</h3>${r.exclusoes.map(q=>attemptField(q.id,q.pergunta,answers)).join('')}<div class="expanded-status" role="alert"></div><button type="submit" class="as-botao as-botao--primario">Conferir e continuar</button><button type="button" class="as-botao" data-action="close-dialog">Cancelar</button></form>`;
-const capture=()=>{const f=new FormData(d.querySelector('form'));return {id:r.id,idade_meses:child.ageMonths,situacao_id:f.get('situacao'),momento:f.get('momento'),riscos:Object.fromEntries(RISK_QUESTIONS.map(q=>[q.campo,f.get(q.id)])),gates:Object.fromEntries(GATES.map(k=>[k,f.get(k)])),respostas:Object.fromEntries([...r.requisitos,...r.exclusoes].map(q=>[q.id,f.get(q.id)]))};};
+d.innerHTML=`<form class="as-fluxo"><div class="attempt-heading"><h2>Confira esta tentativa</h2><button class="dismiss-attempt" type="button" data-action="close-dialog" aria-label="Fechar conferência">${icone('fechar')}</button></div><p>Para ${esc(child.name)}. As respostas valem só para esta ficha e este contexto.</p>${attemptField('situacao','É esta a situação?',[[r.situacao.id,r.situacao.rotulo],['outra','Outra situação']])}${attemptField('momento','Qual é o momento?',[['antes','Preparação'],['na_hora','Dificuldade leve agora'],['depois','Recuperação'],['treino','Prática tranquila']].filter(([id])=>r.momentos_permitidos.includes(id)))}${GATES.map((k,i)=>attemptField(k,labels[i],answers)).join('')}<h3>Sinais que precisam ser esclarecidos</h3><p>Confirme com quem acompanha a criança. Estas respostas valem apenas para esta tentativa.</p>${RISK_QUESTIONS.map(q=>attemptField(q.id,q.pergunta,answers)).join('')}<h3>Requisitos</h3>${r.requisitos.filter(q=>!fromOnboarding(q)).map(q=>attemptField(q.id,q.pergunta,answers)).join('')}<h3>Quando interromper</h3>${r.exclusoes.map(q=>attemptField(q.id,q.pergunta,answers)).join('')}<div class="expanded-status" role="alert"></div><button type="submit" class="as-botao as-botao--primario">Conferir e continuar</button><button type="button" class="as-botao" data-action="close-dialog">Cancelar</button></form>`;
+const capture=()=>{const f=new FormData(d.querySelector('form'));return {id:r.id,idade_meses:child.ageMonths,situacao_id:f.get('situacao'),momento:f.get('momento'),riscos:Object.fromEntries(RISK_QUESTIONS.map(q=>[q.campo,f.get(q.id)])),gates:Object.fromEntries(GATES.map(k=>[k,f.get(k)])),respostas:Object.fromEntries([...r.requisitos,...r.exclusoes].map(q=>[q.id,fromOnboarding(q)?'sim':f.get(q.id)]))};};
 const form=d.querySelector('form'),status=d.querySelector('.expanded-status');
 let triedSubmit=false;
 const show=()=>{
@@ -469,9 +504,27 @@ function confirmUse(act,id){
 }
 root.addEventListener('click',e=>{if(!fresh()){e.preventDefault();return;}
  const anchor=e.target.closest('main a[href]'),source=route()[0];
+ const normal=e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey;
+ const navigation=e.target.closest('.as-nav a[href]');
+ if(normal&&navigation){
+   rememberRead();
+   const section=navigation.hash.slice(2), target=tabReads.get(section);
+   if(navigation.hasAttribute('aria-current')) {
+     tabReads.delete(section);
+   } else if(target?.profile===state.activeId) {
+     e.preventDefault();readingOrigin=target.origin;
+     if(location.hash===target.path){
+       history.replaceState({reading:target.origin,readerFrom:null},'');cardTab=target.part;render();window.scrollTo(0,target.y);
+     }else{resuming=target;go(target.path.slice(2));}return;
+   }
+ }
+ if(normal&&anchor?.hasAttribute('data-reader-back')&&history.state?.readerFrom===anchor.hash){
+   e.preventDefault();history.back();return;
+ }
  if(anchor && Object.hasOwn(listLabels,source) && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button===0){
   const match=anchor.hash.match(/^#\/(?:card|situacao)\/([^/]+)$/);
-  if(match)readingOrigin={path:location.hash.slice(2)||'home',card:match[1],to:anchor.hash,profile:state.activeId,y:window.scrollY};
+  if(match)readingOrigin={path:location.hash.slice(2)||'home',card:match[1],to:anchor.hash,profile:state.activeId,y:window.scrollY,
+   ...(source==='explore'?{search,filter}:source==='situacoes'?{situationSearch}:{})};
  }
  if(e.target.closest('.as-pular')){e.preventDefault();root.querySelector('main')?.focus();return;}const danger=e.target.closest('a[href="#/reset"],a[href="#/delete"]');if(danger){e.preventDefault();const kind=danger.getAttribute('href').slice(2);armConfirmation(kind,kind==='delete'?p()?.id:undefined);go(kind,true);return;}if(e.target.closest('.as-pular')){e.preventDefault();document.querySelector('main')?.focus();return;}if(e.target.closest('a[href^="#/"]'))clearNotice();const tab=e.target.closest('[data-aba]');if(tab){cardTab=tab.dataset.aba;render();document.querySelector('#aba-'+cardTab)?.focus();return;}const choice=e.target.closest('[data-testid^="card-feedback-"]');if(choice){undoFavorite=null;const kind=choice.dataset.testid.replace('card-feedback-',''),id=route()[1],c=catalog.cards.find(c=>c.id===id);if(!(c?.regra_integracao?validExpandedUse(c):assess(c,p(),catalog).compatible))return;try{if(save(feedback(state,p().id,id,kind))){gesture=kind==='usamos'?{kind:'attempt',profile:p().id}:null;notice(kind==='desconforto'?catalog.orientacoes.desconforto+' Se você repassou esta ficha, avise o outro cuidador: a cópia externa não é retirada pelo app.':'Retorno registrado para '+p().name+'.',kind==='desconforto');if(kind==='adaptar')cardTab='adaptar';render();}}catch(err){notice(err.message,true);render();}return;}
  if(e.target.closest('[data-testid="save-undo"]')){if(undoFavorite&&p()?.id===undoFavorite.profileId&&storage.getItem(STORAGE_KEY)===undoFavorite.raw){if(save(favorite(state,p().id,undoFavorite.cardId)))notice('Alteração desfeita.');}else notice('O contexto mudou. Confira os salvos antes de alterar.',true);undoFavorite=null;render();return;}
@@ -507,6 +560,7 @@ root.addEventListener('click',e=>{if(!fresh()){e.preventDefault();return;}
   situationSearch='';render();root.querySelector('#situation-search-input')?.focus();return;
  }
  if(act==='recheck-kit'){kitSafety=null;render();root.querySelector('#kit-safety select')?.focus();return;}
+ if(act==='clear-library'){filter='';search='';render();root.querySelector('#search-form-input')?.focus();return;}
  if(act==='filter'){undoFavorite=null;filter=id||'';render();}
  if(act==='switch'){if(save(setActive(state,id))){day=0;clearNotice();go('home');}}
  if(act==='today'||act==='tomorrow'){day=act==='tomorrow'?1:0;render();}
@@ -530,9 +584,25 @@ window.addEventListener('hashchange',event=>{cardTab='como';
   readingOrigin={path:'home',to:nextHash,card:nextHash.slice(7),profile:state.activeId,y:window.scrollY,openGroups};
  }
  if(!transition)kitSafety=null;
- lastUse=null;confirmedUse=null;undoFavorite=null;if(confirmationIntent&&route()[0]!==confirmationIntent.kind)confirmationIntent=null;const queued=pendingToast;pendingToast=null;if(queued&&noticeValid(queued.context)){toast=queued.text;toastContext=queued.context;toastPersistent=queued.persistent;}else {clearNotice();}render();if(!restoreRow(new URL(event.oldURL).hash))window.scrollTo(0,0);});
+ const hashEntry=history.state?.reading;
+ if(!resuming && hashEntry?.profile===state.activeId && hashEntry.to===nextHash)readingOrigin=hashEntry;
+ if(nextHash.startsWith('#/card/')&&readingOrigin?.to===nextHash&&readingOrigin.profile===state.activeId){
+   const directBack=!resuming && oldHash==='#/'+readingOrigin.path;
+   history.replaceState({...history.state,reading:readingOrigin,readerFrom:directBack?oldHash:history.state?.readerFrom||null},'');
+ }
+ if(oldHash.startsWith('#/card/')&&readingOrigin&&nextHash==='#/'+readingOrigin.path)tabReads.delete(readingSection(readingOrigin.path.split('/')[0]));
+ if(readingOrigin?.profile===state.activeId && nextHash==='#/'+readingOrigin.path && oldHash===readingOrigin.to){
+   if(readingOrigin.path==='explore'){search=readingOrigin.search||'';filter=readingOrigin.filter||'';}
+   if(readingOrigin.path.split('/')[0]==='situacoes')situationSearch=readingOrigin.situationSearch||'';
+ }
+ const resume=resuming;resuming=null;
+ if(resume?.path===nextHash)cardTab=resume.part;
+ lastUse=null;confirmedUse=null;undoFavorite=null;if(confirmationIntent&&route()[0]!==confirmationIntent.kind)confirmationIntent=null;const queued=pendingToast;pendingToast=null;if(queued&&noticeValid(queued.context)){toast=queued.text;toastContext=queued.context;toastPersistent=queued.persistent;}else {clearNotice();}render();if(resume?.path===nextHash){
+   root.querySelectorAll('article details').forEach((d,i)=>{if(resume.open.includes(i))d.open=true;});
+   window.scrollTo(0,resume.y);
+ }else if(!restoreRow(new URL(event.oldURL).hash))window.scrollTo(0,0);});
 window.addEventListener('storage',e=>{kitSafety=null;lastUse=null;confirmedUse=null;if(e.key!==STORAGE_KEY&&e.key!==null)return;const latest=load(storage);state=latest.state;storageError=latest.error;raw=latest.raw;day=0;undoFavorite=null;confirmationIntent=null;notice('Dados atualizados por outra aba.',true);if(['delete','restore','reset'].includes(route()[0]))go('profiles',true);else render();});
-try{const read=async u=>{const r=await fetch(u);if(!r.ok)throw Error('Arquivo indisponível');return r.json();};const [cards,ds,man,rc,km]=await Promise.all([read('../banco/cards.json'),read('../banco/desafios.json'),read('../ilustracoes/manifesto.json'),read('../banco/rotas.json').catch(()=>null),read('../banco/mapa-kit.json')]);kitMap=km;routeContent=loadRoutes(rc);const v=validateCatalog(cards,ds);if(v.problems.length||!v.catalog.cards.length)throw Error('O catálogo precisa de correção antes de abrir.');catalog=v.catalog;manifest=man;if(!location.hash.startsWith('#/'))history.replaceState(null,'','#/home');render();}catch{root.innerHTML='<main class="as-conteudo"><h1>Não foi possível abrir o Agora Sei.</h1><p>Tente abrir o app novamente. Seus perfis continuam neste navegador.</p><p><a href="./">Tentar novamente</a></p></main>';}
+try{const read=async u=>{const r=await fetch(u);if(!r.ok)throw Error('Arquivo indisponível');return r.json();};const [cards,ds,man,rc,km]=await Promise.all([read('../banco/cards.json'),read('../banco/desafios.json'),read('../ilustracoes/manifesto.json'),read('../banco/rotas.json').catch(()=>null),read('../banco/mapa-kit.json')]);kitMap=km;routeContent=loadRoutes(rc);const v=validateCatalog(cards,ds);if(v.problems.length||!v.catalog.cards.length)throw Error('O catálogo precisa de correção antes de abrir.');allCards=v.catalog.cards.map(applyEdition);catalog={...v.catalog};manifest=man;if(!location.hash.startsWith('#/'))history.replaceState(null,'','#/home');render();if(history.state?.reading?.profile===state.activeId&&history.state.reading.to===location.hash){readingOrigin=history.state.reading;render();}}catch{root.innerHTML='<main class="as-conteudo"><h1>Não foi possível abrir o Agora Sei.</h1><p>Tente abrir o app novamente. Seus perfis continuam neste navegador.</p><p><a href="./">Tentar novamente</a></p></main>';}
 
 root.addEventListener('input',e=>{const form=e.target.closest('#profile-form');if(form)updateProfileFields(form,e.target.name);});
-root.addEventListener('change',e=>{if(e.target.id==='situation-filter')go('situacoes'+(e.target.value?'/'+e.target.value:''));});
+root.addEventListener('change',e=>{if(e.target.id==='library-topic'){filter=e.target.value;render();root.querySelector('#library-topic')?.focus();return;}if(e.target.id==='situation-filter')go('situacoes'+(e.target.value?'/'+e.target.value:''));});

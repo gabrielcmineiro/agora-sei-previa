@@ -169,9 +169,9 @@ export function filtro({rotulo, icone: ic = '', pressionado = false, href, famil
 // rota: 'home' | 'explore' | 'saved' | 'profiles' | 'help' | '' (nenhuma marcada).
 // semNav: sem a barra de baixo (boas-vindas, quiz, erro). semRodape: sem o rodapé (boas-vindas, montando o kit).
 // crianca: {nome, avatar} ou null. base: {design, ilustracoes}. links: troca os destinos (padrão: rotas #/…).
-export function moldura({rota = '', appLinks = false, crianca = null, conteudoHtml, base = {design: '../design', ilustracoes: '../ilustracoes'}, links = ROTAS, semNav = false, semRodape = false, estreito = false, largo = false}) {
+export function moldura({rota = '', secao = rota, appLinks = false, crianca = null, conteudoHtml, base = {design: '../design', ilustracoes: '../ilustracoes'}, links = ROTAS, semNav = false, semRodape = false, estreito = false, largo = false}) {
   const L = {...ROTAS, ...links};
-  const nav = semNav ? '' : `<nav class="as-nav" aria-label="Principal">${NAV.map(([r, ic, t]) => `<a class="as-nav-item" href="${esc(L[r])}"${r === rota ? ' aria-current="page"' : ''}>${icone(ic)}<span>${t}</span></a>`).join('')}</nav>`;
+  const nav = semNav ? '' : `<nav class="as-nav" aria-label="Principal">${NAV.map(([r, ic, t]) => `<a class="as-nav-item" href="${esc(L[r])}"${r === secao ? (r === rota ? ' aria-current="page"' : ' aria-current="location"') : ''}>${icone(ic)}<span>${t}</span></a>`).join('')}</nav>`;
   const seletor = crianca
     ? `<a class="as-crianca-ativa" href="${esc(L.profiles)}" data-testid="active-child" aria-label="Criança ativa: ${esc(crianca.nome)}. Trocar de criança">${avatar({src: crianca.avatar, tamanho: 'p'})}<span class="as-crianca-ativa-texto"><span class="as-crianca-ativa-rotulo">Criança ativa</span><span class="as-crianca-ativa-nome">${esc(crianca.nome)}</span></span>${icone('trocar')}</a>`
     : '';

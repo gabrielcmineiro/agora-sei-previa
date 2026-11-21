@@ -34,7 +34,7 @@ export function searchCards(cards, query, filter = '', kitMap = null) {
   if (!terms.length) return {cards: [], limited: false};
   const matches = [];
   for (const card of scope) {
-    const titleWords = searchWords(card.titulo);
+    const titleWords = [...searchWords(card.titulo), ...searchWords(card.titulo_anterior)];
     if(card.id==='pes-d01')titleWords.push('celular','tablet','tela');
     const words = new Set([...titleWords, ...searchWords(card.objetivo),
       ...searchWords(card.regra_integracao?.situacao?.rotulo)]);
